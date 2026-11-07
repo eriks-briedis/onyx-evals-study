@@ -1,0 +1,192 @@
+# yaml-language-server: $schema=https://promptfoo.dev/config-schema.json
+description: Onyx answer quality with the gold passages in hand - Victorian rentals, passage oracle
+#
+# The passage-oracle arm. Copy of promptfooconfig.rentals.yaml with three changes: the
+# persona is rentals-oracle (no search tool), the message is the gold's law passages
+# (vars.passages, scripts/make-oracle-dataset.py) followed by the question, and the search
+# asserts are gone because no search runs. retrieval is recorded as a pass by construction so
+# the 3-run summaries and gold pass (retrieval + three judges) read the same as every other arm.
+# What this arm still gets wrong is the writing half: the ceiling a perfect retrieval would
+# give each model. Run with `npm run eval:rentals:oracle` (sets EVAL_CORPUS; the document set
+# below is never searched but bindProviders checks it).
+
+extensions:
+  - file://dist/src/setup.js:hook
+
+prompts:
+  - '{{question}}'
+
+providers:
+  - id: https
+    label: 'rentals-oracle:haiku'
+    config:
+      url: '{{env.ONYX_BASE_URL}}/api/chat/send-chat-message'
+      method: POST
+      headers:
+        Content-Type: application/json
+      maxRetries: 0
+      body:
+        message: "{{passages}}\n\nQuestion: {{question}}"
+        chat_session_info:
+          persona_id: 0
+        internal_search_filters:
+          document_set:
+            - vic-rentals-baseline
+        llm_override:
+          model_configuration_id: 0      # written by the hook -> claude-haiku-5-5
+          temperature: 0
+        stream: false
+        include_citations: true
+      transformResponse: (json) => json
+
+  - id: https
+    label: 'rentals-oracle:sonnet'
+    config:
+      url: '{{env.ONYX_BASE_URL}}/api/chat/send-chat-message'
+      method: POST
+      headers:
+        Content-Type: application/json
+      maxRetries: 0
+      body:
+        message: "{{passages}}\n\nQuestion: {{question}}"
+        chat_session_info:
+          persona_id: 0
+        internal_search_filters:
+          document_set:
+            - vic-rentals-baseline
+        llm_override:
+          model_configuration_id: 0      # written by the hook -> claude-sonnet-5-5: the mid rung of the model ladder with the passages in hand
+          temperature: 0
+        stream: false
+        include_citations: true
+      transformResponse: (json) => json
+
+  - id: https
+    label: 'rentals-oracle:luna'
+    config:
+      url: '{{env.ONYX_BASE_URL}}/api/chat/send-chat-message'
+      method: POST
+      headers:
+        Content-Type: application/json
+      maxRetries: 0
+      body:
+        message: "{{passages}}\n\nQuestion: {{question}}"
+        chat_session_info:
+          persona_id: 0
+        internal_search_filters:
+          document_set:
+            - vic-rentals-baseline
+        llm_override:
+          model_configuration_id: 0      # written by the hook -> gpt-5.6-luna
+          temperature: 0
+        stream: false
+        include_citations: true
+      transformResponse: (json) => json
+
+  - id: https
+    label: 'rentals-oracle:luna-api'
+    config:
+      url: '{{env.ONYX_BASE_URL}}/api/chat/send-chat-message'
+      method: POST
+      headers:
+        Content-Type: application/json
+      maxRetries: 0
+      body:
+        message: "{{passages}}\n\nQuestion: {{question}}"
+        chat_session_info:
+          persona_id: 0
+        internal_search_filters:
+          document_set:
+            - vic-rentals-baseline
+        llm_override:
+          model_configuration_id: 0      # written by the hook -> gpt-5.6-luna via the openai provider (API key), manifest luna-api
+          temperature: 0
+        stream: false
+        include_citations: true
+      transformResponse: (json) => json
+
+  - id: https
+    label: 'rentals-oracle:sol-api'
+    config:
+      url: '{{env.ONYX_BASE_URL}}/api/chat/send-chat-message'
+      method: POST
+      headers:
+        Content-Type: application/json
+      maxRetries: 0
+      body:
+        message: "{{passages}}\n\nQuestion: {{question}}"
+        chat_session_info:
+          persona_id: 0
+        internal_search_filters:
+          document_set:
+            - vic-rentals-baseline
+        llm_override:
+          model_configuration_id: 0      # written by the hook -> configuration 31, gpt-5.6-sol via Onyx's direct openai provider, manifest sol-api
+          temperature: 0
+        stream: false
+        include_citations: true
+      transformResponse: (json) => json
+
+  - id: https
+    label: 'rentals-oracle:opus'
+    config:
+      url: '{{env.ONYX_BASE_URL}}/api/chat/send-chat-message'
+      method: POST
+      headers:
+        Content-Type: application/json
+      maxRetries: 0
+      body:
+        message: "{{passages}}\n\nQuestion: {{question}}"
+        chat_session_info:
+          persona_id: 0
+        internal_search_filters:
+          document_set:
+            - vic-rentals-baseline
+        llm_override:
+          model_configuration_id: 0      # written by the hook -> claude-opus-5-5: the judge as an answerer, to test the gold
+          temperature: 0
+        stream: false
+        include_citations: true
+      transformResponse: (json) => json
+
+  - id: https
+    label: 'rentals-oracle:qwen'
+    config:
+      url: '{{env.ONYX_BASE_URL}}/api/chat/send-chat-message'
+      method: POST
+      headers:
+        Content-Type: application/json
+      maxRetries: 0
+      body:
+        message: "{{passages}}\n\nQuestion: {{question}}"
+        chat_session_info:
+          persona_id: 0
+        internal_search_filters:
+          document_set:
+            - vic-rentals-baseline
+        llm_override:
+          model_configuration_id: 0      # written by the hook -> qwen3.6:35b (local Ollama)
+          temperature: 0
+        stream: false
+        include_citations: true
+      transformResponse: (json) => json
+
+defaultTest:
+  options:
+    provider:
+      id: 'openai:chat:{{env.JUDGE_MODEL}}'
+      config:
+        apiBaseUrl: '{{env.JUDGE_BASE_URL}}'
+        apiKey: unused
+        temperature: 0
+        max_tokens: 4096
+  assert:
+    - type: javascript
+      value: file://dist/src/asserts/noError.js
+      metric: no_error
+    # No search ran: the passages were given. Recorded as a pass so gold pass keeps its four parts.
+    - type: javascript
+      value: "({ pass: true, score: 1, reason: 'the gold passages were given in the message; retrieval holds by construction' })"
+      metric: retrieval
+
+tests: file://datasets/vic-rentals-oracle.yaml

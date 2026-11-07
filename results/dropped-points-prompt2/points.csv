@@ -1,0 +1,298 @@
+run,filters,model,case,point,kind,judged,dropped,bucket,passages,reason
+1,off,haiku,vr-vrq-035-2025-10-01,1,rule,True,False,,,
+1,off,haiku,vr-vrq-035-2025-10-01,2,judgement,True,False,,,
+1,off,haiku,vr-vrq-035-2025-10-01,3,next step,True,False,,,
+1,off,haiku,vr-vrq-003-2025-10-01,1,condition,True,True,fed,"91ZZB: fed (fed 100%, other version 56%, searched 100%); Version 110: s 91ZZO, form of notice to vacate: other ver (fed 0%, other version 100%, searched 80%)","No: the answer covers the 60-day minimum, withdrawal only by a written notice signed by both parties, and next steps (a signed withdrawal or a VCAT challenge within 30 days), but it misses the first point. It never explains that the outcome depends on which ground the notice states and the evidence attached: premises to be offered for sale with vacant possession, which survives the buyer pulling out, versus a signed contract of sale. It treats the 14-day contract timing as applying to every sale notice and leaves the collapsed-sale question unanswered."
+1,off,haiku,vr-vrq-003-2025-10-01,2,rule,True,False,,,
+1,off,haiku,vr-vrq-003-2025-10-01,3,rule,True,False,,,
+1,off,haiku,vr-vrq-003-2025-10-01,4,next step,True,False,,,
+1,off,haiku,vr-vrq-021-2023-03-01,1,absence,True,False,,,
+1,off,haiku,vr-vrq-021-2023-03-01,2,next step,True,False,,,
+1,off,haiku,vr-vrq-004-2025-10-01,1,rule,True,False,,,
+1,off,haiku,vr-vrq-004-2025-10-01,2,rule,True,False,,,
+1,off,haiku,vr-vrq-004-2025-10-01,3,rule,True,False,,,
+1,off,haiku,vr-vrq-004-2025-10-01,4,next step,True,False,,,
+1,off,haiku,vr-newsq-005-2019-11-01,1,rule,True,True,missing,"Historical s 263, notice to vacate for no specified reason (120 days): missing (fed 0%, other version 16%, searched 5%)",No: the answer misses every required point. It never says a no-reason notice is allowed with at least 120 days notice; it lists the minimum notice period as something the documents don't cover. It never says a notice given in response to a repair request has no effect; it says the 2019 version doesn't say whether such a notice is invalid. It never says the tenant can challenge at VCAT within 60 days; its only 60-day limit is for a Tribunal repair application after a Director's report.
+1,off,haiku,vr-newsq-005-2019-11-01,2,rule,True,True,other ver,"Historical s 266(2)–(3), notice of no effect if given in response to exercise of a right; 60-day challenge limit: other ver (fed 0%, other version 44%, searched 6%)",No: the answer misses every required point. It never says a no-reason notice is allowed with at least 120 days notice; it lists the minimum notice period as something the documents don't cover. It never says a notice given in response to a repair request has no effect; it says the 2019 version doesn't say whether such a notice is invalid. It never says the tenant can challenge at VCAT within 60 days; its only 60-day limit is for a Tribunal repair application after a Director's report.
+1,off,haiku,vr-newsq-005-2019-11-01,3,next step,True,True,other ver,"Historical s 266(2)–(3), notice of no effect if given in response to exercise of a right; 60-day challenge limit: other ver (fed 0%, other version 44%, searched 6%)",No: the answer misses every required point. It never says a no-reason notice is allowed with at least 120 days notice; it lists the minimum notice period as something the documents don't cover. It never says a notice given in response to a repair request has no effect; it says the 2019 version doesn't say whether such a notice is invalid. It never says the tenant can challenge at VCAT within 60 days; its only 60-day limit is for a Tribunal repair application after a Director's report.
+1,off,haiku,vr-vrq-001-2026-10-15,1,rule,True,False,,,
+1,off,haiku,vr-vrq-001-2026-10-15,2,condition,True,False,,,
+1,off,haiku,vr-vrq-001-2026-10-15,3,next step,True,False,,,
+1,off,haiku,vr-wpq-005-2026-10-15,1,condition,True,False,,,
+1,off,haiku,vr-wpq-005-2026-10-15,2,rule,True,True,missing,"s 81: missing (fed 0%, other version 10%, searched 10%)","No. The answer names deciding facts ('whether your friend pays you any money, whether they have any agreement with you about their stay, and whether they have exclusive use of any part of the home'), but it never says sub-letting needs the landlord's written consent; it mentions only acting 'without the residential rental provider's consent' as a ground for a notice to vacate, so the written-consent requirement is missing."
+1,off,haiku,vr-vrq-010-2026-10-15,1,rule,True,False,,,
+1,off,haiku,vr-vrq-010-2026-10-15,2,rule,True,True,searched,"Version 115: s 61, renter must not intentionally or negligently damage the premises: searched (fed 0%, other version 0%, searched 33%); Version 115: s 63, keep reasonably clean; leave in the same condition, allowing for fair wear and tear: searched (fed 0%, other version 0%, searched 100%)","No — the answer covers written notice 'as soon as practicable', says the documents don't address insurance, and gives a next step (written notice and offering to arrange a qualified repair), but it misses the second point: it never says the renter is responsible for damage they or their pet cause (as distinct from fair wear and tear), only that the owner 'may' issue a repair notice if damage results from a failure to take care, and it never mentions the obligation to leave the home in the same condition."
+1,off,haiku,vr-vrq-010-2026-10-15,3,absence,True,False,,,
+1,off,haiku,vr-vrq-010-2026-10-15,4,next step,True,False,,,
+1,off,haiku,vr-vrq-028-2026-10-15,1,rule,True,False,,,
+1,off,haiku,vr-vrq-028-2026-10-15,2,absence,True,False,,,
+1,off,haiku,vr-vrq-028-2026-10-15,3,rule,True,False,,,
+1,off,haiku,vr-vrq-028-2026-10-15,4,next step,True,False,,,
+1,off,haiku,vr-newsq-008-2025-10-01,1,absence,True,True,fed,"Version 110: ss 30F–30G, fixed-amount rent offers (no s 30F(4)); false or misleading rent advertising: fed (fed 100%, other version 100%, searched 79%)","No. The answer never says that relisting the property at a higher fixed rent is not illegal by itself. It covers the ban on soliciting higher offers, the absence of a ban on accepting unsolicited offers on that date (""The v110 text has no ban on accepting an uninvited higher offer""), and the lack of any rule on withdrawal emails, but it does not address whether the re-listing at a higher rent was lawful in itself."
+1,off,haiku,vr-newsq-008-2025-10-01,2,rule,True,False,,,
+1,off,haiku,vr-newsq-008-2025-10-01,3,absence,True,False,,,
+1,off,haiku,vr-newsq-008-2025-10-01,4,absence,True,False,,,
+1,off,luna,vr-vrq-035-2025-10-01,1,rule,True,False,,,
+1,off,luna,vr-vrq-035-2025-10-01,2,judgement,True,False,,,
+1,off,luna,vr-vrq-035-2025-10-01,3,next step,True,False,,,
+1,off,luna,vr-vrq-003-2025-10-01,1,condition,True,False,,,
+1,off,luna,vr-vrq-003-2025-10-01,2,rule,True,True,fed,"91ZZB: fed (fed 100%, other version 24%, searched 100%)","No. The answer covers withdrawal only by a written notice signed by both parties, the 30-day VCAT challenge, and the dependence on the sale ground and its evidence, but it never states the minimum 60-day notice period."
+1,off,luna,vr-vrq-003-2025-10-01,3,rule,True,False,,,
+1,off,luna,vr-vrq-003-2025-10-01,4,next step,True,False,,,
+1,off,luna,vr-vrq-021-2023-03-01,1,absence,True,False,,,
+1,off,luna,vr-vrq-021-2023-03-01,2,next step,True,False,,,
+1,off,luna,vr-vrq-004-2025-10-01,1,rule,True,False,,,
+1,off,luna,vr-vrq-004-2025-10-01,2,rule,True,False,,,
+1,off,luna,vr-vrq-004-2025-10-01,3,rule,True,False,,,
+1,off,luna,vr-vrq-004-2025-10-01,4,next step,True,False,,,
+1,off,luna,vr-newsq-005-2019-11-01,1,rule,True,True,searched,"Historical s 263, notice to vacate for no specified reason (120 days): searched (fed 16%, other version 5%, searched 63%)","No. The output never mentions a no-reason notice with at least 120 days' notice. It also contradicts the second point, saying the 'given in response to the renter exercising a right' rule applies only to fixed-term agreements, not month-to-month tenancies. It gives a 30-day Tribunal challenge window instead of 60 days."
+1,off,luna,vr-newsq-005-2019-11-01,2,rule,True,True,fed,"Historical s 266(2)–(3), notice of no effect if given in response to exercise of a right; 60-day challenge limit: fed (fed 44%, other version 25%, searched 100%)","No. The output never mentions a no-reason notice with at least 120 days' notice. It also contradicts the second point, saying the 'given in response to the renter exercising a right' rule applies only to fixed-term agreements, not month-to-month tenancies. It gives a 30-day Tribunal challenge window instead of 60 days."
+1,off,luna,vr-newsq-005-2019-11-01,3,next step,True,True,fed,"Historical s 266(2)–(3), notice of no effect if given in response to exercise of a right; 60-day challenge limit: fed (fed 44%, other version 25%, searched 100%)","No. The output never mentions a no-reason notice with at least 120 days' notice. It also contradicts the second point, saying the 'given in response to the renter exercising a right' rule applies only to fixed-term agreements, not month-to-month tenancies. It gives a 30-day Tribunal challenge window instead of 60 days."
+1,off,luna,vr-vrq-001-2026-10-15,1,rule,True,False,,,
+1,off,luna,vr-vrq-001-2026-10-15,2,condition,True,False,,,
+1,off,luna,vr-vrq-001-2026-10-15,3,next step,True,False,,,
+1,off,luna,vr-wpq-005-2026-10-15,1,condition,True,False,,,
+1,off,luna,vr-wpq-005-2026-10-15,2,rule,True,True,missing,"s 81: missing (fed 0%, other version 0%, searched 0%)","No — the missing point is that sub-letting needs the landlord's written consent. The first point is covered: 'particularly whether your friend pays you rent, has exclusive use of part of the premises'. The answer only says the rental provider may give a notice to vacate if you 'purported to sub-let... without the rental provider's consent'. That implies consent matters, but it never states that sub-letting requires consent, and it never mentions that the consent must be written."
+1,off,luna,vr-vrq-010-2026-10-15,1,rule,True,False,,,
+1,off,luna,vr-vrq-010-2026-10-15,2,rule,True,True,missing,"Version 115: s 61, renter must not intentionally or negligently damage the premises: missing (fed 17%, other version 0%, searched 0%); Version 115: s 63, keep reasonably clean; leave in the same condition, allowing for fair wear and tear: missing (fed 9%, other version 0%, searched 0%)","No. The answer never says that the renter is responsible for damage they or their pet cause (as opposed to fair wear and tear) or that they must leave the home in the same condition; it instead says 'The retrieved documents do not state who ultimately pays for this particular dog damage,' which hedges the point. The other three points are covered: written notice as soon as practicable, the documents not settling the insurance question, and the next step of notifying in writing and agreeing on the repair."
+1,off,luna,vr-vrq-010-2026-10-15,3,absence,True,False,,,
+1,off,luna,vr-vrq-010-2026-10-15,4,next step,True,False,,,
+1,off,luna,vr-vrq-028-2026-10-15,1,rule,True,False,,,
+1,off,luna,vr-vrq-028-2026-10-15,2,absence,True,False,,,
+1,off,luna,vr-vrq-028-2026-10-15,3,rule,True,False,,,
+1,off,luna,vr-vrq-028-2026-10-15,4,next step,True,False,,,
+1,off,luna,vr-newsq-008-2025-10-01,1,absence,True,False,,,
+1,off,luna,vr-newsq-008-2025-10-01,2,rule,True,False,,,
+1,off,luna,vr-newsq-008-2025-10-01,3,absence,True,False,,,
+1,off,luna,vr-newsq-008-2025-10-01,4,absence,True,False,,,
+1,off,qwen,vr-vrq-035-2025-10-01,1,rule,True,False,,,
+1,off,qwen,vr-vrq-035-2025-10-01,2,judgement,True,False,,,
+1,off,qwen,vr-vrq-035-2025-10-01,3,next step,True,True,other ver,"Version 110: s 65A(1)–(2), premises must comply on occupation; urgent repairs request: other ver (fed 0%, other version 94%, searched 100%); Version 110: s 91L, termination by renter before possession: missing (fed 0%, other version 0%, searched 0%)","No - the answer covers the mould and damp standard ('free from mould and damp caused by or related to the building structure') and says 'a photo alone is insufficient proof', but it gives no next step, such as asking the agent, checking at an inspection, requesting urgent repairs, or ending the agreement before moving in."
+1,off,qwen,vr-vrq-003-2025-10-01,1,condition,True,True,fed,"91ZZB: other ver (fed 0%, other version 53%, searched 100%); Version 110: s 91ZZO, form of notice to vacate: fed (fed 33%, other version 100%, searched 80%)","No. The answer covers withdrawal in writing signed by both parties and gives next steps (a formal withdrawal request, a VCAT challenge within 30 days). However, it never says the outcome depends on the ground stated in the notice and its evidence (planned sale with vacant possession vs a signed contract), and it never mentions the 60-day minimum notice period."
+1,off,qwen,vr-vrq-003-2025-10-01,2,rule,True,True,other ver,"91ZZB: other ver (fed 0%, other version 53%, searched 100%)","No. The answer covers withdrawal in writing signed by both parties and gives next steps (a formal withdrawal request, a VCAT challenge within 30 days). However, it never says the outcome depends on the ground stated in the notice and its evidence (planned sale with vacant possession vs a signed contract), and it never mentions the 60-day minimum notice period."
+1,off,qwen,vr-vrq-003-2025-10-01,3,rule,True,False,,,
+1,off,qwen,vr-vrq-003-2025-10-01,4,next step,True,False,,,
+1,off,qwen,vr-vrq-021-2023-03-01,1,absence,True,False,,,
+1,off,qwen,vr-vrq-021-2023-03-01,2,next step,True,False,,,
+1,off,qwen,vr-vrq-004-2025-10-01,1,rule,True,False,,,
+1,off,qwen,vr-vrq-004-2025-10-01,2,rule,True,False,,,
+1,off,qwen,vr-vrq-004-2025-10-01,3,rule,True,False,,,
+1,off,qwen,vr-vrq-004-2025-10-01,4,next step,True,False,,,
+1,off,qwen,vr-newsq-005-2019-11-01,1,rule,True,True,missing,"Historical s 263, notice to vacate for no specified reason (120 days): missing (fed 5%, other version 5%, searched 5%)","No. The output is empty, so it states none of the required points: the at-least-120-days no-reason notice, the rule that a no-reason notice has no effect if given in response to the tenant asking for repairs, and the 60-day window to challenge at VCAT."
+1,off,qwen,vr-newsq-005-2019-11-01,2,rule,True,True,missing,"Historical s 266(2)–(3), notice of no effect if given in response to exercise of a right; 60-day challenge limit: missing (fed 19%, other version 6%, searched 19%)","No. The output is empty, so it states none of the required points: the at-least-120-days no-reason notice, the rule that a no-reason notice has no effect if given in response to the tenant asking for repairs, and the 60-day window to challenge at VCAT."
+1,off,qwen,vr-newsq-005-2019-11-01,3,next step,True,True,missing,"Historical s 266(2)–(3), notice of no effect if given in response to exercise of a right; 60-day challenge limit: missing (fed 19%, other version 6%, searched 19%)","No. The output is empty, so it states none of the required points: the at-least-120-days no-reason notice, the rule that a no-reason notice has no effect if given in response to the tenant asking for repairs, and the 60-day window to challenge at VCAT."
+1,off,qwen,vr-vrq-001-2026-10-15,1,rule,True,False,,,
+1,off,qwen,vr-vrq-001-2026-10-15,2,condition,True,False,,,
+1,off,qwen,vr-vrq-001-2026-10-15,3,next step,True,False,,,
+1,off,qwen,vr-wpq-005-2026-10-15,1,condition,True,True,missing,"s 3(1): residential rental agreement: missing (fed 0%, other version 0%, searched 0%); Version 115: s 91R, sub-residential rental agreements: missing (fed 0%, other version 0%, searched 0%)","No. The answer covers written consent for sub-letting ('a renter must not assign or sub-let the whole or any part of the premises without the written consent of the rental provider'), but it misses the first point. It makes the answer turn on whether the user is renter or landlord, not on the arrangement with the friend. It never names a deciding fact such as whether the friend has space that is only theirs, what was agreed between them, or what the friend pays."
+1,off,qwen,vr-wpq-005-2026-10-15,2,rule,True,False,,,
+1,off,qwen,vr-vrq-010-2026-10-15,1,rule,True,False,,,
+1,off,qwen,vr-vrq-010-2026-10-15,2,rule,True,True,searched,"Version 115: s 61, renter must not intentionally or negligently damage the premises: searched (fed 0%, other version 0%, searched 33%); Version 115: s 63, keep reasonably clean; leave in the same condition, allowing for fair wear and tear: searched (fed 0%, other version 0%, searched 100%)","No. The answer never states that the renter is responsible for damage caused by them or their pet (as distinct from fair wear and tear), or that they must leave the home in the same condition. It only calls this ""tenant-caused damage"", then implies the rental provider is responsible for non-urgent repairs and leaves cost as something to ""discuss who will cover"". So the second point is missing or hedged too far for a reader to tell which way it falls."
+1,off,qwen,vr-vrq-010-2026-10-15,3,absence,True,False,,,
+1,off,qwen,vr-vrq-010-2026-10-15,4,next step,True,False,,,
+1,off,qwen,vr-vrq-028-2026-10-15,1,rule,True,False,,,
+1,off,qwen,vr-vrq-028-2026-10-15,2,absence,True,False,,,
+1,off,qwen,vr-vrq-028-2026-10-15,3,rule,True,False,,,
+1,off,qwen,vr-vrq-028-2026-10-15,4,next step,True,False,,,
+1,off,qwen,vr-newsq-008-2025-10-01,1,absence,True,True,fed,"Version 110: ss 30F–30G, fixed-amount rent offers (no s 30F(4)); false or misleading rent advertising: fed (fed 100%, other version 100%, searched 79%)","No. The answer misses or contradicts three required points. First, it never says that relisting at a higher fixed rent is not illegal by itself. Second, it says providers are 'prohibited from accepting unsolicited offers that exceed the advertised amount', which contradicts the point that only inviting higher offers was banned on this date. Third, it says the false withdrawal email 'constitutes misleading or deceptive conduct... which is strictly prohibited' under the Act, which contradicts the point that no specific rental-law rule covers it. Only the ban on soliciting or inviting higher offers is correctly stated."
+1,off,qwen,vr-newsq-008-2025-10-01,2,rule,True,False,,,
+1,off,qwen,vr-newsq-008-2025-10-01,3,absence,True,True,fed,"Version 110: ss 30F–30G, fixed-amount rent offers (no s 30F(4)); false or misleading rent advertising: fed (fed 100%, other version 100%, searched 79%)","No. The answer misses or contradicts three required points. First, it never says that relisting at a higher fixed rent is not illegal by itself. Second, it says providers are 'prohibited from accepting unsolicited offers that exceed the advertised amount', which contradicts the point that only inviting higher offers was banned on this date. Third, it says the false withdrawal email 'constitutes misleading or deceptive conduct... which is strictly prohibited' under the Act, which contradicts the point that no specific rental-law rule covers it. Only the ban on soliciting or inviting higher offers is correctly stated."
+1,off,qwen,vr-newsq-008-2025-10-01,4,absence,True,True,no passage,,"No. The answer misses or contradicts three required points. First, it never says that relisting at a higher fixed rent is not illegal by itself. Second, it says providers are 'prohibited from accepting unsolicited offers that exceed the advertised amount', which contradicts the point that only inviting higher offers was banned on this date. Third, it says the false withdrawal email 'constitutes misleading or deceptive conduct... which is strictly prohibited' under the Act, which contradicts the point that no specific rental-law rule covers it. Only the ban on soliciting or inviting higher offers is correctly stated."
+2,off,haiku,vr-vrq-035-2025-10-01,1,rule,True,False,,,
+2,off,haiku,vr-vrq-035-2025-10-01,2,judgement,True,False,,,
+2,off,haiku,vr-vrq-035-2025-10-01,3,next step,True,False,,,
+2,off,haiku,vr-vrq-003-2025-10-01,1,condition,True,False,,,
+2,off,haiku,vr-vrq-003-2025-10-01,2,rule,True,False,,,
+2,off,haiku,vr-vrq-003-2025-10-01,3,rule,True,False,,,
+2,off,haiku,vr-vrq-003-2025-10-01,4,next step,True,False,,,
+2,off,haiku,vr-vrq-021-2023-03-01,1,absence,True,False,,,
+2,off,haiku,vr-vrq-021-2023-03-01,2,next step,True,False,,,
+2,off,haiku,vr-vrq-004-2025-10-01,1,rule,True,False,,,
+2,off,haiku,vr-vrq-004-2025-10-01,2,rule,True,False,,,
+2,off,haiku,vr-vrq-004-2025-10-01,3,rule,True,False,,,
+2,off,haiku,vr-vrq-004-2025-10-01,4,next step,True,False,,,
+2,off,haiku,vr-newsq-005-2019-11-01,1,rule,True,True,missing,"Historical s 263, notice to vacate for no specified reason (120 days): missing (fed 16%, other version 16%, searched 11%)","No: the output never says that a no-reason notice is allowed with at least 120 days' notice, it hedges on whether a retaliatory no-reason notice has no effect (""I cannot say what notices it covers""), and it gives a 30-day rather than 60-day VCAT challenge window."
+2,off,haiku,vr-newsq-005-2019-11-01,2,rule,True,True,fed,"Historical s 266(2)–(3), notice of no effect if given in response to exercise of a right; 60-day challenge limit: fed (fed 56%, other version 50%, searched 19%)","No: the output never says that a no-reason notice is allowed with at least 120 days' notice, it hedges on whether a retaliatory no-reason notice has no effect (""I cannot say what notices it covers""), and it gives a 30-day rather than 60-day VCAT challenge window."
+2,off,haiku,vr-newsq-005-2019-11-01,3,next step,True,True,fed,"Historical s 266(2)–(3), notice of no effect if given in response to exercise of a right; 60-day challenge limit: fed (fed 56%, other version 50%, searched 19%)","No: the output never says that a no-reason notice is allowed with at least 120 days' notice, it hedges on whether a retaliatory no-reason notice has no effect (""I cannot say what notices it covers""), and it gives a 30-day rather than 60-day VCAT challenge window."
+2,off,haiku,vr-vrq-001-2026-10-15,1,rule,True,False,,,
+2,off,haiku,vr-vrq-001-2026-10-15,2,condition,True,False,,,
+2,off,haiku,vr-vrq-001-2026-10-15,3,next step,True,False,,,
+2,off,haiku,vr-wpq-005-2026-10-15,1,condition,True,False,,,
+2,off,haiku,vr-wpq-005-2026-10-15,2,rule,True,True,other ver,"s 81: other ver (fed 0%, other version 100%, searched 0%)",No. The point that sub-letting needs the landlord's written consent is missing: the answer only says the rental provider may end the tenancy if the renter sub-lets 'without the residential rental provider's consent' and never says the consent must be in writing. The first point is covered by 'whether a friend living with you without paying rent or taking over part of the premises counts.'
+2,off,haiku,vr-vrq-010-2026-10-15,1,rule,True,False,,,
+2,off,haiku,vr-vrq-010-2026-10-15,2,rule,True,False,,,
+2,off,haiku,vr-vrq-010-2026-10-15,3,absence,True,False,,,
+2,off,haiku,vr-vrq-010-2026-10-15,4,next step,True,False,,,
+2,off,haiku,vr-vrq-028-2026-10-15,1,rule,True,False,,,
+2,off,haiku,vr-vrq-028-2026-10-15,2,absence,True,False,,,
+2,off,haiku,vr-vrq-028-2026-10-15,3,rule,True,False,,,
+2,off,haiku,vr-vrq-028-2026-10-15,4,next step,True,False,,,
+2,off,haiku,vr-newsq-008-2025-10-01,1,absence,True,False,,,
+2,off,haiku,vr-newsq-008-2025-10-01,2,rule,True,False,,,
+2,off,haiku,vr-newsq-008-2025-10-01,3,absence,True,False,,,
+2,off,haiku,vr-newsq-008-2025-10-01,4,absence,True,False,,,
+2,off,luna,vr-vrq-035-2025-10-01,1,rule,True,False,,,
+2,off,luna,vr-vrq-035-2025-10-01,2,judgement,True,False,,,
+2,off,luna,vr-vrq-035-2025-10-01,3,next step,True,False,,,
+2,off,luna,vr-vrq-003-2025-10-01,1,condition,True,False,,,
+2,off,luna,vr-vrq-003-2025-10-01,2,rule,True,False,,,
+2,off,luna,vr-vrq-003-2025-10-01,3,rule,True,False,,,
+2,off,luna,vr-vrq-003-2025-10-01,4,next step,True,False,,,
+2,off,luna,vr-vrq-021-2023-03-01,1,absence,True,False,,,
+2,off,luna,vr-vrq-021-2023-03-01,2,next step,True,False,,,
+2,off,luna,vr-vrq-004-2025-10-01,1,rule,True,False,,,
+2,off,luna,vr-vrq-004-2025-10-01,2,rule,True,False,,,
+2,off,luna,vr-vrq-004-2025-10-01,3,rule,True,False,,,
+2,off,luna,vr-vrq-004-2025-10-01,4,next step,True,False,,,
+2,off,luna,vr-newsq-005-2019-11-01,1,rule,True,True,other ver,"Historical s 263, notice to vacate for no specified reason (120 days): other ver (fed 0%, other version 100%, searched 5%)","No. The 60-day VCAT challenge point is missing entirely. The 120-day no-reason notice and the retaliatory-notice rules appear only for a later version (v089, 4 December 2019), and the answer then says 'I cannot apply those rules to your 1 November 2019 situation'. That hedge leaves the reader unable to tell whether those rules applied on the user's date."
+2,off,luna,vr-newsq-005-2019-11-01,2,rule,True,True,other ver,"Historical s 266(2)–(3), notice of no effect if given in response to exercise of a right; 60-day challenge limit: other ver (fed 0%, other version 100%, searched 12%)","No. The 60-day VCAT challenge point is missing entirely. The 120-day no-reason notice and the retaliatory-notice rules appear only for a later version (v089, 4 December 2019), and the answer then says 'I cannot apply those rules to your 1 November 2019 situation'. That hedge leaves the reader unable to tell whether those rules applied on the user's date."
+2,off,luna,vr-newsq-005-2019-11-01,3,next step,True,True,other ver,"Historical s 266(2)–(3), notice of no effect if given in response to exercise of a right; 60-day challenge limit: other ver (fed 0%, other version 100%, searched 12%)","No. The 60-day VCAT challenge point is missing entirely. The 120-day no-reason notice and the retaliatory-notice rules appear only for a later version (v089, 4 December 2019), and the answer then says 'I cannot apply those rules to your 1 November 2019 situation'. That hedge leaves the reader unable to tell whether those rules applied on the user's date."
+2,off,luna,vr-vrq-001-2026-10-15,1,rule,True,False,,,
+2,off,luna,vr-vrq-001-2026-10-15,2,condition,True,False,,,
+2,off,luna,vr-vrq-001-2026-10-15,3,next step,True,False,,,
+2,off,luna,vr-wpq-005-2026-10-15,1,condition,True,False,,,
+2,off,luna,vr-wpq-005-2026-10-15,2,rule,True,False,,,
+2,off,luna,vr-vrq-010-2026-10-15,1,rule,True,False,,,
+2,off,luna,vr-vrq-010-2026-10-15,2,rule,True,True,missing,"Version 115: s 61, renter must not intentionally or negligently damage the premises: missing (fed 17%, other version 0%, searched 0%); Version 115: s 63, keep reasonably clean; leave in the same condition, allowing for fair wear and tear: missing (fed 9%, other version 0%, searched 0%)","No — the answer never says the renter is responsible for damage they or their pet cause (as distinct from fair wear and tear) or that they must leave the home in the same condition; it only says renters 'must avoid damaging the premises and notify the rental provider in writing.' The written-notice, insurance and next-step points are covered."
+2,off,luna,vr-vrq-010-2026-10-15,3,absence,True,False,,,
+2,off,luna,vr-vrq-010-2026-10-15,4,next step,True,False,,,
+2,off,luna,vr-vrq-028-2026-10-15,1,rule,True,False,,,
+2,off,luna,vr-vrq-028-2026-10-15,2,absence,True,False,,,
+2,off,luna,vr-vrq-028-2026-10-15,3,rule,True,False,,,
+2,off,luna,vr-vrq-028-2026-10-15,4,next step,True,False,,,
+2,off,luna,vr-newsq-008-2025-10-01,1,absence,True,False,,,
+2,off,luna,vr-newsq-008-2025-10-01,2,rule,True,False,,,
+2,off,luna,vr-newsq-008-2025-10-01,3,absence,True,False,,,
+2,off,luna,vr-newsq-008-2025-10-01,4,absence,True,False,,,
+2,off,qwen,vr-vrq-035-2025-10-01,1,rule,True,False,,,
+2,off,qwen,vr-vrq-035-2025-10-01,2,judgement,True,False,,,
+2,off,qwen,vr-vrq-035-2025-10-01,3,next step,True,True,other ver,"Version 110: s 65A(1)–(2), premises must comply on occupation; urgent repairs request: other ver (fed 0%, other version 94%, searched 100%); Version 110: s 91L, termination by renter before possession: missing (fed 0%, other version 0%, searched 0%)","No: the answer covers the mould and damp standard ('caused by or related to the building structure') and says a photo alone likely isn't enough, but it gives no next step for the user, such as asking the agent, checking at the inspection, requesting urgent repairs, or ending the agreement before moving in. Its mention of 'independent expert reports' is framed as a deciding fact not covered by the documents, not as advice to act on."
+2,off,qwen,vr-vrq-003-2025-10-01,1,condition,True,True,fed,"91ZZB: other ver (fed 0%, other version 53%, searched 15%); Version 110: s 91ZZO, form of notice to vacate: fed (fed 33%, other version 100%, searched 80%)","No. The answer covers written withdrawal signed by both parties and the next steps (ask for a withdrawal, or apply to VCAT within 30 days), but it never mentions the 60-day minimum notice period. It also does not say the answer depends on the notice's stated ground and evidence (planned sale with vacant possession vs a signed contract), saying only that the documents do not specify the requirements."
+2,off,qwen,vr-vrq-003-2025-10-01,2,rule,True,True,other ver,"91ZZB: other ver (fed 0%, other version 53%, searched 15%)","No. The answer covers written withdrawal signed by both parties and the next steps (ask for a withdrawal, or apply to VCAT within 30 days), but it never mentions the 60-day minimum notice period. It also does not say the answer depends on the notice's stated ground and evidence (planned sale with vacant possession vs a signed contract), saying only that the documents do not specify the requirements."
+2,off,qwen,vr-vrq-003-2025-10-01,3,rule,True,False,,,
+2,off,qwen,vr-vrq-003-2025-10-01,4,next step,True,False,,,
+2,off,qwen,vr-vrq-021-2023-03-01,1,absence,True,False,,,
+2,off,qwen,vr-vrq-021-2023-03-01,2,next step,True,False,,,
+2,off,qwen,vr-vrq-004-2025-10-01,1,rule,True,True,searched,"44(1)–(2), complete subsections; s44(3) fragment removed: searched (fed 0%, other version 0%, searched 100%); Regulations version 004: reg 21, rent increase notice form: missing (fed 0%, other version 0%, searched 0%)","No. The output covers none of the required points: it does not mention Form 5, the 60-day minimum notice period, that the email is not a valid notice so the higher rent is not yet payable, or any next step, saying only that it 'cannot tell you from these sources whether you have to pay the higher rent.'"
+2,off,qwen,vr-vrq-004-2025-10-01,2,rule,True,True,searched,"44(1)–(2), complete subsections; s44(3) fragment removed: searched (fed 0%, other version 0%, searched 100%)","No. The output covers none of the required points: it does not mention Form 5, the 60-day minimum notice period, that the email is not a valid notice so the higher rent is not yet payable, or any next step, saying only that it 'cannot tell you from these sources whether you have to pay the higher rent.'"
+2,off,qwen,vr-vrq-004-2025-10-01,3,rule,True,True,searched,"Version 110: s 44 in full, including s 44(5) (non-complying increase invalid): searched (fed 0%, other version 0%, searched 92%)","No. The output covers none of the required points: it does not mention Form 5, the 60-day minimum notice period, that the email is not a valid notice so the higher rent is not yet payable, or any next step, saying only that it 'cannot tell you from these sources whether you have to pay the higher rent.'"
+2,off,qwen,vr-vrq-004-2025-10-01,4,next step,True,True,missing,"Version 110: s 45(1)–(2), renter may ask the Director to investigate within 30 days: missing (fed 0%, other version 0%, searched 0%)","No. The output covers none of the required points: it does not mention Form 5, the 60-day minimum notice period, that the email is not a valid notice so the higher rent is not yet payable, or any next step, saying only that it 'cannot tell you from these sources whether you have to pay the higher rent.'"
+2,off,qwen,vr-newsq-005-2019-11-01,1,rule,True,True,missing,"Historical s 263, notice to vacate for no specified reason (120 days): missing (fed 5%, other version 5%, searched 5%)","The output covers none of the required points. It says the documents contain no relevant rule, and it never mentions the 120-day no-reason notice, that a retaliatory notice has no effect, or the 60-day window to challenge at VCAT."
+2,off,qwen,vr-newsq-005-2019-11-01,2,rule,True,True,missing,"Historical s 266(2)–(3), notice of no effect if given in response to exercise of a right; 60-day challenge limit: missing (fed 6%, other version 6%, searched 6%)","The output covers none of the required points. It says the documents contain no relevant rule, and it never mentions the 120-day no-reason notice, that a retaliatory notice has no effect, or the 60-day window to challenge at VCAT."
+2,off,qwen,vr-newsq-005-2019-11-01,3,next step,True,True,missing,"Historical s 266(2)–(3), notice of no effect if given in response to exercise of a right; 60-day challenge limit: missing (fed 6%, other version 6%, searched 6%)","The output covers none of the required points. It says the documents contain no relevant rule, and it never mentions the 120-day no-reason notice, that a retaliatory notice has no effect, or the 60-day window to challenge at VCAT."
+2,off,qwen,vr-vrq-001-2026-10-15,1,rule,True,False,,,
+2,off,qwen,vr-vrq-001-2026-10-15,2,condition,True,True,fed,"Part 2, ss 71B–71D: fed (fed 100%, other version 100%, searched 79%); Part 2, s 71E: fed (fed 100%, other version 100%, searched 87%)","No. Point 2 is changed in meaning: the answer assumes no VCAT application was made, stating ""Because three weeks (21 days) have passed without them taking this legal step, their verbal refusal is invalid,"" when it should say consent is deemed given only unless the landlord applied within 14 days. Its next steps also never suggest checking whether such an application was made."
+2,off,qwen,vr-vrq-001-2026-10-15,3,next step,True,True,fed,"Part 2, ss 71B–71D: fed (fed 100%, other version 100%, searched 79%); Part 2, s 71E: fed (fed 100%, other version 100%, searched 87%)","No. Point 2 is changed in meaning: the answer assumes no VCAT application was made, stating ""Because three weeks (21 days) have passed without them taking this legal step, their verbal refusal is invalid,"" when it should say consent is deemed given only unless the landlord applied within 14 days. Its next steps also never suggest checking whether such an application was made."
+2,off,qwen,vr-wpq-005-2026-10-15,1,condition,True,False,,,
+2,off,qwen,vr-wpq-005-2026-10-15,2,rule,True,False,,,
+2,off,qwen,vr-vrq-010-2026-10-15,1,rule,True,False,,,
+2,off,qwen,vr-vrq-010-2026-10-15,2,rule,True,True,searched,"Version 115: s 61, renter must not intentionally or negligently damage the premises: searched (fed 0%, other version 0%, searched 33%); Version 115: s 63, keep reasonably clean; leave in the same condition, allowing for fair wear and tear: searched (fed 0%, other version 0%, searched 100%)","No. The answer covers written notice 'as soon as practicable' and says the documents do not address insurance, but it never says the renter is responsible for damage caused by them or their dog (as opposed to fair wear and tear) or that they must leave the premises in the same condition; it instead suggests the rental provider is responsible for carrying out the non-urgent repair."
+2,off,qwen,vr-vrq-010-2026-10-15,3,absence,True,False,,,
+2,off,qwen,vr-vrq-010-2026-10-15,4,next step,True,False,,,
+2,off,qwen,vr-vrq-028-2026-10-15,1,rule,True,False,,,
+2,off,qwen,vr-vrq-028-2026-10-15,2,absence,True,False,,,
+2,off,qwen,vr-vrq-028-2026-10-15,3,rule,True,False,,,
+2,off,qwen,vr-vrq-028-2026-10-15,4,next step,True,False,,,
+2,off,qwen,vr-newsq-008-2025-10-01,1,absence,True,True,fed,"Version 110: ss 30F–30G, fixed-amount rent offers (no s 30F(4)); false or misleading rent advertising: fed (fed 100%, other version 100%, searched 79%)","The answer fails because three required points are missing. It never says that relisting at a higher fixed rent is not illegal by itself. It never says that accepting an unsolicited higher offer was not banned on this date; it instead suggests that relisting and 'subsequently accepted a higher offer' 'may constitute a breach'. It also treats the false 'withdrawn' email as covered by the misleading-conduct provisions, rather than saying no specific rental-law rule covers it. The only required point it covers is that rental providers 'must not solicit or invite an offer higher than the advertised rent'."
+2,off,qwen,vr-newsq-008-2025-10-01,2,rule,True,False,,,
+2,off,qwen,vr-newsq-008-2025-10-01,3,absence,True,True,fed,"Version 110: ss 30F–30G, fixed-amount rent offers (no s 30F(4)); false or misleading rent advertising: fed (fed 100%, other version 100%, searched 79%)","The answer fails because three required points are missing. It never says that relisting at a higher fixed rent is not illegal by itself. It never says that accepting an unsolicited higher offer was not banned on this date; it instead suggests that relisting and 'subsequently accepted a higher offer' 'may constitute a breach'. It also treats the false 'withdrawn' email as covered by the misleading-conduct provisions, rather than saying no specific rental-law rule covers it. The only required point it covers is that rental providers 'must not solicit or invite an offer higher than the advertised rent'."
+2,off,qwen,vr-newsq-008-2025-10-01,4,absence,True,True,no passage,,"The answer fails because three required points are missing. It never says that relisting at a higher fixed rent is not illegal by itself. It never says that accepting an unsolicited higher offer was not banned on this date; it instead suggests that relisting and 'subsequently accepted a higher offer' 'may constitute a breach'. It also treats the false 'withdrawn' email as covered by the misleading-conduct provisions, rather than saying no specific rental-law rule covers it. The only required point it covers is that rental providers 'must not solicit or invite an offer higher than the advertised rent'."
+3,off,haiku,vr-vrq-035-2025-10-01,1,rule,True,False,,,
+3,off,haiku,vr-vrq-035-2025-10-01,2,judgement,True,False,,,
+3,off,haiku,vr-vrq-035-2025-10-01,3,next step,True,False,,,
+3,off,haiku,vr-vrq-003-2025-10-01,1,condition,True,False,,,
+3,off,haiku,vr-vrq-003-2025-10-01,2,rule,True,False,,,
+3,off,haiku,vr-vrq-003-2025-10-01,3,rule,True,True,other ver,"Version 110: s 91ZZQ, how a notice can be withdrawn: other ver (fed 0%, other version 100%, searched 100%)","No. The point that a notice is withdrawn only in writing, signed by both the landlord and the renter, is missing. The answer only says 'Check whether any written withdrawal has been signed. I couldn't confirm the withdrawal rule from the in-force text,' which never says both parties must sign and is hedged too far to state the rule. The other points (ground of sale vs contract, the 60-day minimum, and the next step of asking the landlord for a written withdrawal) are covered."
+3,off,haiku,vr-vrq-003-2025-10-01,4,next step,True,False,,,
+3,off,haiku,vr-vrq-021-2023-03-01,1,absence,True,False,,,
+3,off,haiku,vr-vrq-021-2023-03-01,2,next step,True,False,,,
+3,off,haiku,vr-vrq-004-2025-10-01,1,rule,True,False,,,
+3,off,haiku,vr-vrq-004-2025-10-01,2,rule,True,False,,,
+3,off,haiku,vr-vrq-004-2025-10-01,3,rule,True,True,fed,"Version 110: s 44 in full, including s 44(5) (non-complying increase invalid): fed (fed 100%, other version 97%, searched 92%)","No. The point that the email is not a valid notice and the higher rent isn't payable yet is hedged too far. The answer says only that an email is 'probably not enough' and that 'The documents don't tell me whether an email could ever count as the prescribed notice.' It also says, on 'Whether you must pay before a valid notice: The documents don't say.' That leaves a reader unable to tell whether the higher rent is payable now. The other points are covered: Form 5, the 60-day notice, and the next step of asking in writing for a Form 5 notice."
+3,off,haiku,vr-vrq-004-2025-10-01,4,next step,True,False,,,
+3,off,haiku,vr-newsq-005-2019-11-01,1,rule,True,True,missing,"Historical s 263, notice to vacate for no specified reason (120 days): missing (fed 5%, other version 16%, searched 5%)","No. The answer omits all three required points. It never states that a no-reason notice is allowed with at least 120 days' notice, and it says the documents don't set out a 2019 minimum notice period. It explains the 'of no effect if given in response to exercising a right' rule only for rooming houses and says it can't confirm this for a residential rental agreement. It also says the documents don't give a 2019 VCAT challenge deadline, instead of stating the 60-day limit."
+3,off,haiku,vr-newsq-005-2019-11-01,2,rule,True,True,other ver,"Historical s 266(2)–(3), notice of no effect if given in response to exercise of a right; 60-day challenge limit: other ver (fed 19%, other version 38%, searched 6%)","No. The answer omits all three required points. It never states that a no-reason notice is allowed with at least 120 days' notice, and it says the documents don't set out a 2019 minimum notice period. It explains the 'of no effect if given in response to exercising a right' rule only for rooming houses and says it can't confirm this for a residential rental agreement. It also says the documents don't give a 2019 VCAT challenge deadline, instead of stating the 60-day limit."
+3,off,haiku,vr-newsq-005-2019-11-01,3,next step,True,True,other ver,"Historical s 266(2)–(3), notice of no effect if given in response to exercise of a right; 60-day challenge limit: other ver (fed 19%, other version 38%, searched 6%)","No. The answer omits all three required points. It never states that a no-reason notice is allowed with at least 120 days' notice, and it says the documents don't set out a 2019 minimum notice period. It explains the 'of no effect if given in response to exercising a right' rule only for rooming houses and says it can't confirm this for a residential rental agreement. It also says the documents don't give a 2019 VCAT challenge deadline, instead of stating the 60-day limit."
+3,off,haiku,vr-vrq-001-2026-10-15,1,rule,True,False,,,
+3,off,haiku,vr-vrq-001-2026-10-15,2,condition,True,False,,,
+3,off,haiku,vr-vrq-001-2026-10-15,3,next step,True,False,,,
+3,off,haiku,vr-wpq-005-2026-10-15,1,condition,True,False,,,
+3,off,haiku,vr-wpq-005-2026-10-15,2,rule,True,True,missing,"s 81: missing (fed 0%, other version 0%, searched 0%)","No. The first point is covered by 'Whether your friend pays rent or any money to you, or has exclusive use of part of the premises', but the second point is missing. The answer only quotes s 91ZV's 'without the residential rental provider's consent' as a ground for a notice to vacate. It never says sub-letting needs the landlord's written consent, so a reader could think informal or verbal approval is enough."
+3,off,haiku,vr-vrq-010-2026-10-15,1,rule,True,False,,,
+3,off,haiku,vr-vrq-010-2026-10-15,2,rule,True,False,,,
+3,off,haiku,vr-vrq-010-2026-10-15,3,absence,True,False,,,
+3,off,haiku,vr-vrq-010-2026-10-15,4,next step,True,False,,,
+3,off,haiku,vr-vrq-028-2026-10-15,1,rule,True,False,,,
+3,off,haiku,vr-vrq-028-2026-10-15,2,absence,True,False,,,
+3,off,haiku,vr-vrq-028-2026-10-15,3,rule,True,False,,,
+3,off,haiku,vr-vrq-028-2026-10-15,4,next step,True,False,,,
+3,off,haiku,vr-newsq-008-2025-10-01,1,absence,True,True,fed,"Version 110: ss 30F–30G, fixed-amount rent offers (no s 30F(4)); false or misleading rent advertising: fed (fed 100%, other version 100%, searched 79%)","No. The answer never says that relisting at a higher fixed rent is lawful by itself. It only mentions saving 'the current listing showing the higher rent' as evidence. It also says the false withdrawal email 'might fall under' the misleading-conduct rule, which conflicts with the point that no specific rental-law rule covers it."
+3,off,haiku,vr-newsq-008-2025-10-01,2,rule,True,False,,,
+3,off,haiku,vr-newsq-008-2025-10-01,3,absence,True,False,,,
+3,off,haiku,vr-newsq-008-2025-10-01,4,absence,True,True,no passage,,"No. The answer never says that relisting at a higher fixed rent is lawful by itself. It only mentions saving 'the current listing showing the higher rent' as evidence. It also says the false withdrawal email 'might fall under' the misleading-conduct rule, which conflicts with the point that no specific rental-law rule covers it."
+3,off,luna,vr-vrq-035-2025-10-01,1,rule,True,False,,,
+3,off,luna,vr-vrq-035-2025-10-01,2,judgement,True,False,,,
+3,off,luna,vr-vrq-035-2025-10-01,3,next step,True,False,,,
+3,off,luna,vr-vrq-003-2025-10-01,1,condition,True,True,fed,"91ZZB: fed (fed 100%, other version 15%, searched 100%); Version 110: s 91ZZO, form of notice to vacate: fed (fed 100%, other version 100%, searched 80%)","No: the answer never states the 60-day minimum notice period. It also does not distinguish a planned sale with vacant possession from a signed contract of sale, although it does cover written withdrawal signed by both parties and the 30-day Tribunal challenge."
+3,off,luna,vr-vrq-003-2025-10-01,2,rule,True,True,fed,"91ZZB: fed (fed 100%, other version 15%, searched 100%)","No: the answer never states the 60-day minimum notice period. It also does not distinguish a planned sale with vacant possession from a signed contract of sale, although it does cover written withdrawal signed by both parties and the 30-day Tribunal challenge."
+3,off,luna,vr-vrq-003-2025-10-01,3,rule,True,False,,,
+3,off,luna,vr-vrq-003-2025-10-01,4,next step,True,False,,,
+3,off,luna,vr-vrq-021-2023-03-01,1,absence,True,False,,,
+3,off,luna,vr-vrq-021-2023-03-01,2,next step,True,False,,,
+3,off,luna,vr-vrq-004-2025-10-01,1,rule,True,False,,,
+3,off,luna,vr-vrq-004-2025-10-01,2,rule,True,False,,,
+3,off,luna,vr-vrq-004-2025-10-01,3,rule,True,False,,,
+3,off,luna,vr-vrq-004-2025-10-01,4,next step,True,False,,,
+3,off,luna,vr-newsq-005-2019-11-01,1,rule,True,True,missing,"Historical s 263, notice to vacate for no specified reason (120 days): missing (fed 0%, other version 5%, searched 16%)","The output covers none of the required points. It explicitly declines to state the 120-day minimum for a no-reason notice, that such a notice has no effect if given in response to the tenant exercising a right such as requesting repairs, and that the tenant can challenge it at VCAT within 60 days. Instead it says it 'cannot safely state' these matters."
+3,off,luna,vr-newsq-005-2019-11-01,2,rule,True,True,other ver,"Historical s 266(2)–(3), notice of no effect if given in response to exercise of a right; 60-day challenge limit: other ver (fed 0%, other version 25%, searched 50%)","The output covers none of the required points. It explicitly declines to state the 120-day minimum for a no-reason notice, that such a notice has no effect if given in response to the tenant exercising a right such as requesting repairs, and that the tenant can challenge it at VCAT within 60 days. Instead it says it 'cannot safely state' these matters."
+3,off,luna,vr-newsq-005-2019-11-01,3,next step,True,True,other ver,"Historical s 266(2)–(3), notice of no effect if given in response to exercise of a right; 60-day challenge limit: other ver (fed 0%, other version 25%, searched 50%)","The output covers none of the required points. It explicitly declines to state the 120-day minimum for a no-reason notice, that such a notice has no effect if given in response to the tenant exercising a right such as requesting repairs, and that the tenant can challenge it at VCAT within 60 days. Instead it says it 'cannot safely state' these matters."
+3,off,luna,vr-vrq-001-2026-10-15,1,rule,True,False,,,
+3,off,luna,vr-vrq-001-2026-10-15,2,condition,True,False,,,
+3,off,luna,vr-vrq-001-2026-10-15,3,next step,True,False,,,
+3,off,luna,vr-wpq-005-2026-10-15,1,condition,True,False,,,
+3,off,luna,vr-wpq-005-2026-10-15,2,rule,True,False,,,
+3,off,luna,vr-vrq-010-2026-10-15,1,rule,True,False,,,
+3,off,luna,vr-vrq-010-2026-10-15,2,rule,True,True,missing,"Version 115: s 61, renter must not intentionally or negligently damage the premises: missing (fed 0%, other version 0%, searched 0%); Version 115: s 63, keep reasonably clean; leave in the same condition, allowing for fair wear and tear: missing (fed 0%, other version 0%, searched 0%)","No. The answer covers written notice as soon as practicable, says the documents do not settle the insurance question, and gives next steps such as notifying in writing. However, it never says the renter is responsible for damage caused by them or their pet (as distinct from fair wear and tear), nor that the renter must leave the premises in the same condition."
+3,off,luna,vr-vrq-010-2026-10-15,3,absence,True,False,,,
+3,off,luna,vr-vrq-010-2026-10-15,4,next step,True,False,,,
+3,off,luna,vr-vrq-028-2026-10-15,1,rule,True,False,,,
+3,off,luna,vr-vrq-028-2026-10-15,2,absence,True,False,,,
+3,off,luna,vr-vrq-028-2026-10-15,3,rule,True,False,,,
+3,off,luna,vr-vrq-028-2026-10-15,4,next step,True,False,,,
+3,off,luna,vr-newsq-008-2025-10-01,1,absence,True,False,,,
+3,off,luna,vr-newsq-008-2025-10-01,2,rule,True,False,,,
+3,off,luna,vr-newsq-008-2025-10-01,3,absence,True,True,fed,"Version 110: ss 30F–30G, fixed-amount rent offers (no s 30F(4)); false or misleading rent advertising: fed (fed 100%, other version 100%, searched 79%)","No. The point that accepting an unsolicited higher offer was not banned on this date is missing. The answer instead says a challenge may be possible 'if the agent or provider solicited, invited, or accepted a higher offer', which suggests accepting is itself a contravention. That materially changes the meaning of the point."
+3,off,luna,vr-newsq-008-2025-10-01,4,absence,True,False,,,
+3,off,qwen,vr-vrq-035-2025-10-01,1,rule,True,False,,,
+3,off,qwen,vr-vrq-035-2025-10-01,2,judgement,True,False,,,
+3,off,qwen,vr-vrq-035-2025-10-01,3,next step,True,True,other ver,"Version 110: s 65A(1)–(2), premises must comply on occupation; urgent repairs request: other ver (fed 0%, other version 94%, searched 100%); Version 110: s 91L, termination by renter before possession: missing (fed 0%, other version 0%, searched 0%)","No. The answer covers the structural mould/damp standard ('free from mould and damp caused by or related to the building structure') and says the documents do not specify whether a photograph alone is adequate proof, but it gives no next step such as asking the agent, checking at the inspection, requesting urgent repairs or ending the agreement before moving in."
+3,off,qwen,vr-vrq-003-2025-10-01,1,condition,True,True,fed,"91ZZB: fed (fed 100%, other version 88%, searched 100%); Version 110: s 91ZZO, form of notice to vacate: fed (fed 33%, other version 100%, searched 80%)","No: the answer never states the minimum 60-day notice period, and it does not explain that the outcome depends on the notice's stated ground and evidence (a planned sale with vacant possession versus a signed contract of sale). It does cover the written withdrawal signed by both parties and the VCAT challenge within 30 days."
+3,off,qwen,vr-vrq-003-2025-10-01,2,rule,True,True,fed,"91ZZB: fed (fed 100%, other version 88%, searched 100%)","No: the answer never states the minimum 60-day notice period, and it does not explain that the outcome depends on the notice's stated ground and evidence (a planned sale with vacant possession versus a signed contract of sale). It does cover the written withdrawal signed by both parties and the VCAT challenge within 30 days."
+3,off,qwen,vr-vrq-003-2025-10-01,3,rule,True,False,,,
+3,off,qwen,vr-vrq-003-2025-10-01,4,next step,True,False,,,
+3,off,qwen,vr-vrq-021-2023-03-01,1,absence,True,False,,,
+3,off,qwen,vr-vrq-021-2023-03-01,2,next step,True,False,,,
+3,off,qwen,vr-vrq-004-2025-10-01,1,rule,True,False,,,
+3,off,qwen,vr-vrq-004-2025-10-01,2,rule,True,True,searched,"44(1)–(2), complete subsections; s44(3) fragment removed: searched (fed 0%, other version 0%, searched 100%)","No. The answer is missing the point that at least 60 days' notice is required: it says 'at least **90 days' notice**' and that the start date 'cannot be sooner than 90 days after the notice is given', which materially changes the meaning. It does cover the other points: Form 5, that the email alone does not make the higher rent payable, and next steps (requesting a Form 5 and applying to the Director of Consumer Affairs Victoria for review)."
+3,off,qwen,vr-vrq-004-2025-10-01,3,rule,True,False,,,
+3,off,qwen,vr-vrq-004-2025-10-01,4,next step,True,False,,,
+3,off,qwen,vr-newsq-005-2019-11-01,1,rule,True,True,missing,"Historical s 263, notice to vacate for no specified reason (120 days): missing (fed 5%, other version 11%, searched 16%)","No. The output omits the 120-day no-reason notice point and the 60-day VCAT challenge point, and it contradicts the second point by saying the 'notice of no effect' rule applies only to rooming houses and caravan parks, not standard residential tenancies."
+3,off,qwen,vr-newsq-005-2019-11-01,2,rule,True,True,searched,"Historical s 266(2)–(3), notice of no effect if given in response to exercise of a right; 60-day challenge limit: searched (fed 19%, other version 19%, searched 50%)","No. The output omits the 120-day no-reason notice point and the 60-day VCAT challenge point, and it contradicts the second point by saying the 'notice of no effect' rule applies only to rooming houses and caravan parks, not standard residential tenancies."
+3,off,qwen,vr-newsq-005-2019-11-01,3,next step,True,True,searched,"Historical s 266(2)–(3), notice of no effect if given in response to exercise of a right; 60-day challenge limit: searched (fed 19%, other version 19%, searched 50%)","No. The output omits the 120-day no-reason notice point and the 60-day VCAT challenge point, and it contradicts the second point by saying the 'notice of no effect' rule applies only to rooming houses and caravan parks, not standard residential tenancies."
+3,off,qwen,vr-vrq-001-2026-10-15,1,rule,True,False,,,
+3,off,qwen,vr-vrq-001-2026-10-15,2,condition,True,False,,,
+3,off,qwen,vr-vrq-001-2026-10-15,3,next step,True,False,,,
+3,off,qwen,vr-wpq-005-2026-10-15,1,condition,True,True,missing,"s 3(1): residential rental agreement: missing (fed 0%, other version 0%, searched 0%); Version 115: s 91R, sub-residential rental agreements: missing (fed 0%, other version 0%, searched 0%)","No. The answer is missing the first point: it never says the outcome depends on the arrangement, and it names no deciding fact such as whether the friend has a space that is only theirs, what was agreed, or what they pay. It also misreads the user as the rental provider rather than a renter who let a friend move in. The second point is covered by the quoted term that a renter 'must not assign... or sub-let the whole or any part of the premises without the written consent of the rental provider'."
+3,off,qwen,vr-wpq-005-2026-10-15,2,rule,True,False,,,
+3,off,qwen,vr-vrq-010-2026-10-15,1,rule,True,True,missing,"Part 2, s 62: missing (fed 8%, other version 8%, searched 8%)","No: the output is empty, so it misses every required point, starting with the duty to tell the landlord in writing about the damage as soon as practicable."
+3,off,qwen,vr-vrq-010-2026-10-15,2,rule,True,True,missing,"Version 115: s 61, renter must not intentionally or negligently damage the premises: missing (fed 0%, other version 0%, searched 0%); Version 115: s 63, keep reasonably clean; leave in the same condition, allowing for fair wear and tear: missing (fed 0%, other version 9%, searched 0%)","No: the output is empty, so it misses every required point, starting with the duty to tell the landlord in writing about the damage as soon as practicable."
+3,off,qwen,vr-vrq-010-2026-10-15,3,absence,True,True,no passage,,"No: the output is empty, so it misses every required point, starting with the duty to tell the landlord in writing about the damage as soon as practicable."
+3,off,qwen,vr-vrq-010-2026-10-15,4,next step,True,True,missing,"Part 2, s 62: missing (fed 8%, other version 8%, searched 8%); Part 2, s 64(1)–(1A): missing (fed 0%, other version 22%, searched 0%)","No: the output is empty, so it misses every required point, starting with the duty to tell the landlord in writing about the damage as soon as practicable."
+3,off,qwen,vr-vrq-028-2026-10-15,1,rule,True,False,,,
+3,off,qwen,vr-vrq-028-2026-10-15,2,absence,True,False,,,
+3,off,qwen,vr-vrq-028-2026-10-15,3,rule,True,False,,,
+3,off,qwen,vr-vrq-028-2026-10-15,4,next step,True,False,,,
+3,off,qwen,vr-newsq-008-2025-10-01,1,absence,True,True,fed,"Version 110: ss 30F–30G, fixed-amount rent offers (no s 30F(4)); false or misleading rent advertising: fed (fed 100%, other version 100%, searched 79%)",No. Three required points are missing or contradicted. The answer treats 'relisting at a higher price' as a likely breach rather than saying a higher fixed-rent relisting is not illegal by itself. It never says that accepting an unsolicited higher offer was not banned on this date. It also treats the false 'withdrawn' email as a breach of the Act's misleading-conduct provisions instead of saying no specific rental-law rule covers it. Only the ban on soliciting offers above the advertised rent is covered.
+3,off,qwen,vr-newsq-008-2025-10-01,2,rule,True,False,,,
+3,off,qwen,vr-newsq-008-2025-10-01,3,absence,True,True,fed,"Version 110: ss 30F–30G, fixed-amount rent offers (no s 30F(4)); false or misleading rent advertising: fed (fed 100%, other version 100%, searched 79%)",No. Three required points are missing or contradicted. The answer treats 'relisting at a higher price' as a likely breach rather than saying a higher fixed-rent relisting is not illegal by itself. It never says that accepting an unsolicited higher offer was not banned on this date. It also treats the false 'withdrawn' email as a breach of the Act's misleading-conduct provisions instead of saying no specific rental-law rule covers it. Only the ban on soliciting offers above the advertised rent is covered.
+3,off,qwen,vr-newsq-008-2025-10-01,4,absence,True,True,no passage,,No. Three required points are missing or contradicted. The answer treats 'relisting at a higher price' as a likely breach rather than saying a higher fixed-rent relisting is not illegal by itself. It never says that accepting an unsolicited higher offer was not banned on this date. It also treats the false 'withdrawn' email as a breach of the Act's misleading-conduct provisions instead of saying no specific rental-law rule covers it. Only the ban on soliciting offers above the advertised rent is covered.
