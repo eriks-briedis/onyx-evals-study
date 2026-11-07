@@ -1,0 +1,244 @@
+run,filters,model,case,point,kind,judged,dropped,bucket,passages,reason
+1,off,haiku,vr-ho-vrq-011-2026-01-15,1,rule,True,False,,,
+1,off,haiku,vr-ho-vrq-011-2026-01-15,2,condition,True,False,,,
+1,off,haiku,vr-ho-vrq-022-2019-10-15,1,rule,True,False,,,
+1,off,haiku,vr-ho-vrq-022-2019-10-15,2,rule,True,True,fed,"s 68, landlord's duty to maintain premises in good repair: fed (the passage was in the message); s 72, urgent repairs: fed (the passage was in the message)","No. The point that the renter can ask for repairs, and that serious damage making the home unsafe can be urgent repairs, is missing. The answer states the s 68 duty but says it 'can't confirm it covers your situation,' and it describes the s 72 procedure without saying that serious or unsafe damage like this can count as urgent repairs. The s 226 termination point and the disrepair-versus-unclean point, which includes photos and an assessment, are covered."
+1,off,haiku,vr-ho-vrq-022-2019-10-15,3,condition,True,False,,,
+1,off,haiku,vr-ho-newsq-003-2025-12-03,1,rule,True,False,,,
+1,off,haiku,vr-ho-newsq-003-2025-12-03,2,rule,True,True,fed,"s 68AA, provider's duty in relation to smoke alarms: fed (the passage was in the message); 85(b): fed (the passage was in the message); 86(1)(c): fed (the passage was in the message)","No: the second point is incomplete. The answer says a smoke alarm check is 'likely entry to carry out a duty under the Act' but never says the duty belongs to the landlord or rental provider. It also offers the 24-hour notice requirement only as 'my inference' and never confirms that the notice given satisfies it, telling the renter to check this instead. The first point is covered, since the answer says 'the passages don't require you to be present' and that the duty is to permit entry."
+1,off,haiku,vr-ho-wpq-008-2022-11-08,1,rule,True,False,,,
+1,off,haiku,vr-ho-wpq-008-2022-11-08,2,rule,True,False,,,
+1,off,haiku,vr-ho-wpq-008-2022-11-08,3,rule,True,False,,,
+1,off,haiku,vr-ho-vrq-011-undated,1,rule,True,False,,,
+1,off,haiku,vr-ho-vrq-011-undated,2,rule,True,False,,,
+1,off,haiku,vr-ho-vrq-011-undated,3,next step,True,False,,,
+1,off,haiku,vr-ho-vrq-022-undated,1,rule,True,False,,,
+1,off,haiku,vr-ho-vrq-022-undated,2,rule,True,False,,,
+1,off,haiku,vr-ho-vrq-022-undated,3,next step,True,False,,,
+1,off,haiku,vr-ho-vrq-020-undated,1,rule,True,False,,,
+1,off,haiku,vr-ho-vrq-020-undated,2,rule,True,False,,,
+1,off,haiku,vr-ho-vrq-020-undated,3,rule,True,False,,,
+1,off,haiku,vr-ho-vrq-013-undated,1,rule,True,False,,,
+1,off,haiku,vr-ho-vrq-013-undated,2,rule,True,False,,,
+1,off,haiku,vr-ho-vrq-013-undated,3,next step,True,False,,,
+1,off,haiku,vr-ho-vrq-027-undated,1,rule,True,False,,,
+1,off,haiku,vr-ho-vrq-027-undated,2,rule,True,False,,,
+1,off,haiku,vr-ho-vrq-027-undated,3,rule,True,False,,,
+1,off,haiku,vr-ho-vrq-016-undated,1,rule,True,True,fed,"s 411, claims for rental bonds: fed (the passage was in the message); ss 411AB–411AC, matters a bond claim may cover; repayment where no dispute: fed (the passage was in the message)","No. The first point is missing: the answer says 'the passages don't say whether agreeing to a bond deduction has the same legal effect as agreeing to pay an invoice' and 'leave open whether you're liable for it', which hedges so far that a reader cannot tell that agreeing to a bond deduction is only agreement to a bond claim, not to a separate invoice. The second point is covered via s 63(2) and s 411AB(1)(c)."
+1,off,haiku,vr-ho-vrq-016-undated,2,rule,True,False,,,
+1,off,luna-api,vr-ho-vrq-011-2026-01-15,1,rule,True,False,,,
+1,off,luna-api,vr-ho-vrq-011-2026-01-15,2,condition,True,False,,,
+1,off,luna-api,vr-ho-vrq-022-2019-10-15,1,rule,True,False,,,
+1,off,luna-api,vr-ho-vrq-022-2019-10-15,2,rule,True,False,,,
+1,off,luna-api,vr-ho-vrq-022-2019-10-15,3,condition,True,True,fed,"s 226, termination by tenant before possession: fed (the passage was in the message)","No: the third point is missing. The answer lists the s 226 grounds and says 'The notice must rely on the applicable ground', but it never says that cancelling depends on disrepair or unfitness rather than mere uncleanliness. Its s 65 discussion of cleanliness ('you do not have to move in') may even blur that line, and it does not mention photos or an inspection as evidence. Points 1 and 2 (s 226 notice before possession; s 68 repairs with the urgent-repairs route under s 72) are covered."
+1,off,luna-api,vr-ho-newsq-003-2025-12-03,1,rule,True,False,,,
+1,off,luna-api,vr-ho-newsq-003-2025-12-03,2,rule,True,False,,,
+1,off,luna-api,vr-ho-wpq-008-2022-11-08,1,rule,True,True,fed,"s 66, provider must give renter certain information (including notice of a change): fed (the passage was in the message)","No. The first point is incomplete: the answer covers written notice of the owner's full name and address for service, and notice of changes within 7 days (s 66(2)(a) and (4)), but it never mentions the emergency repairs contact number. The bond-lodgment and rent-payment-change points are adequately covered."
+1,off,luna-api,vr-ho-wpq-008-2022-11-08,2,rule,True,False,,,
+1,off,luna-api,vr-ho-wpq-008-2022-11-08,3,rule,True,False,,,
+1,off,luna-api,vr-ho-vrq-011-undated,1,rule,True,False,,,
+1,off,luna-api,vr-ho-vrq-011-undated,2,rule,True,False,,,
+1,off,luna-api,vr-ho-vrq-011-undated,3,next step,True,False,,,
+1,off,luna-api,vr-ho-vrq-022-undated,1,rule,True,False,,,
+1,off,luna-api,vr-ho-vrq-022-undated,2,rule,True,False,,,
+1,off,luna-api,vr-ho-vrq-022-undated,3,next step,True,False,,,
+1,off,luna-api,vr-ho-vrq-020-undated,1,rule,True,False,,,
+1,off,luna-api,vr-ho-vrq-020-undated,2,rule,True,False,,,
+1,off,luna-api,vr-ho-vrq-020-undated,3,rule,True,False,,,
+1,off,luna-api,vr-ho-vrq-013-undated,1,rule,True,False,,,
+1,off,luna-api,vr-ho-vrq-013-undated,2,rule,True,False,,,
+1,off,luna-api,vr-ho-vrq-013-undated,3,next step,True,False,,,
+1,off,luna-api,vr-ho-vrq-027-undated,1,rule,True,False,,,
+1,off,luna-api,vr-ho-vrq-027-undated,2,rule,True,False,,,
+1,off,luna-api,vr-ho-vrq-027-undated,3,rule,True,False,,,
+1,off,luna-api,vr-ho-vrq-016-undated,1,rule,True,True,fed,"s 411, claims for rental bonds: fed (the passage was in the message); ss 411AB–411AC, matters a bond claim may cover; repayment where no dispute: fed (the passage was in the message)","No: the second point is missing. The answer says the renter must leave the premises 'reasonably clean' (s 63(2)(a), s 411AB(1)(c)), but it never says this is the test at VCAT or that cleanliness is judged against the premises' condition at the start of the tenancy. The first point is also only weakly covered: the answer says the passages 'do not say that agreeing to a proposed bond deduction automatically means agreeing to pay a separate invoice', but it does not say the agreement was to a claim on the bond."
+1,off,luna-api,vr-ho-vrq-016-undated,2,rule,True,True,fed,"s 63, renter must keep and leave the premises reasonably clean: fed (the passage was in the message); ss 411AB–411AC, matters a bond claim may cover; repayment where no dispute: fed (the passage was in the message)","No: the second point is missing. The answer says the renter must leave the premises 'reasonably clean' (s 63(2)(a), s 411AB(1)(c)), but it never says this is the test at VCAT or that cleanliness is judged against the premises' condition at the start of the tenancy. The first point is also only weakly covered: the answer says the passages 'do not say that agreeing to a proposed bond deduction automatically means agreeing to pay a separate invoice', but it does not say the agreement was to a claim on the bond."
+1,off,qwen,vr-ho-vrq-011-2026-01-15,1,rule,True,False,,,
+1,off,qwen,vr-ho-vrq-011-2026-01-15,2,condition,True,False,,,
+1,off,qwen,vr-ho-vrq-022-2019-10-15,1,rule,True,False,,,
+1,off,qwen,vr-ho-vrq-022-2019-10-15,2,rule,True,True,fed,"s 68, landlord's duty to maintain premises in good repair: fed (the passage was in the message); s 72, urgent repairs: fed (the passage was in the message)","No. The urgent-repairs part of the second point is missing: the answer covers s 68 and asking for repairs, but never says that serious damage making the home unsafe can count as urgent repairs. The third point is also weak, because it never contrasts disrepair or unfitness with mere uncleanliness and never mentions photos or an inspection as evidence."
+1,off,qwen,vr-ho-vrq-022-2019-10-15,3,condition,True,True,fed,"s 226, termination by tenant before possession: fed (the passage was in the message)","No. The urgent-repairs part of the second point is missing: the answer covers s 68 and asking for repairs, but never says that serious damage making the home unsafe can count as urgent repairs. The third point is also weak, because it never contrasts disrepair or unfitness with mere uncleanliness and never mentions photos or an inspection as evidence."
+1,off,qwen,vr-ho-newsq-003-2025-12-03,1,rule,True,False,,,
+1,off,qwen,vr-ho-newsq-003-2025-12-03,2,rule,True,True,fed,"s 68AA, provider's duty in relation to smoke alarms: fed (the passage was in the message); 85(b): fed (the passage was in the message); 86(1)(c): fed (the passage was in the message)","No. The second point is incomplete: the answer states the smoke alarm check is the provider's duty and that entry needs 24 hours' written notice between 8 a.m. and 6 p.m. on a weekday, but it never says the notice given (seven days) meets this requirement. Instead it tells the renter to 'Verify the notice' and to ask for proper written notice, which leaves it unclear whether the agent has complied. The first point is covered by 'The law does not require you to be physically present yourself; it only requires that access is permitted.'"
+1,off,qwen,vr-ho-wpq-008-2022-11-08,1,rule,True,True,fed,"s 66, provider must give renter certain information (including notice of a change): fed (the passage was in the message)","No. The bond point is missing: the answer only says the bond is 'governed by separate lodgment rules in s 406' and sets it aside. It never says the bond must be lodged with the Residential Tenancies Bond Authority or that the renter should check for the Authority's receipt (s 406, s 407). The s 66 point is also incomplete, since it omits the required full name, address for service and emergency repairs number."
+1,off,qwen,vr-ho-wpq-008-2022-11-08,2,rule,True,True,fed,"s 406, duty to pay bond to the Authority: fed (the passage was in the message)","No. The bond point is missing: the answer only says the bond is 'governed by separate lodgment rules in s 406' and sets it aside. It never says the bond must be lodged with the Residential Tenancies Bond Authority or that the renter should check for the Authority's receipt (s 406, s 407). The s 66 point is also incomplete, since it omits the required full name, address for service and emergency repairs number."
+1,off,qwen,vr-ho-wpq-008-2022-11-08,3,rule,True,False,,,
+1,off,qwen,vr-ho-vrq-011-undated,1,rule,True,False,,,
+1,off,qwen,vr-ho-vrq-011-undated,2,rule,True,True,fed,"ss 51–51A, charges prohibited; application and rent payment fees: fed (the passage was in the message); reg 21C, prohibited rental application and rent payment fees: fed (the passage was in the message)","No. Point 2 is materially misstated. The rubric requires saying that rent payment fees are banned for anyone other than a bank (s 51A with reg 21C), so it does not matter whether the app or the agent collects the fee, unless it is a surcharge permitted under another law. The answer instead says 'Who receives the fee matters significantly' and that 'third-party payment apps can legally charge card processing/surcharge fees', which treats the ban as applying only to the provider or agent. Points 1 and 3 are covered."
+1,off,qwen,vr-ho-vrq-011-undated,3,next step,True,False,,,
+1,off,qwen,vr-ho-vrq-022-undated,1,rule,True,False,,,
+1,off,qwen,vr-ho-vrq-022-undated,2,rule,True,False,,,
+1,off,qwen,vr-ho-vrq-022-undated,3,next step,True,False,,,
+1,off,qwen,vr-ho-vrq-020-undated,1,rule,True,False,,,
+1,off,qwen,vr-ho-vrq-020-undated,2,rule,True,False,,,
+1,off,qwen,vr-ho-vrq-020-undated,3,rule,True,False,,,
+1,off,qwen,vr-ho-vrq-013-undated,1,rule,True,False,,,
+1,off,qwen,vr-ho-vrq-013-undated,2,rule,True,False,,,
+1,off,qwen,vr-ho-vrq-013-undated,3,next step,True,False,,,
+1,off,qwen,vr-ho-vrq-027-undated,1,rule,True,False,,,
+1,off,qwen,vr-ho-vrq-027-undated,2,rule,True,True,fed,"Current s 3(1), urgent repairs definition, paragraphs (h)–(i): fed (the passage was in the message); ss 72AA–72, renter must report damage; urgent repairs: fed (the passage was in the message)","No. The answer covers written reporting under s 72AA and the s 91ZD notice to vacate with an immediate termination date. It misses the second point: it never says damaged plumbing and wiring are urgent repairs the landlord must fix immediately. Instead it hedges ('If the damaged plumbing or wiring qualifies as an ""urgent repair""' and 'If the damage does not meet the thresholds for urgent repairs'), so a reader cannot tell whether these are urgent repairs."
+1,off,qwen,vr-ho-vrq-027-undated,3,rule,True,False,,,
+1,off,qwen,vr-ho-vrq-016-undated,1,rule,True,True,fed,"s 411, claims for rental bonds: fed (the passage was in the message); ss 411AB–411AC, matters a bond claim may cover; repayment where no dispute: fed (the passage was in the message)","No. The answer misses the first point: it says only that the passages ""do not explicitly state whether agreeing to a bond deduction is legally equivalent to agreeing to pay a separate invoice."" A reader cannot tell which way it falls, and it never says the agreement was to a claim on the bond rather than to a separate invoice. The second point (reasonably clean, judged against the starting condition, s 63(2) and s 411AB(1)(c)) is covered."
+1,off,qwen,vr-ho-vrq-016-undated,2,rule,True,False,,,
+2,off,haiku,vr-ho-vrq-011-2026-01-15,1,rule,True,False,,,
+2,off,haiku,vr-ho-vrq-011-2026-01-15,2,condition,True,False,,,
+2,off,haiku,vr-ho-vrq-022-2019-10-15,1,rule,True,False,,,
+2,off,haiku,vr-ho-vrq-022-2019-10-15,2,rule,True,True,fed,"s 68, landlord's duty to maintain premises in good repair: fed (the passage was in the message); s 72, urgent repairs: fed (the passage was in the message)","No. The answer covers s 226 cancellation and the s 68 repair duty, and it covers the evidence point by recommending photos. It fails the urgent-repairs point: it never says that serious damage making the home unsafe can be an urgent repair, and it hedges with ""The passage doesn't say whether damp and rot count as 'urgent repairs,'"" so a reader cannot tell which way that point falls."
+2,off,haiku,vr-ho-vrq-022-2019-10-15,3,condition,True,False,,,
+2,off,haiku,vr-ho-newsq-003-2025-12-03,1,rule,True,True,fed,88-89: fed (the passage was in the message),"No. The answer misses the first point: it says the duty 'doesn't say you must be home in person' but then lists 'whether you must be present' as a point 'not covered by the passages' to seek advice on, and never says the agent can enter with the inspector using a key, so a reader cannot tell whether they must attend."
+2,off,haiku,vr-ho-newsq-003-2025-12-03,2,rule,True,False,,,
+2,off,haiku,vr-ho-wpq-008-2022-11-08,1,rule,True,False,,,
+2,off,haiku,vr-ho-wpq-008-2022-11-08,2,rule,True,True,fed,"s 406, duty to pay bond to the Authority: fed (the passage was in the message)","No. The bond point is missing: the answer covers lodgment with the Authority under s 406, but it never tells the renter to check for the Authority's receipt or record (s 407). Instead it says 'The passages do not say how you can verify this yourself,' which contradicts the required point. The s 66 notice point and the s 42 agreement point are adequately covered."
+2,off,haiku,vr-ho-wpq-008-2022-11-08,3,rule,True,False,,,
+2,off,haiku,vr-ho-vrq-011-undated,1,rule,True,False,,,
+2,off,haiku,vr-ho-vrq-011-undated,2,rule,True,False,,,
+2,off,haiku,vr-ho-vrq-011-undated,3,next step,True,False,,,
+2,off,haiku,vr-ho-vrq-022-undated,1,rule,True,False,,,
+2,off,haiku,vr-ho-vrq-022-undated,2,rule,True,False,,,
+2,off,haiku,vr-ho-vrq-022-undated,3,next step,True,False,,,
+2,off,haiku,vr-ho-vrq-020-undated,1,rule,True,True,fed,"Section 3(1), urgent repairs definition, paragraphs (h)–(i): fed (the passage was in the message)","No. The point that no water supply or a burst water service is an urgent repair is missing: the answer says it 'can't confirm' a broken tap qualifies and even states 'turning off the water yourself isn't a failure of the supply under (i)'. The reg 11(e) point is also hedged into uncertainty ('Whether the owner's own tradespeople count as a ""third party"" isn't addressed')."
+2,off,haiku,vr-ho-vrq-020-undated,2,rule,True,False,,,
+2,off,haiku,vr-ho-vrq-020-undated,3,rule,True,True,fed,"Regulation 11(e), prohibited terms: fed (the passage was in the message)","No. The point that no water supply or a burst water service is an urgent repair is missing: the answer says it 'can't confirm' a broken tap qualifies and even states 'turning off the water yourself isn't a failure of the supply under (i)'. The reg 11(e) point is also hedged into uncertainty ('Whether the owner's own tradespeople count as a ""third party"" isn't addressed')."
+2,off,haiku,vr-ho-vrq-013-undated,1,rule,True,True,fed,"Regulation 12, professional cleaning: fed (the passage was in the message)","No. The answer covers s 63 (""leave the premises 'as far as practicable' reasonably clean and in the same condition as when you moved in, allowing for fair wear and tear"") and treats the move-in condition report as the baseline. But it misses part of the first point: reg 12 also allows professional cleaning to be required if the premises were professionally cleaned before the tenancy and the renter was told. The answer presents restoring move-in condition as the only ground, which narrows the rule."
+2,off,haiku,vr-ho-vrq-013-undated,2,rule,True,False,,,
+2,off,haiku,vr-ho-vrq-013-undated,3,next step,True,False,,,
+2,off,haiku,vr-ho-vrq-027-undated,1,rule,True,False,,,
+2,off,haiku,vr-ho-vrq-027-undated,2,rule,True,True,fed,"Current s 3(1), urgent repairs definition, paragraphs (h)–(i): fed (the passage was in the message); ss 72AA–72, renter must report damage; urgent repairs: fed (the passage was in the message)","No. The urgent-repairs point is hedged too far: the answer says the plumbing is only ""likely"" covered, the wiring ""could"" be covered only ""if it has cut off power,"" and ""the passages you provided don't say whether the burglary damage meets those tests."" It also never says the landlord must fix these immediately. The s 91ZD point also omits that the right applies whether or not the lease is fixed term, and instead suggests lease-break obligations are uncertain."
+2,off,haiku,vr-ho-vrq-027-undated,3,rule,True,True,fed,"Current s 91ZD, premises destroyed or unfit for habitation: fed (the passage was in the message)","No. The urgent-repairs point is hedged too far: the answer says the plumbing is only ""likely"" covered, the wiring ""could"" be covered only ""if it has cut off power,"" and ""the passages you provided don't say whether the burglary damage meets those tests."" It also never says the landlord must fix these immediately. The s 91ZD point also omits that the right applies whether or not the lease is fixed term, and instead suggests lease-break obligations are uncertain."
+2,off,haiku,vr-ho-vrq-016-undated,1,rule,True,False,,,
+2,off,haiku,vr-ho-vrq-016-undated,2,rule,True,False,,,
+2,off,luna-api,vr-ho-vrq-011-2026-01-15,1,rule,True,False,,,
+2,off,luna-api,vr-ho-vrq-011-2026-01-15,2,condition,True,False,,,
+2,off,luna-api,vr-ho-vrq-022-2019-10-15,1,rule,True,False,,,
+2,off,luna-api,vr-ho-vrq-022-2019-10-15,2,rule,True,False,,,
+2,off,luna-api,vr-ho-vrq-022-2019-10-15,3,condition,True,False,,,
+2,off,luna-api,vr-ho-newsq-003-2025-12-03,1,rule,True,False,,,
+2,off,luna-api,vr-ho-newsq-003-2025-12-03,2,rule,True,False,,,
+2,off,luna-api,vr-ho-wpq-008-2022-11-08,1,rule,True,False,,,
+2,off,luna-api,vr-ho-wpq-008-2022-11-08,2,rule,True,False,,,
+2,off,luna-api,vr-ho-wpq-008-2022-11-08,3,rule,True,False,,,
+2,off,luna-api,vr-ho-vrq-011-undated,1,rule,True,False,,,
+2,off,luna-api,vr-ho-vrq-011-undated,2,rule,True,False,,,
+2,off,luna-api,vr-ho-vrq-011-undated,3,next step,True,False,,,
+2,off,luna-api,vr-ho-vrq-022-undated,1,rule,True,False,,,
+2,off,luna-api,vr-ho-vrq-022-undated,2,rule,True,False,,,
+2,off,luna-api,vr-ho-vrq-022-undated,3,next step,True,False,,,
+2,off,luna-api,vr-ho-vrq-020-undated,1,rule,True,False,,,
+2,off,luna-api,vr-ho-vrq-020-undated,2,rule,True,False,,,
+2,off,luna-api,vr-ho-vrq-020-undated,3,rule,True,False,,,
+2,off,luna-api,vr-ho-vrq-013-undated,1,rule,True,False,,,
+2,off,luna-api,vr-ho-vrq-013-undated,2,rule,True,False,,,
+2,off,luna-api,vr-ho-vrq-013-undated,3,next step,True,False,,,
+2,off,luna-api,vr-ho-vrq-027-undated,1,rule,True,False,,,
+2,off,luna-api,vr-ho-vrq-027-undated,2,rule,True,True,fed,"Current s 3(1), urgent repairs definition, paragraphs (h)–(i): fed (the passage was in the message); ss 72AA–72, renter must report damage; urgent repairs: fed (the passage was in the message)","No. The urgent-repairs point is hedged too far: the answer says plumbing and wiring damage 'may fall within these categories' and 'If the repairs are urgent', so it never says these are urgent repairs the landlord must fix immediately. The written-notice point (s 72AA) and the immediate notice of intention to vacate, 'even if the lease has not otherwise ended' (s 91ZD), are covered."
+2,off,luna-api,vr-ho-vrq-027-undated,3,rule,True,False,,,
+2,off,luna-api,vr-ho-vrq-016-undated,1,rule,True,False,,,
+2,off,luna-api,vr-ho-vrq-016-undated,2,rule,True,False,,,
+2,off,qwen,vr-ho-vrq-011-2026-01-15,1,rule,True,False,,,
+2,off,qwen,vr-ho-vrq-011-2026-01-15,2,condition,True,False,,,
+2,off,qwen,vr-ho-vrq-022-2019-10-15,1,rule,True,False,,,
+2,off,qwen,vr-ho-vrq-022-2019-10-15,2,rule,True,True,fed,"s 68, landlord's duty to maintain premises in good repair: fed (the passage was in the message); s 72, urgent repairs: fed (the passage was in the message)","No. The second point is incomplete. The answer says the landlord must maintain the premises in good repair under s 68(1) and that the renter can seek repairs, but it never says that serious damage making the home unsafe (such as damp, mould and rotting timber) can count as urgent repairs. The third point is also weak: the answer gives the s 226 grounds but never contrasts disrepair or unfitness with mere uncleanliness, and it does not mention photos or an inspection as evidence."
+2,off,qwen,vr-ho-vrq-022-2019-10-15,3,condition,True,True,fed,"s 226, termination by tenant before possession: fed (the passage was in the message)","No. The second point is incomplete. The answer says the landlord must maintain the premises in good repair under s 68(1) and that the renter can seek repairs, but it never says that serious damage making the home unsafe (such as damp, mould and rotting timber) can count as urgent repairs. The third point is also weak: the answer gives the s 226 grounds but never contrasts disrepair or unfitness with mere uncleanliness, and it does not mention photos or an inspection as evidence."
+2,off,qwen,vr-ho-newsq-003-2025-12-03,1,rule,True,False,,,
+2,off,qwen,vr-ho-newsq-003-2025-12-03,2,rule,True,True,fed,"s 68AA, provider's duty in relation to smoke alarms: fed (the passage was in the message); 85(b): fed (the passage was in the message); 86(1)(c): fed (the passage was in the message)","No. The answer covers the first point with ""The law does not require you to be physically present yourself; it only requires that access is permitted."" It also correctly says smoke alarm checks are the provider's statutory duty, needing 24 hours' written notice between 8 a.m. and 6 p.m. on a weekday. However, it never states that the notice given (seven days) satisfies this requirement. Instead it tells the renter to 'verify the notice' and request 24 hours' written notice, so the 'seven days given satisfies' part of the second point is missing."
+2,off,qwen,vr-ho-wpq-008-2022-11-08,1,rule,True,True,fed,"s 66, provider must give renter certain information (including notice of a change): fed (the passage was in the message)","No. The bond point is missing: the answer mentions s 406 only in passing and expressly sets the bond aside. It never says the bond must be lodged with the Residential Tenancies Bond Authority or that the renter should check for the Authority's receipt or record (s 407). The s 66 point is also incomplete, since it omits the required details: full name, address for service and emergency repairs number."
+2,off,qwen,vr-ho-wpq-008-2022-11-08,2,rule,True,True,fed,"s 406, duty to pay bond to the Authority: fed (the passage was in the message)","No. The bond point is missing: the answer mentions s 406 only in passing and expressly sets the bond aside. It never says the bond must be lodged with the Residential Tenancies Bond Authority or that the renter should check for the Authority's receipt or record (s 407). The s 66 point is also incomplete, since it omits the required details: full name, address for service and emergency repairs number."
+2,off,qwen,vr-ho-wpq-008-2022-11-08,3,rule,True,False,,,
+2,off,qwen,vr-ho-vrq-011-undated,1,rule,True,False,,,
+2,off,qwen,vr-ho-vrq-011-undated,2,rule,True,True,fed,"ss 51–51A, charges prohibited; application and rent payment fees: fed (the passage was in the message); reg 21C, prohibited rental application and rent payment fees: fed (the passage was in the message)","No — the output contradicts point 2: it says ""Who receives the fee matters significantly"" and suggests only the provider or agent is barred, with third-party apps free to charge card fees, instead of saying the s 51A/reg 21C ban applies to anyone other than a bank whether the app or the agent collects it (apart from surcharges permitted under another law); points 1 and 3 are covered."
+2,off,qwen,vr-ho-vrq-011-undated,3,next step,True,False,,,
+2,off,qwen,vr-ho-vrq-022-undated,1,rule,True,False,,,
+2,off,qwen,vr-ho-vrq-022-undated,2,rule,True,False,,,
+2,off,qwen,vr-ho-vrq-022-undated,3,next step,True,False,,,
+2,off,qwen,vr-ho-vrq-020-undated,1,rule,True,False,,,
+2,off,qwen,vr-ho-vrq-020-undated,2,rule,True,False,,,
+2,off,qwen,vr-ho-vrq-020-undated,3,rule,True,False,,,
+2,off,qwen,vr-ho-vrq-013-undated,1,rule,True,False,,,
+2,off,qwen,vr-ho-vrq-013-undated,2,rule,True,False,,,
+2,off,qwen,vr-ho-vrq-013-undated,3,next step,True,False,,,
+2,off,qwen,vr-ho-vrq-027-undated,1,rule,True,False,,,
+2,off,qwen,vr-ho-vrq-027-undated,2,rule,True,True,fed,"Current s 3(1), urgent repairs definition, paragraphs (h)–(i): fed (the passage was in the message); ss 72AA–72, renter must report damage; urgent repairs: fed (the passage was in the message)","No: the urgent-repairs point is hedged rather than stated. The answer says only ""If the damaged plumbing or wiring qualifies as an 'urgent repair'"" and adds ""If the damage does not meet the thresholds for urgent repairs,"" so it never says that damaged plumbing and wiring are urgent repairs the landlord must fix immediately."
+2,off,qwen,vr-ho-vrq-027-undated,3,rule,True,False,,,
+2,off,qwen,vr-ho-vrq-016-undated,1,rule,True,True,fed,"s 411, claims for rental bonds: fed (the passage was in the message); ss 411AB–411AC, matters a bond claim may cover; repayment where no dispute: fed (the passage was in the message)","No. The answer misses the first point: it says the passages ""do not explicitly state whether agreeing to a bond deduction is legally equivalent to agreeing to pay a separate invoice,"" so a reader cannot tell that agreeing to a bond deduction is only agreement to a claim on the bond, not to a separate invoice. The second point is covered by s 63(2) and s 411AB(1)(c)."
+2,off,qwen,vr-ho-vrq-016-undated,2,rule,True,False,,,
+3,off,haiku,vr-ho-vrq-011-2026-01-15,1,rule,True,False,,,
+3,off,haiku,vr-ho-vrq-011-2026-01-15,2,condition,True,False,,,
+3,off,haiku,vr-ho-vrq-022-2019-10-15,1,rule,True,False,,,
+3,off,haiku,vr-ho-vrq-022-2019-10-15,2,rule,True,True,fed,"s 68, landlord's duty to maintain premises in good repair: fed (the passage was in the message); s 72, urgent repairs: fed (the passage was in the message)","No. The second point is incomplete: the answer correctly states the s 68 duty to keep the premises in good repair and describes the s 72 urgent repairs process, but it never says that serious damage making the home unsafe, such as the damp, mould and rotting timber, can count as urgent repairs. The first point is covered ('notice of termination on the ground that the premises are not in good repair, are unfit for human habitation'), and so is the third ('provided you haven't moved in and the defects make the premises not in good repair or unfit for habitation', plus keeping photos)."
+3,off,haiku,vr-ho-vrq-022-2019-10-15,3,condition,True,False,,,
+3,off,haiku,vr-ho-newsq-003-2025-12-03,1,rule,True,True,fed,88-89: fed (the passage was in the message),"No. The answer hedges both required points too far. On presence, it says the passages ""don't require you to be there yourself, but they don't rule it out either,"" so a reader can't tell whether the renter must be home, and it never says the agent can enter with the inspector. On notice, it says the check ""may fall under s 86(1)(c)"" and ""I can't confirm which purpose applies,"" so it never firmly states that 24 hours' written notice applies or that the notice given is enough."
+3,off,haiku,vr-ho-newsq-003-2025-12-03,2,rule,True,True,fed,"s 68AA, provider's duty in relation to smoke alarms: fed (the passage was in the message); 85(b): fed (the passage was in the message); 86(1)(c): fed (the passage was in the message)","No. The answer hedges both required points too far. On presence, it says the passages ""don't require you to be there yourself, but they don't rule it out either,"" so a reader can't tell whether the renter must be home, and it never says the agent can enter with the inspector. On notice, it says the check ""may fall under s 86(1)(c)"" and ""I can't confirm which purpose applies,"" so it never firmly states that 24 hours' written notice applies or that the notice given is enough."
+3,off,haiku,vr-ho-wpq-008-2022-11-08,1,rule,True,False,,,
+3,off,haiku,vr-ho-wpq-008-2022-11-08,2,rule,True,False,,,
+3,off,haiku,vr-ho-wpq-008-2022-11-08,3,rule,True,False,,,
+3,off,haiku,vr-ho-vrq-011-undated,1,rule,True,False,,,
+3,off,haiku,vr-ho-vrq-011-undated,2,rule,True,False,,,
+3,off,haiku,vr-ho-vrq-011-undated,3,next step,True,False,,,
+3,off,haiku,vr-ho-vrq-022-undated,1,rule,True,False,,,
+3,off,haiku,vr-ho-vrq-022-undated,2,rule,True,False,,,
+3,off,haiku,vr-ho-vrq-022-undated,3,next step,True,False,,,
+3,off,haiku,vr-ho-vrq-020-undated,1,rule,True,False,,,
+3,off,haiku,vr-ho-vrq-020-undated,2,rule,True,False,,,
+3,off,haiku,vr-ho-vrq-020-undated,3,rule,True,False,,,
+3,off,haiku,vr-ho-vrq-013-undated,1,rule,True,False,,,
+3,off,haiku,vr-ho-vrq-013-undated,2,rule,True,False,,,
+3,off,haiku,vr-ho-vrq-013-undated,3,next step,True,False,,,
+3,off,haiku,vr-ho-vrq-027-undated,1,rule,True,False,,,
+3,off,haiku,vr-ho-vrq-027-undated,2,rule,True,False,,,
+3,off,haiku,vr-ho-vrq-027-undated,3,rule,True,True,fed,"Current s 91ZD, premises destroyed or unfit for habitation: fed (the passage was in the message)","No. The third point is missing. The answer says a notice under s 91ZD 'can take effect on the day it is given', but it never says this works whether or not the lease is a fixed term. It then undercuts the point by listing 'whether the lease ends early under s 91ZD' as something the passages don't cover, so a reader can't tell whether the renter can actually end the lease early."
+3,off,haiku,vr-ho-vrq-016-undated,1,rule,True,False,,,
+3,off,haiku,vr-ho-vrq-016-undated,2,rule,True,False,,,
+3,off,luna-api,vr-ho-vrq-011-2026-01-15,1,rule,True,True,fed,42: fed (the passage was in the message),"No. The answer covers the date, saying ""regulation 21C, which specifically prescribes rent-payment fees, only operates from 31 March 2026."" However, it concludes that ""the card fee is likely not permitted"" now under s 51(3)(b), which materially reverses the required point that the rent-payment fee ban is not yet in effect. It also says only that the bank transfer ""is relevant to"" the fee-free requirement, which is too hedged to state that it may satisfy it."
+3,off,luna-api,vr-ho-vrq-011-2026-01-15,2,condition,True,True,fed,21C: fed (the passage was in the message); Endnotes: No. 6/2025 commencement: fed (the passage was in the message),"No. The answer covers the date, saying ""regulation 21C, which specifically prescribes rent-payment fees, only operates from 31 March 2026."" However, it concludes that ""the card fee is likely not permitted"" now under s 51(3)(b), which materially reverses the required point that the rent-payment fee ban is not yet in effect. It also says only that the bank transfer ""is relevant to"" the fee-free requirement, which is too hedged to state that it may satisfy it."
+3,off,luna-api,vr-ho-vrq-022-2019-10-15,1,rule,True,False,,,
+3,off,luna-api,vr-ho-vrq-022-2019-10-15,2,rule,True,True,fed,"s 68, landlord's duty to maintain premises in good repair: fed (the passage was in the message); s 72, urgent repairs: fed (the passage was in the message)","No. Point 3 is missing: the answer lists the s 226 grounds and says the conditions 'may support one of those grounds, depending on their severity', but it never says that cancelling depends on disrepair or unfitness rather than mere uncleanliness, and it doesn't mention photos or an inspection as evidence; its link between serious, unsafe damage and urgent repairs is also only conditional ('If the repairs are urgent')."
+3,off,luna-api,vr-ho-vrq-022-2019-10-15,3,condition,True,True,fed,"s 226, termination by tenant before possession: fed (the passage was in the message)","No. Point 3 is missing: the answer lists the s 226 grounds and says the conditions 'may support one of those grounds, depending on their severity', but it never says that cancelling depends on disrepair or unfitness rather than mere uncleanliness, and it doesn't mention photos or an inspection as evidence; its link between serious, unsafe damage and urgent repairs is also only conditional ('If the repairs are urgent')."
+3,off,luna-api,vr-ho-newsq-003-2025-12-03,1,rule,True,False,,,
+3,off,luna-api,vr-ho-newsq-003-2025-12-03,2,rule,True,True,fed,"s 68AA, provider's duty in relation to smoke alarms: fed (the passage was in the message); 85(b): fed (the passage was in the message); 86(1)(c): fed (the passage was in the message)","No. The second point is not fully stated. The answer covers the landlord's duty (s 68AA), the need for at least 24 hours' written notice (ss 85, 86(1)(c), 88), and that the renter need not be home ('do not require the renter personally to be home… must permit… entry'). However, it never says the notice actually given satisfies the requirement. Instead it advises the user to ask the agent to 'provide the required written notice', which implies proper notice has not been given. It also applies the 8 am–6 pm window to delivering the notice rather than to the time of entry."
+3,off,luna-api,vr-ho-wpq-008-2022-11-08,1,rule,True,False,,,
+3,off,luna-api,vr-ho-wpq-008-2022-11-08,2,rule,True,False,,,
+3,off,luna-api,vr-ho-wpq-008-2022-11-08,3,rule,True,False,,,
+3,off,luna-api,vr-ho-vrq-011-undated,1,rule,True,False,,,
+3,off,luna-api,vr-ho-vrq-011-undated,2,rule,True,False,,,
+3,off,luna-api,vr-ho-vrq-011-undated,3,next step,True,False,,,
+3,off,luna-api,vr-ho-vrq-022-undated,1,rule,True,False,,,
+3,off,luna-api,vr-ho-vrq-022-undated,2,rule,True,False,,,
+3,off,luna-api,vr-ho-vrq-022-undated,3,next step,True,False,,,
+3,off,luna-api,vr-ho-vrq-020-undated,1,rule,True,False,,,
+3,off,luna-api,vr-ho-vrq-020-undated,2,rule,True,False,,,
+3,off,luna-api,vr-ho-vrq-020-undated,3,rule,True,False,,,
+3,off,luna-api,vr-ho-vrq-013-undated,1,rule,True,False,,,
+3,off,luna-api,vr-ho-vrq-013-undated,2,rule,True,False,,,
+3,off,luna-api,vr-ho-vrq-013-undated,3,next step,True,False,,,
+3,off,luna-api,vr-ho-vrq-027-undated,1,rule,True,False,,,
+3,off,luna-api,vr-ho-vrq-027-undated,2,rule,True,True,fed,"Current s 3(1), urgent repairs definition, paragraphs (h)–(i): fed (the passage was in the message); ss 72AA–72, renter must report damage; urgent repairs: fed (the passage was in the message)","No. The urgent-repairs point is hedged: the answer says plumbing and wiring damage only ""may involve an urgent repair"" and that ""the passages do not expressly classify every plumbing or wiring problem as an urgent repair."" It never states that the damage is an urgent repair the landlord must fix immediately; it covers renter-arranged repairs and reimbursement only conditionally (""If the repairs are urgent""). The written-notice (s 72AA) and unfit-or-unsafe immediate notice to vacate (s 91ZD) points are covered."
+3,off,luna-api,vr-ho-vrq-027-undated,3,rule,True,False,,,
+3,off,luna-api,vr-ho-vrq-016-undated,1,rule,True,True,fed,"s 411, claims for rental bonds: fed (the passage was in the message); ss 411AB–411AC, matters a bond claim may cover; repayment where no dispute: fed (the passage was in the message)","No — the output covers the 'reasonably clean' test (ss 63, 411AB(1)(c)) but never says the premises are judged against their condition at the start of the tenancy, and it hedges point 1 by framing it only as 'not stated to be equivalent' while also saying the passages lack enough information."
+3,off,luna-api,vr-ho-vrq-016-undated,2,rule,True,True,fed,"s 63, renter must keep and leave the premises reasonably clean: fed (the passage was in the message); ss 411AB–411AC, matters a bond claim may cover; repayment where no dispute: fed (the passage was in the message)","No — the output covers the 'reasonably clean' test (ss 63, 411AB(1)(c)) but never says the premises are judged against their condition at the start of the tenancy, and it hedges point 1 by framing it only as 'not stated to be equivalent' while also saying the passages lack enough information."
+3,off,qwen,vr-ho-vrq-011-2026-01-15,1,rule,True,False,,,
+3,off,qwen,vr-ho-vrq-011-2026-01-15,2,condition,True,False,,,
+3,off,qwen,vr-ho-vrq-022-2019-10-15,1,rule,True,False,,,
+3,off,qwen,vr-ho-vrq-022-2019-10-15,2,rule,True,True,fed,"s 68, landlord's duty to maintain premises in good repair: fed (the passage was in the message); s 72, urgent repairs: fed (the passage was in the message)","No. The answer covers s 226 termination by notice and the s 68 duty to keep the premises in good repair, but it never says that serious damage making the home unsafe can be treated as urgent repairs. It also does not clearly state that cancelling depends on disrepair or unfitness rather than mere uncleanliness, nor does it mention photos or an inspection as evidence."
+3,off,qwen,vr-ho-vrq-022-2019-10-15,3,condition,True,True,fed,"s 226, termination by tenant before possession: fed (the passage was in the message)","No. The answer covers s 226 termination by notice and the s 68 duty to keep the premises in good repair, but it never says that serious damage making the home unsafe can be treated as urgent repairs. It also does not clearly state that cancelling depends on disrepair or unfitness rather than mere uncleanliness, nor does it mention photos or an inspection as evidence."
+3,off,qwen,vr-ho-newsq-003-2025-12-03,1,rule,True,False,,,
+3,off,qwen,vr-ho-newsq-003-2025-12-03,2,rule,True,False,,,
+3,off,qwen,vr-ho-wpq-008-2022-11-08,1,rule,True,True,fed,"s 66, provider must give renter certain information (including notice of a change): fed (the passage was in the message)","No. The bond point is missing: the answer only says the bond 'is governed by separate lodgment rules in s 406' and treats it as outside the immediate concern. It never says the bond must be lodged with the Residential Tenancies Bond Authority or that the renter should check for the Authority's receipt or record (s 407). The s 66 point is also incomplete, because it never names the full name, address for service and emergency repairs number."
+3,off,qwen,vr-ho-wpq-008-2022-11-08,2,rule,True,True,fed,"s 406, duty to pay bond to the Authority: fed (the passage was in the message)","No. The bond point is missing: the answer only says the bond 'is governed by separate lodgment rules in s 406' and treats it as outside the immediate concern. It never says the bond must be lodged with the Residential Tenancies Bond Authority or that the renter should check for the Authority's receipt or record (s 407). The s 66 point is also incomplete, because it never names the full name, address for service and emergency repairs number."
+3,off,qwen,vr-ho-wpq-008-2022-11-08,3,rule,True,False,,,
+3,off,qwen,vr-ho-vrq-011-undated,1,rule,True,False,,,
+3,off,qwen,vr-ho-vrq-011-undated,2,rule,True,True,fed,"ss 51–51A, charges prohibited; application and rent payment fees: fed (the passage was in the message); reg 21C, prohibited rental application and rent payment fees: fed (the passage was in the message)","No. The output contradicts point 2. The rubric says the s 51A / reg 21C ban applies to anyone other than a bank, so it does not matter whether the app company or the agent collects the fee. The output instead states that 'Who receives the fee matters significantly' and that 'third-party payment apps can legally charge card processing/surcharge fees, but the rental provider or agent cannot.' This is a material change of meaning. Points 1 and 3 are covered: the s 42(4) free-method requirement and the next step of using the fee-free bank transfer."
+3,off,qwen,vr-ho-vrq-011-undated,3,next step,True,False,,,
+3,off,qwen,vr-ho-vrq-022-undated,1,rule,True,False,,,
+3,off,qwen,vr-ho-vrq-022-undated,2,rule,True,False,,,
+3,off,qwen,vr-ho-vrq-022-undated,3,next step,True,False,,,
+3,off,qwen,vr-ho-vrq-020-undated,1,rule,True,False,,,
+3,off,qwen,vr-ho-vrq-020-undated,2,rule,True,False,,,
+3,off,qwen,vr-ho-vrq-020-undated,3,rule,True,False,,,
+3,off,qwen,vr-ho-vrq-013-undated,1,rule,True,False,,,
+3,off,qwen,vr-ho-vrq-013-undated,2,rule,True,False,,,
+3,off,qwen,vr-ho-vrq-013-undated,3,next step,True,False,,,
+3,off,qwen,vr-ho-vrq-027-undated,1,rule,True,False,,,
+3,off,qwen,vr-ho-vrq-027-undated,2,rule,True,True,fed,"Current s 3(1), urgent repairs definition, paragraphs (h)–(i): fed (the passage was in the message); ss 72AA–72, renter must report damage; urgent repairs: fed (the passage was in the message)","No — the urgent-repairs point is hedged: the answer says only ""If the damaged plumbing or wiring qualifies as an 'urgent repair'"" and its closing note adds ""If the damage does not meet the thresholds for urgent repairs,"" so it never states that the damaged plumbing and wiring are urgent repairs the landlord must fix immediately (it also omits that s 91ZD applies whether or not the lease is fixed-term)."
+3,off,qwen,vr-ho-vrq-027-undated,3,rule,True,True,fed,"Current s 91ZD, premises destroyed or unfit for habitation: fed (the passage was in the message)","No — the urgent-repairs point is hedged: the answer says only ""If the damaged plumbing or wiring qualifies as an 'urgent repair'"" and its closing note adds ""If the damage does not meet the thresholds for urgent repairs,"" so it never states that the damaged plumbing and wiring are urgent repairs the landlord must fix immediately (it also omits that s 91ZD applies whether or not the lease is fixed-term)."
+3,off,qwen,vr-ho-vrq-016-undated,1,rule,True,True,fed,"s 411, claims for rental bonds: fed (the passage was in the message); ss 411AB–411AC, matters a bond claim may cover; repayment where no dispute: fed (the passage was in the message)","No. The answer misses the first point: it says only that the passages 'do not explicitly state whether agreeing to a bond deduction is legally equivalent to agreeing to pay a separate invoice.' That hedge never tells the reader that agreeing to a deduction is agreement to a claim on the bond, not to pay a separate invoice. The second point is covered by s 63(2) and s 411AB(1)(c)."
+3,off,qwen,vr-ho-vrq-016-undated,2,rule,True,False,,,
