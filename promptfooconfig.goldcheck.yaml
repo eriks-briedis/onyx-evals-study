@@ -1,0 +1,29 @@
+# yaml-language-server: $schema=https://promptfoo.dev/config-schema.json
+description: Judge the gold answers against their own rubrics - Victorian rentals
+#
+# A check on the test oracle, not on Onyx: the "answers" are the gold answers themselves
+# (scripts/make-goldcheck-replay.py, with the must-cite list appended as the sources), replayed
+# through the dataset's must-mention, must-not-say and version-cited rubrics. Every one should
+# pass; a failure is a rubric or gold bug. Same env as promptfooconfig.regrade.yaml:
+# REPLAY_RESULTS, REGRADE_DATASET, JUDGE_MODEL (REGRADE_IDS and REGRADE_JUDGES narrow it).
+# No deterministic asserts: there was no search, so nothing to check for.
+
+prompts:
+  - '{{question}}'
+
+providers:
+  - id: file://dist/src/replay.js
+    config:
+      results: '{{env.REPLAY_RESULTS}}'
+
+defaultTest:
+  options:
+    provider:
+      id: 'openai:chat:{{env.JUDGE_MODEL}}'
+      config:
+        apiBaseUrl: '{{env.JUDGE_BASE_URL}}'
+        apiKey: unused
+        temperature: 0
+        max_tokens: 4096
+
+tests: file://dist/src/regradeTests.js

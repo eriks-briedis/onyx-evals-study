@@ -1,0 +1,47 @@
+# yaml-language-server: $schema=https://promptfoo.dev/config-schema.json
+description: Re-judge saved Onyx answers - Victorian rentals
+#
+# Replays the answers in REPLAY_RESULTS (a promptfoo -o JSON file from promptfooconfig.rentals.yaml)
+# through the current asserts and rubrics. Onyx is not called and the setup hook does not run,
+# so nothing checks the judge's family here: set JUDGE_MODEL (claude-opus-5-5 for every model
+# since 2026-11-02; earlier runs used claude-sonnet-5-5 for luna and qwen, gpt-6-astra for haiku). Rebuild the dataset first
+# (npm run cases -- cases/vic-rentals.yaml) so the tests carry the current rubrics.
+#
+# REGRADE_JUDGES limits the judges to those named (e.g. version-cited), so a rubric change
+# re-runs only its own judge; scripts/compare-filter-runs.py keeps the other verdicts from the
+# original file. Unset, every judge runs.
+
+prompts:
+  - '{{question}}'
+
+providers:
+  - id: file://dist/src/replay.js
+    config:
+      results: '{{env.REPLAY_RESULTS}}'
+
+defaultTest:
+  options:
+    provider:
+      id: 'openai:chat:{{env.JUDGE_MODEL}}'
+      config:
+        apiBaseUrl: '{{env.JUDGE_BASE_URL}}'
+        apiKey: unused
+        temperature: 0
+        # The judge endpoint's default output cap was 1024 tokens. A judge reasoning over a long answer
+        # runs past it, the JSON verdict is cut off, and llm-rubric records a grader error.
+        max_tokens: 4096
+  assert:
+    - type: javascript
+      value: file://dist/src/asserts/noError.js
+      metric: no_error
+    - type: javascript
+      value: file://dist/src/asserts/toolInvocation.js
+      metric: tool_invocation
+    - type: javascript
+      value: file://dist/src/asserts/retrieval.js
+      metric: retrieval
+    - type: javascript
+      value: file://dist/src/asserts/citationSupport.js
+      metric: citation_support
+
+tests: file://dist/src/regradeTests.js

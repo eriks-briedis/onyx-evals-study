@@ -1,0 +1,181 @@
+{
+  "$comment": "Environment pin + corpus pointer. Verified by src/setup.ts on every run and by src/seed.ts before seeding; drift stops the run.",
+  "onyx_commit": "06aa2b09cc4aa5135fa2627e5235814e996f1514",
+  "onyx_commit_date": "2026-09-04",
+  "captured_at": "2026-09-13",
+  "search_settings": {
+    "$comment": "Contextual retrieval reverted 3 Nov 2026 (search settings 8, contextual off, swapped in by the port flow). Settings 7 (contextual on, qwen3:4b-instruct) and 6 (the earlier contextual-off baseline) are PAST. The background container's num_ctx patch went with the recreate that dropped CONTEXTUAL_RAG_LLM_TIMEOUT.",
+    "id": 8,
+    "status": "PRESENT",
+    "model_name": "nomic-ai/nomic-embed-text-v1",
+    "multipass_indexing": false,
+    "enable_contextual_rag": false,
+    "contextual_rag_model_configuration_id": null,
+    "contextual_rag_model_name": null,
+    "contextual_rag_max_input_tokens": null
+  },
+  "onyx_background_env": {
+    "LLM_SOCKET_READ_TIMEOUT": "180",
+    "SKIP_METADATA_IN_CHUNK": "true"
+  },
+  "onyx_api_server_env": {
+    "$comment": "Read from the api_server container before every run. The relevance checks and the section pick give up at 60 s by default; the local qwen model answers one request at a time (Ollama allows no parallel slots for qwen35moe) while Onyx fans out up to 30 of them per search, so the queue tail timed out (4 Nov 2026).",
+    "SECONDARY_LLM_FLOW_TIMEOUT_S": "300"
+  },
+  "onyx_api_server_patches": [
+    {
+      "name": "version-filter",
+      "apply": "onyx-patches/version-filter/apply.sh",
+      "why": "Onyx's date step patched to ask the as-at date and pick, per instrument, the version in force on it (tags instrument/version_id/in_force_from/in_force_to); no date stated means today (since 4 Nov 2026). Only matters with auto_detect_search_filters on; drop this entry to measure stock Onyx."
+    }
+  ],
+  "workspace_settings": {
+    "image_extraction_and_analysis_enabled": false
+  },
+  "max_chunks_fed_to_chat": 25,
+  "$comment_llm_provider": "The Onyx LLM provider every model goes through unless it names its own: an OpenAI-compatible gateway in front of the Anthropic and OpenAI APIs, registered in this Onyx install under the name below. The model_configuration_id values are database row ids in that install: on another Onyx, set them to yours (docs/reproduce.md); setup refuses a mismatch.",
+  "llm_provider_name": "LLM Router",
+  "models": [
+    {
+      "label": "haiku",
+      "model_configuration_id": 129,
+      "model_name": "claude-haiku-5-5",
+      "llm_override_covers_cascade": null,
+      "llm_override_verified_at": null,
+      "note": "The main answering model. Replaces claude-haiku-4-5 (configuration 109), whose context window is too small for the Act. Override cascade not yet verified."
+    },
+    {
+      "label": "luna",
+      "model_configuration_id": 133,
+      "model_name": "gpt-5.6-luna",
+      "llm_override_covers_cascade": null,
+      "llm_override_verified_at": null,
+      "note": "OpenAI small model, through the gateway. Was configuration 120 until 2026-10-26, when the gateway's model list was re-registered. Override cascade not yet re-verified for 133."
+    },
+    {
+      "label": "luna-api",
+      "model_configuration_id": 32,
+      "model_name": "gpt-5.6-luna",
+      "provider": "openai",
+      "llm_override_covers_cascade": null,
+      "llm_override_verified_at": null,
+      "note": "Added 5 Nov 2026 for the held-out runs: the same gpt-5.6-luna through Onyx's direct `openai` provider instead of the gateway. Same model as `luna`; only the Onyx provider differs."
+    },
+    {
+      "label": "sonnet",
+      "model_configuration_id": 131,
+      "model_name": "claude-sonnet-5-5",
+      "llm_override_covers_cascade": null,
+      "llm_override_verified_at": null,
+      "note": "Bigger-model arm (added 2026-11-03) to tell a capability limit from a prompt limit. Same family as the Opus judge: hand-check a batch of its answers before quoting its scores."
+    },
+    {
+      "label": "sol",
+      "model_configuration_id": 134,
+      "model_name": "gpt-5.6-sol",
+      "llm_override_covers_cascade": null,
+      "llm_override_verified_at": null,
+      "note": "OpenAI mid-tier model, the Sonnet equivalent (ladder: gpt-5.6-luna < gpt-5.6-sol < gpt-6-astra), added 2026-11-03, through the gateway like luna."
+    },
+    {
+      "label": "sol-api",
+      "model_configuration_id": 31,
+      "model_name": "gpt-5.6-sol",
+      "provider": "openai",
+      "llm_override_covers_cascade": null,
+      "llm_override_verified_at": null,
+      "note": "Added 5 Nov 2026: the same gpt-5.6-sol through Onyx's direct `openai` provider instead of the gateway, used to finish the Sol runs. Same model as `sol`; only the Onyx provider differs."
+    },
+    {
+      "label": "qwen",
+      "model_configuration_id": 5,
+      "model_name": "qwen3.6:35b",
+      "provider": "ollama_chat",
+      "llm_override_covers_cascade": null,
+      "llm_override_verified_at": null,
+      "note": "Local arm (added 2026-10-26): Qwen3.6 35B-A3B MoE on Ollama, RTX 5060 Ti 16 GB with experts offloaded to RAM. Chosen for tool use and long-context scores among models that run here. Not via the gateway by design. Onyx DB model_configuration.max_input_tokens set to 65536 for id 5 (Onyx passes it to Ollama as num_ctx; 262144 would reserve a 256k cache). Re-saving the Ollama provider resets it."
+    },
+    {
+      "label": "opus",
+      "model_configuration_id": 130,
+      "model_name": "claude-opus-5-5",
+      "provider": null,
+      "llm_override_covers_cascade": null,
+      "llm_override_verified_at": null,
+      "note": "The judge as an answering model, added 4 Nov 2026 for the passage-oracle arm only: if the strongest model states a required point from the gold's passages, the point is fair; if no model does, it is inference tier. Opus judging Opus is same-family (SAME_FAMILY_CLEARED rests on the haiku hand-check), so read the answers, not only the verdicts."
+    }
+  ],
+  "search_tool_in_code_id": "SearchTool",
+  "search_tool_name": "internal_search",
+  "corpus": {
+    "manifest": "corpus/manifest.yaml",
+    "doc_set": "vic-rentals-baseline",
+    "document_set_description": "Victorian residential tenancy law, Authorised Versions of the Act and Regulations, for onyx-evals. Managed by npm run seed."
+  },
+  "extra_corpora": [
+    {
+      "manifest": "corpus/asof-manifest.yaml",
+      "doc_set": "vic-rentals-asof-2019-11-01",
+      "document_set_description": "onyx-evals perfect-filter arm: The versions in force on 2019-11-01 only: Residential Tenancies Act 1997, Authorised Version No. 088. Managed by npm run seed."
+    },
+    {
+      "manifest": "corpus/asof-manifest.yaml",
+      "doc_set": "vic-rentals-asof-2023-03-01",
+      "document_set_description": "onyx-evals perfect-filter arm: The versions in force on 2023-03-01 only: Residential Tenancies Act 1997, Authorised Version No. 101; Residential Tenancies Regulations 2021, Authorised Version No. 002. Managed by npm run seed."
+    },
+    {
+      "manifest": "corpus/asof-manifest.yaml",
+      "doc_set": "vic-rentals-asof-2025-10-01",
+      "document_set_description": "onyx-evals perfect-filter arm: The versions in force on 2025-10-01 only: Residential Tenancies Act 1997, Authorised Version No. 110; Residential Tenancies Regulations 2021, Authorised Version No. 004; Residential Tenancies (Rooming House Standards) Regulations 2023, Authorised Version No. 002. Managed by npm run seed."
+    },
+    {
+      "manifest": "corpus/asof-manifest.yaml",
+      "doc_set": "vic-rentals-asof-2026-02-01",
+      "document_set_description": "onyx-evals perfect-filter arm: The versions in force on 2026-02-01 only: Residential Tenancies Act 1997, Authorised Version No. 111; Residential Tenancies Regulations 2021, Authorised Version No. 005; Residential Tenancies (Rooming House Standards) Regulations 2023, Authorised Version No. 002. Managed by npm run seed."
+    },
+    {
+      "manifest": "corpus/asof-manifest.yaml",
+      "doc_set": "vic-rentals-asof-2026-10-15",
+      "document_set_description": "onyx-evals perfect-filter arm: The versions in force on 2026-10-15 only: Residential Tenancies Act 1997, Authorised Version No. 115; Residential Tenancies Regulations 2021, Authorised Version No. 009; Residential Tenancies (Rooming House Standards) Regulations 2023, Authorised Version No. 002. Managed by npm run seed."
+    }
+  ],
+  "personas": [
+    {
+      "variant": "rentals",
+      "name": "onyx-evals:rentals",
+      "description": "onyx-evals Victorian rentals variant. Managed by the setup hook; do not edit by hand.",
+      "system_prompt": "You are a careful research assistant answering questions about Victorian residential tenancy law. Answer only from the retrieved documents. The question gives the date it is asked on: apply the version of the law in force on that date, and name the document and its Authorised Version number. If the documents do not contain the answer, say so plainly rather than guessing.",
+      "task_prompt": "First say what the law says about the situation, then what the renter can do or ask. Cite every factual claim inline using the [1], [2] markers for the retrieved documents. Keep the answer concise and in plain language.",
+      "replace_base_system_prompt": false,
+      "datetime_aware": false
+    },
+    {
+      "variant": "rentals-v2",
+      "name": "onyx-evals:rentals-v2",
+      "description": "onyx-evals Victorian rentals variant 2 (2 Nov 2026): use only the in-force version, say what the law doesn't cover and when the answer depends on facts. Managed by the setup hook; do not edit by hand.",
+      "system_prompt": "You are a careful research assistant answering questions about Victorian residential tenancy law. Answer only from the retrieved documents. The question gives the date it is asked on. The retrieved documents may include several versions of the same Act or Regulations: use only the version in force on that date, and name the document, its Authorised Version number and the version's date. Do not apply a rule or suggest a step taken from any other version, even with a caveat; at most, note that the law was different before or changes later. If the answer depends on facts the question does not give, say so and name the facts that decide it. If the documents have no rule on something the user asks about, say that plainly instead of guessing or filling it in from elsewhere.",
+      "task_prompt": "First say what the law in force on the date says about the situation, including what it does not require or does not cover where that matters to the user, then what the renter can do or ask. Cite every factual claim inline using the [1], [2] markers for the retrieved documents. Keep the answer concise and in plain language.",
+      "replace_base_system_prompt": false,
+      "datetime_aware": false
+    },
+    {
+      "variant": "rentals-undated",
+      "name": "onyx-evals:rentals-undated",
+      "description": "onyx-evals Victorian rentals, undated questions (4 Nov 2026): the question is asked today; apply the law in force today. datetime_aware on, so the model knows the date. Managed by the setup hook; do not edit by hand.",
+      "system_prompt": "You are a careful research assistant answering questions about Victorian residential tenancy law. Answer only from the retrieved documents. The question is being asked today: apply the version of the law in force today, and name the document and its Authorised Version number. If the documents do not contain the answer, say so plainly rather than guessing.",
+      "task_prompt": "First say what the law says about the situation, then what the renter can do or ask. Cite every factual claim inline using the [1], [2] markers for the retrieved documents. Keep the answer concise and in plain language.",
+      "replace_base_system_prompt": false,
+      "datetime_aware": true
+    },
+    {
+      "variant": "rentals-oracle",
+      "name": "onyx-evals:rentals-oracle",
+      "description": "onyx-evals Victorian rentals, passage oracle (4 Nov 2026): the gold's law passages are in the message and there is no search tool, so the arm measures the writing half alone. Managed by the setup hook; do not edit by hand.",
+      "system_prompt": "You are a careful research assistant answering questions about Victorian residential tenancy law. The message gives the law passages to use, each headed with its document, Authorised Version number and location, and then the question. Answer only from those passages. The question gives the date it is asked on, and the passages are from the versions of the law in force on that date: apply them, and name the document and its Authorised Version number. If the passages do not contain the answer, say so plainly rather than guessing.",
+      "task_prompt": "First say what the law says about the situation, then what the renter can do or ask. Name the document and version each point rests on. Keep the answer concise and in plain language.",
+      "replace_base_system_prompt": false,
+      "datetime_aware": false,
+      "search_tool": false
+    }
+  ]
+}

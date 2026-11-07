@@ -1,0 +1,48 @@
+{
+  "name": "onyx-evals-study",
+  "version": "0.1.0",
+  "description": "An eval study of Onyx (self-hosted RAG) answering Victorian rental-law questions: which law version it uses, and a fix.",
+  "type": "module",
+  "engines": {
+    "node": ">=22"
+  },
+  "scripts": {
+    "build": "tsc",
+    "clean": "rm -rf dist",
+    "corpus": "python3 scripts/fetch-corpus.py",
+    "cases": "python3 scripts/make-rental-cases.py && npm run build && node dist/src/cases.js",
+    "passages": "python3 scripts/build-passages.py",
+    "oracle": "python3 scripts/make-oracle-dataset.py && python3 scripts/make-oracle-dataset.py --heldout",
+    "seed": "npm run build && EVAL_CORPUS=vic-rentals-baseline node --env-file-if-exists=.env dist/src/seed.js",
+    "bootstrap": "npm run build && node --env-file-if-exists=.env dist/src/bootstrap-user.js",
+    "verify": "npm run build && node --env-file-if-exists=.env dist/src/verify-manifest.js",
+    "filters": "npm run build && node --env-file-if-exists=.env dist/src/set-auto-filters.js",
+    "eval:rentals": "npm run build && EVAL_CORPUS=vic-rentals-baseline REQUEST_TIMEOUT_MS=1800000 promptfoo eval --no-cache -c promptfooconfig.rentals.yaml",
+    "eval:rentals:quick": "npm run eval:rentals -- --filter-metadata quick=true",
+    "eval:rentals:local": "npm run eval:rentals -- -j 1",
+    "eval:rentals:undated": "npm run build && EVAL_CORPUS=vic-rentals-baseline REQUEST_TIMEOUT_MS=1800000 promptfoo eval --no-cache -c promptfooconfig.rentals.yaml --tests datasets/vic-rentals-undated.yaml",
+    "eval:rentals:heldout": "npm run build && EVAL_CORPUS=vic-rentals-baseline REQUEST_TIMEOUT_MS=1800000 promptfoo eval --no-cache -c promptfooconfig.rentals.yaml --tests datasets/vic-rentals-heldout.yaml",
+    "eval:rentals:heldout-undated": "npm run build && EVAL_CORPUS=vic-rentals-baseline REQUEST_TIMEOUT_MS=1800000 promptfoo eval --no-cache -c promptfooconfig.rentals.yaml --tests datasets/vic-rentals-heldout-undated.yaml",
+    "eval:rentals:asof": "npm run build && EVAL_CORPUS=vic-rentals-baseline REQUEST_TIMEOUT_MS=1800000 promptfoo eval --no-cache -c promptfooconfig.rentals-asof.yaml",
+    "eval:rentals:oracle": "npm run build && EVAL_CORPUS=vic-rentals-baseline REQUEST_TIMEOUT_MS=1800000 promptfoo eval --no-cache -c promptfooconfig.rentals-oracle.yaml",
+    "regrade": "npm run build && promptfoo eval --no-cache -c promptfooconfig.regrade.yaml",
+    "goldcheck": "npm run build && promptfoo eval --no-cache -c promptfooconfig.goldcheck.yaml",
+    "view": "promptfoo view",
+    "test": "npm run build && node --test --test-concurrency=1 dist/tests/cases.test.js dist/tests/corpus.test.js",
+    "test:live": "npm run build && node --env-file-if-exists=.env --test --test-concurrency=1 dist/tests/setup-idempotency.test.js dist/tests/prompt-cleanliness.test.js"
+  },
+  "devDependencies": {
+    "@types/node": "^22.10.2",
+    "promptfoo": "^0.122.2",
+    "typescript": "^5.7.2",
+    "yaml": "^2.9.0"
+  },
+  "dependencies": {
+    "undici": "^7.29.1"
+  },
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/eriks-briedis/onyx-evals-study"
+  }
+}

@@ -1,0 +1,423 @@
+# yaml-language-server: $schema=https://promptfoo.dev/config-schema.json
+description: Onyx retrieval and answer quality - Victorian rentals
+
+extensions:
+  - file://dist/src/setup.js:hook
+
+prompts:
+  - '{{question}}'
+
+providers:
+  # One entry per cell of the matrix. `label` carries both axes as
+  # `<promptVariant>:<modelLabel>`: the beforeAll hook looks up manifest.personas[].variant
+  # by the first half and manifest.models[].label by the second, then writes the resolved
+  # persona id and model_configuration_id into config.body. Auth headers are injected there
+  # too — promptfoo issues these requests itself and has no session of its own.
+  #
+  # Both ids below are deliberately invalid so an unbound provider fails loudly rather than
+  # running persona 0 (the default Assistant) on whatever model Onyx defaults to.
+  # model_configuration_id is mandatory: with only a model_version, factory.py:180 falls
+  # through to get_default_llm() and still returns 200, so the run would claim a model it
+  # never used. The manifest owns the real ids.
+  #
+  # The entries are written out in full rather than sharing a YAML anchor. An anchor
+  # makes both providers point at ONE body object, so binding the second would silently
+  # rewrite the first and both cells would run the same model under different labels.
+  # bindProviders now refuses that outright, but the duplication is the first line of
+  # defence. Keep the entries in step by hand.
+  - id: https
+    label: 'rentals:haiku'
+    config:
+      url: '{{env.ONYX_BASE_URL}}/api/chat/send-chat-message'
+      method: POST
+      headers:
+        Content-Type: application/json
+      # Default is 4. A retry hides a failure and doubles the cost.
+      maxRetries: 0
+      body:
+        message: '{{question}}'
+        chat_session_info:
+          persona_id: 0
+        internal_search_filters:
+          document_set:
+            - vic-rentals-baseline
+        llm_override:
+          model_configuration_id: 0      # written by the hook -> configuration 129, claude-haiku-5-5
+          temperature: 0
+        stream: false
+        include_citations: true
+      transformResponse: (json) => json
+
+  - id: https
+    label: 'rentals:luna'
+    config:
+      url: '{{env.ONYX_BASE_URL}}/api/chat/send-chat-message'
+      method: POST
+      headers:
+        Content-Type: application/json
+      # Default is 4. A retry hides a failure and doubles the cost.
+      maxRetries: 0
+      body:
+        message: '{{question}}'
+        chat_session_info:
+          persona_id: 0
+        internal_search_filters:
+          document_set:
+            - vic-rentals-baseline
+        llm_override:
+          model_configuration_id: 0      # written by the hook -> configuration 133, gpt-5.6-luna
+          temperature: 0
+        stream: false
+        include_citations: true
+      transformResponse: (json) => json
+
+  - id: https
+    label: 'rentals:luna-api'
+    config:
+      url: '{{env.ONYX_BASE_URL}}/api/chat/send-chat-message'
+      method: POST
+      headers:
+        Content-Type: application/json
+      # Default is 4. A retry hides a failure and doubles the cost.
+      maxRetries: 0
+      body:
+        message: '{{question}}'
+        chat_session_info:
+          persona_id: 0
+        internal_search_filters:
+          document_set:
+            - vic-rentals-baseline
+        llm_override:
+          model_configuration_id: 0      # written by the hook -> configuration 32, gpt-5.6-luna via Onyx's direct openai provider, manifest luna-api
+          temperature: 0
+        stream: false
+        include_citations: true
+      transformResponse: (json) => json
+
+  - id: https
+    label: 'rentals:qwen'
+    config:
+      url: '{{env.ONYX_BASE_URL}}/api/chat/send-chat-message'
+      method: POST
+      headers:
+        Content-Type: application/json
+      # Default is 4. A retry hides a failure and doubles the cost.
+      maxRetries: 0
+      body:
+        message: '{{question}}'
+        chat_session_info:
+          persona_id: 0
+        internal_search_filters:
+          document_set:
+            - vic-rentals-baseline
+        llm_override:
+          model_configuration_id: 0      # written by the hook -> configuration 5, qwen3.6:35b (local Ollama)
+          temperature: 0
+        stream: false
+        include_citations: true
+      transformResponse: (json) => json
+
+  - id: https
+    label: 'rentals:sonnet'
+    config:
+      url: '{{env.ONYX_BASE_URL}}/api/chat/send-chat-message'
+      method: POST
+      headers:
+        Content-Type: application/json
+      maxRetries: 0
+      body:
+        message: '{{question}}'
+        chat_session_info:
+          persona_id: 0
+        internal_search_filters:
+          document_set:
+            - vic-rentals-baseline
+        llm_override:
+          model_configuration_id: 0      # written by the hook -> configuration 131, claude-sonnet-5-5
+          temperature: 0
+        stream: false
+        include_citations: true
+      transformResponse: (json) => json
+
+  - id: https
+    label: 'rentals:opus'
+    config:
+      url: '{{env.ONYX_BASE_URL}}/api/chat/send-chat-message'
+      method: POST
+      headers:
+        Content-Type: application/json
+      maxRetries: 0
+      body:
+        message: '{{question}}'
+        chat_session_info:
+          persona_id: 0
+        internal_search_filters:
+          document_set:
+            - vic-rentals-baseline
+        llm_override:
+          model_configuration_id: 0      # written by the hook -> claude-opus-5-5: the top rung of the ladder; same family as the judge, spot-check its answers
+          temperature: 0
+        stream: false
+        include_citations: true
+      transformResponse: (json) => json
+
+  - id: https
+    label: 'rentals:sol'
+    config:
+      url: '{{env.ONYX_BASE_URL}}/api/chat/send-chat-message'
+      method: POST
+      headers:
+        Content-Type: application/json
+      maxRetries: 0
+      body:
+        message: '{{question}}'
+        chat_session_info:
+          persona_id: 0
+        internal_search_filters:
+          document_set:
+            - vic-rentals-baseline
+        llm_override:
+          model_configuration_id: 0      # written by the hook -> configuration 134, gpt-5.6-sol
+          temperature: 0
+        stream: false
+        include_citations: true
+      transformResponse: (json) => json
+
+  - id: https
+    label: 'rentals:sol-api'
+    config:
+      url: '{{env.ONYX_BASE_URL}}/api/chat/send-chat-message'
+      method: POST
+      headers:
+        Content-Type: application/json
+      maxRetries: 0
+      body:
+        message: '{{question}}'
+        chat_session_info:
+          persona_id: 0
+        internal_search_filters:
+          document_set:
+            - vic-rentals-baseline
+        llm_override:
+          model_configuration_id: 0      # written by the hook -> configuration 31, gpt-5.6-sol via Onyx's direct openai provider, manifest sol-api
+          temperature: 0
+        stream: false
+        include_citations: true
+      transformResponse: (json) => json
+
+  # Prompt variant 2 (manifest.personas rentals-v2): haiku, luna and qwen under the persona that
+  # tells them to use only the in-force version and to say what the law doesn't cover. Run with
+  # --filter-providers 'rentals-v2:<model>'. Three more full copies, for the reason above.
+  - id: https
+    label: 'rentals-v2:haiku'
+    config:
+      url: '{{env.ONYX_BASE_URL}}/api/chat/send-chat-message'
+      method: POST
+      headers:
+        Content-Type: application/json
+      maxRetries: 0
+      body:
+        message: '{{question}}'
+        chat_session_info:
+          persona_id: 0
+        internal_search_filters:
+          document_set:
+            - vic-rentals-baseline
+        llm_override:
+          model_configuration_id: 0
+          temperature: 0
+        stream: false
+        include_citations: true
+      transformResponse: (json) => json
+
+  - id: https
+    label: 'rentals-v2:luna'
+    config:
+      url: '{{env.ONYX_BASE_URL}}/api/chat/send-chat-message'
+      method: POST
+      headers:
+        Content-Type: application/json
+      maxRetries: 0
+      body:
+        message: '{{question}}'
+        chat_session_info:
+          persona_id: 0
+        internal_search_filters:
+          document_set:
+            - vic-rentals-baseline
+        llm_override:
+          model_configuration_id: 0
+          temperature: 0
+        stream: false
+        include_citations: true
+      transformResponse: (json) => json
+
+  - id: https
+    label: 'rentals-v2:qwen'
+    config:
+      url: '{{env.ONYX_BASE_URL}}/api/chat/send-chat-message'
+      method: POST
+      headers:
+        Content-Type: application/json
+      maxRetries: 0
+      body:
+        message: '{{question}}'
+        chat_session_info:
+          persona_id: 0
+        internal_search_filters:
+          document_set:
+            - vic-rentals-baseline
+        llm_override:
+          model_configuration_id: 0
+          temperature: 0
+        stream: false
+        include_citations: true
+      transformResponse: (json) => json
+
+  # Undated questions (manifest.personas rentals-undated, datasets/vic-rentals-undated.yaml): the
+  # same three models under the persona that knows today's date and applies the law in force
+  # today. Run with --tests datasets/vic-rentals-undated.yaml --filter-providers 'rentals-undated:<model>'.
+  - id: https
+    label: 'rentals-undated:haiku'
+    config:
+      url: '{{env.ONYX_BASE_URL}}/api/chat/send-chat-message'
+      method: POST
+      headers:
+        Content-Type: application/json
+      maxRetries: 0
+      body:
+        message: '{{question}}'
+        chat_session_info:
+          persona_id: 0
+        internal_search_filters:
+          document_set:
+            - vic-rentals-baseline
+        llm_override:
+          model_configuration_id: 0
+          temperature: 0
+        stream: false
+        include_citations: true
+      transformResponse: (json) => json
+
+  - id: https
+    label: 'rentals-undated:sonnet'
+    config:
+      url: '{{env.ONYX_BASE_URL}}/api/chat/send-chat-message'
+      method: POST
+      headers:
+        Content-Type: application/json
+      maxRetries: 0
+      body:
+        message: '{{question}}'
+        chat_session_info:
+          persona_id: 0
+        internal_search_filters:
+          document_set:
+            - vic-rentals-baseline
+        llm_override:
+          model_configuration_id: 0
+          temperature: 0
+        stream: false
+        include_citations: true
+      transformResponse: (json) => json
+
+  - id: https
+    label: 'rentals-undated:luna'
+    config:
+      url: '{{env.ONYX_BASE_URL}}/api/chat/send-chat-message'
+      method: POST
+      headers:
+        Content-Type: application/json
+      maxRetries: 0
+      body:
+        message: '{{question}}'
+        chat_session_info:
+          persona_id: 0
+        internal_search_filters:
+          document_set:
+            - vic-rentals-baseline
+        llm_override:
+          model_configuration_id: 0
+          temperature: 0
+        stream: false
+        include_citations: true
+      transformResponse: (json) => json
+
+  - id: https
+    label: 'rentals-undated:luna-api'
+    config:
+      url: '{{env.ONYX_BASE_URL}}/api/chat/send-chat-message'
+      method: POST
+      headers:
+        Content-Type: application/json
+      maxRetries: 0
+      body:
+        message: '{{question}}'
+        chat_session_info:
+          persona_id: 0
+        internal_search_filters:
+          document_set:
+            - vic-rentals-baseline
+        llm_override:
+          model_configuration_id: 0
+          temperature: 0
+        stream: false
+        include_citations: true
+      transformResponse: (json) => json
+
+  - id: https
+    label: 'rentals-undated:qwen'
+    config:
+      url: '{{env.ONYX_BASE_URL}}/api/chat/send-chat-message'
+      method: POST
+      headers:
+        Content-Type: application/json
+      maxRetries: 0
+      body:
+        message: '{{question}}'
+        chat_session_info:
+          persona_id: 0
+        internal_search_filters:
+          document_set:
+            - vic-rentals-baseline
+        llm_override:
+          model_configuration_id: 0
+          temperature: 0
+        stream: false
+        include_citations: true
+      transformResponse: (json) => json
+
+
+defaultTest:
+  options:
+    # One judge for every model: JUDGE_MODEL=claude-opus-5-5. It grades haiku too, which the
+    # beforeAll hook allows only for judges in SAME_FAMILY_CLEARED (src/setup.ts), on the
+    # hand-check evidence. JUDGE_BASE_URL is any OpenAI-compatible endpoint serving the judge model.
+    provider:
+      id: 'openai:chat:{{env.JUDGE_MODEL}}'
+      config:
+        apiBaseUrl: '{{env.JUDGE_BASE_URL}}'
+        apiKey: unused
+        temperature: 0
+        # The judge endpoint's default output cap was 1024 tokens. A judge reasoning over a long answer
+        # runs past it, the JSON verdict is cut off, and llm-rubric records a grader error.
+        max_tokens: 4096
+  assert:
+    - type: javascript
+      value: file://dist/src/asserts/noError.js
+      metric: no_error
+    # Primary metrics.
+    - type: javascript
+      value: file://dist/src/asserts/toolInvocation.js
+      metric: tool_invocation
+    - type: javascript
+      value: file://dist/src/asserts/retrieval.js
+      metric: retrieval
+    - type: javascript
+      value: file://dist/src/asserts/citationSupport.js
+      metric: citation_support
+
+# Compiled by `npm run cases -- cases/vic-rentals.yaml`. Run with `npm run eval:rentals`, which
+# sets EVAL_CORPUS=vic-rentals-baseline; bindProviders refuses to bind these providers to any
+# other document set.
+tests: file://datasets/vic-rentals.yaml
