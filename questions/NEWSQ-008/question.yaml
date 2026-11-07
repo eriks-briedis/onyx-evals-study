@@ -1,0 +1,30 @@
+# Machine record for the case compiler (scripts/make-rental-cases.py). The gold is README.md.
+# start/end are character offsets into corpus/extracted/<doc>.txt (scripts/fetch-corpus.py);
+# sha256 is of the passage text, so a different pdftotext output is caught.
+id: NEWSQ-008
+set: main
+passages:
+- section: 30F
+  doc: rta-1997-v111-2025-11-25.pdf
+  start: 309115
+  end: 311903
+  pdf_page: 117
+  sha256: 4f4852710a38ba19241f643bd1767a9974cd1a4a77360226525225ee4d99df9b
+- section: 30G
+  doc: rta-1997-v111-2025-11-25.pdf
+  start: 312186
+  end: 313613
+  pdf_page: 119
+  sha256: 9aca7c41281b43b2373eca9ff480c25cb97e7cc5989f84d62f26e2aba58da08e
+- section: 'Endnotes: No. 6/2025 commencement'
+  doc: rta-1997-v111-2025-11-25.pdf
+  start: 2221227
+  end: 2221657
+  pdf_page: 880
+  sha256: d2e87e3e2533a119a39eb59198b85cb8b69677703075ce3d96a24d87a532c318
+- section: 'Version 110: ss 30F–30G, fixed-amount rent offers (no s 30F(4)); false or misleading rent advertising'
+  doc: rta-1997-v110-2025-08-06.pdf
+  start: 300480
+  end: 304317
+  pdf_page: 113
+  sha256: 99f8ed942a944b4c740bcfe0d1031a84edb8821d2fb9f8b1f43cfb9d1b673199

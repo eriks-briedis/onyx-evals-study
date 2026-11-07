@@ -1,0 +1,30 @@
+# Machine record for the case compiler (scripts/make-rental-cases.py). The gold is README.md.
+# start/end are character offsets into corpus/extracted/<doc>.txt (scripts/fetch-corpus.py);
+# sha256 is of the passage text, so a different pdftotext output is caught.
+id: VRQ-028
+set: main
+passages:
+- section: Regulation 14, standard for laundry facilities
+  doc: rt-rooming-house-standards-regs-2023-v002-2024-12-01.pdf
+  start: 42527
+  end: 43673
+  pdf_page: 21
+  sha256: 8465e36fe9698a67b28f0269eb0a5c1fd83a6b461c2832db61c5266ec629ff2e
+- section: Part 3, s 109
+  doc: rta-1997-v115-2026-10-13.pdf
+  start: 761563
+  end: 762498
+  pdf_page: 295
+  sha256: 2b8738c0f97e27f6323f4856eec16ab9f4043a7ee22592b2dcb5951770e716c5
+- section: Part 3, s 109A(1)–(2A)
+  doc: rta-1997-v115-2026-10-13.pdf
+  start: 763613
+  end: 764396
+  pdf_page: 296
+  sha256: bac47c228266fab5757862c410dfb0861b1773fe967247886975f4171464017f
+- section: Part 3, s 120A(1)–(3)
+  doc: rta-1997-v115-2026-10-13.pdf
+  start: 788452
+  end: 789607
+  pdf_page: 305
+  sha256: 4ff9799213456eb4f3fec21c095c950909c578636538c533874f56c6653f30bf

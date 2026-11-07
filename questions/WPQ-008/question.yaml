@@ -1,0 +1,42 @@
+# Machine record for the case compiler (scripts/make-rental-cases.py). The gold is README.md.
+# start/end are character offsets into corpus/extracted/<doc>.txt (scripts/fetch-corpus.py);
+# sha256 is of the passage text, so a different pdftotext output is caught.
+id: WPQ-008
+set: held-out
+passages:
+- section: Current s 66(2)–(4), provider and agent details and notice of change
+  doc: rta-1997-v115-2026-10-13.pdf
+  start: 437246
+  end: 439618
+  pdf_page: 167
+  sha256: 0d01389f30f24dbeba2c50817943b768448a49a2cdcfc61465ff28196b420ea3
+- section: Current s 42(1)–(4), where and how rent is paid
+  doc: rta-1997-v115-2026-10-13.pdf
+  start: 355282
+  end: 357213
+  pdf_page: 135
+  sha256: 1942fef580acfec8b019b8e52c72b0c6fc9c6e8de05b5dfae182b512d6268b80
+- section: Current s 406(1), duty to lodge bond with the Authority
+  doc: rta-1997-v115-2026-10-13.pdf
+  start: 1599062
+  end: 1599671
+  pdf_page: 628
+  sha256: 80ac8eb9e4aad988e400dfa6034de87d3e5f39e064f1bb341a44a63a6b647576
+- section: s 42, where and how rent is paid
+  doc: rta-1997-v101-2022-09-07.pdf
+  start: 324004
+  end: 328118
+  pdf_page: 123
+  sha256: 0962e0c729361ad12dac22770ed523bdfe1630d36427b3c39b9b7e4e482c8c65
+- section: s 66, provider must give renter certain information (including notice of a change)
+  doc: rta-1997-v101-2022-09-07.pdf
+  start: 397725
+  end: 402308
+  pdf_page: 151
+  sha256: 5bd492a9158fc8553a0f226891caf76f037228d86542101b0f7cb16a46ca4883
+- section: s 406, duty to pay bond to the Authority
+  doc: rta-1997-v101-2022-09-07.pdf
+  start: 1546443
+  end: 1547201
+  pdf_page: 603
+  sha256: f8a09463349911f4d74952617ee018760fb96c50ffa66529e17975e42aa8d081

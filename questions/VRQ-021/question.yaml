@@ -1,0 +1,66 @@
+# Machine record for the case compiler (scripts/make-rental-cases.py). The gold is README.md.
+# start/end are character offsets into corpus/extracted/<doc>.txt (scripts/fetch-corpus.py);
+# sha256 is of the passage text, so a different pdftotext output is caught.
+id: VRQ-021
+set: main
+passages:
+- section: Regulations Sch 4 cl 9, electrical safety minimum standard
+  doc: rt-regs-2021-v009-2026-06-30.pdf
+  start: 537701
+  end: 539609
+  pdf_page: 259
+  sha256: 79ba4476d89f68d60201973311cc1f0313b8f7e9f8a9e8198891525948d6f1e6
+- section: Current s 3(1), definition of electrical safety check
+  doc: rta-1997-v115-2026-10-13.pdf
+  start: 143645
+  end: 144128
+  pdf_page: 47
+  sha256: 5e5292bc39397d515ec41fc02a5903524171ff8f46c42a4f3db0069d0d2c0335
+- section: Current s 3(1), urgent repairs definition, paragraphs (a)–(e)
+  doc: rta-1997-v115-2026-10-13.pdf
+  start: 233218
+  end: 233641
+  pdf_page: 84
+  sha256: 4c8b8c576c08c01b0866399ea9722e3698892292b9eb4e59efd55c6fae8bd143
+- section: Current s 68A(1)–(1A), safety-related repairs and 2-yearly electrical safety check
+  doc: rta-1997-v115-2026-10-13.pdf
+  start: 446823
+  end: 448731
+  pdf_page: 170
+  sha256: dd85f898c057cae7c9a40aa1f2b5569a5fb25af7f68a98e06b3b65cb0ea6ea9a
+- section: Regulations Sch 1 standard form term 14, electrical safety checks
+  doc: rt-regs-2021-v009-2026-06-30.pdf
+  start: 228435
+  end: 229174
+  pdf_page: 110
+  sha256: cd8ea0a63adbebb80d63689987acbb1e3e916b6cd27b101695b6aec9918a7604
+- section: 'Endnotes: No. 46/2025 commencement'
+  doc: rta-1997-v115-2026-10-13.pdf
+  start: 2318976
+  end: 2319206
+  pdf_page: 926
+  sha256: a90e68a126a40c621fac4ce9a3bbfba14f8f1307b73064960453194f6c22c6a7
+- section: 'Version 101 (in force 1 March 2023): s 3(1), urgent repairs definition, paragraphs (a)–(e)'
+  doc: rta-1997-v101-2022-09-07.pdf
+  start: 205082
+  end: 205647
+  pdf_page: 75
+  sha256: f04295132dce9022e92ba0ccbd0375998ff2742ff95cf981e1e0bdad35890d20
+- section: 'Version 101 (in force 1 March 2023): s 68A(1), safety-related repairs and maintenance'
+  doc: rta-1997-v101-2022-09-07.pdf
+  start: 406695
+  end: 407233
+  pdf_page: 154
+  sha256: 201e0bc990f130d9106d6a350ad0457f87c6a0d591b18f2a3ab5eaddd551a0e7
+- section: 'Regulations version 002 (in force 1 March 2023): standard form term 14, electrical safety checks'
+  doc: rt-regs-2021-v002-2022-06-01.pdf
+  start: 124432
+  end: 125171
+  pdf_page: 67
+  sha256: cd8ea0a63adbebb80d63689987acbb1e3e916b6cd27b101695b6aec9918a7604
+- section: 'Regulations version 002 (in force 1 March 2023): Sch 4 cl 9 commencement wording'
+  doc: rt-regs-2021-v002-2022-06-01.pdf
+  start: 361387
+  end: 361439
+  pdf_page: 187
+  sha256: 9c274f0dc6a4676ce06c92f83bdf3d66cc83eb5fb37bb163179606ac7642a45b

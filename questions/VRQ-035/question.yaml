@@ -1,0 +1,48 @@
+# Machine record for the case compiler (scripts/make-rental-cases.py). The gold is README.md.
+# start/end are character offsets into corpus/extracted/<doc>.txt (scripts/fetch-corpus.py);
+# sha256 is of the passage text, so a different pdftotext output is caught.
+id: VRQ-035
+set: main
+passages:
+- section: 'Version 111: s 65B, advertising premises that do not comply with rental minimum standards'
+  doc: rta-1997-v111-2025-11-25.pdf
+  start: 418053
+  end: 418672
+  pdf_page: 160
+  sha256: 1fab689f7807cdc201b3431d75c28045aa0e95936d20ef9015d6b9bf35f3c0aa
+- section: 'Version 111: s 65A(1)–(2), premises must comply on occupation; urgent repairs request'
+  doc: rta-1997-v111-2025-11-25.pdf
+  start: 416558
+  end: 417801
+  pdf_page: 160
+  sha256: 36626460f203fc56e785679acf166d8ce99a78c32c0b638e491a9929e49fa0ca
+- section: 'Version 111: s 91L, termination by renter before possession'
+  doc: rta-1997-v111-2025-11-25.pdf
+  start: 527219
+  end: 528458
+  pdf_page: 201
+  sha256: 989fa61135603b080624eb5776ba32b184a4d1e13e6b3429bb2e673e6ee202ed
+- section: 'Regulations version 005: Sch 4 cl 8, mould and dampness'
+  doc: rt-regs-2021-v005-2025-11-25.pdf
+  start: 608768
+  end: 608941
+  pdf_page: 294
+  sha256: 1cde7d17905d4172f491d163ca4141488dd24b15e5a75b6f211a8d3858630669
+- section: 'Version 110: s 65A(1)–(2), premises must comply on occupation; urgent repairs request'
+  doc: rta-1997-v110-2025-08-06.pdf
+  start: 404813
+  end: 405985
+  pdf_page: 153
+  sha256: 4f32826a84ecfea91e6068179485612665b7690fd8ee585b6333ece45eb7384f
+- section: 'Version 110: s 91L, termination by renter before possession'
+  doc: rta-1997-v110-2025-08-06.pdf
+  start: 515283
+  end: 516600
+  pdf_page: 192
+  sha256: 2772ff7a9f627ba8dd7a6af98c75e0e912faffd44269c57e95c1eb6bf0acf9dc
+- section: 'Regulations version 004: Sch 4 cl 8, mould and dampness'
+  doc: rt-regs-2021-v004-2025-07-01.pdf
+  start: 519087
+  end: 519260
+  pdf_page: 255
+  sha256: 1cde7d17905d4172f491d163ca4141488dd24b15e5a75b6f211a8d3858630669

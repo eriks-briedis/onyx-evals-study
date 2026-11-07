@@ -1,0 +1,55 @@
+# Machine record for the case compiler (scripts/make-rental-cases.py). The gold is README.md.
+# start/end are character offsets into corpus/extracted/<doc>.txt (scripts/fetch-corpus.py);
+# sha256 is of the passage text, so a different pdftotext output is caught.
+id: NEWSQ-005
+set: main
+passages:
+- section: Historical s 263, notice to vacate for no specified reason (120 days)
+  doc: rta-1997-v088-2019-07-02.pdf
+  start: 634880
+  end: 636717
+  pdf_page: 269
+  sha256: ed5f2854e4dd6c7aad0e3e84d10db8cd3946e2ef8103f769efdfd9c64dc4e126
+- section: Historical s 266(2)–(3), notice of no effect if given in response to exercise of a right; 60-day challenge
+    limit
+  doc: rta-1997-v088-2019-07-02.pdf
+  start: 640063
+  end: 641491
+  pdf_page: 271
+  sha256: 0d31145474468ddd5fb2850408c83c181d2317ea0b540bf7a4b4471284762604
+- section: Current s 91ZZO, form of notice to vacate (reason and supporting evidence)
+  doc: rta-1997-v115-2026-10-13.pdf
+  start: 681705
+  end: 683067
+  pdf_page: 262
+  sha256: 8c54bc6355dae4a955d01efe2c824dd1bac209c7c106669724f96b8e3cdb019b
+- section: Current s 91ZZI(3), response-to-rights rule limited to s 91ZK notices
+  doc: rta-1997-v115-2026-10-13.pdf
+  start: 672884
+  end: 673063
+  pdf_page: 259
+  sha256: 69f156c6bc321da2e4561c13670d7b8b8cb2acb1f6ebd4e7dcd73b9b17303e8a
+- section: Current s 91ZZI(4), response-to-rights rule for NRAS and affordable-housing eligibility notices
+  doc: rta-1997-v115-2026-10-13.pdf
+  start: 673072
+  end: 673641
+  pdf_page: 259
+  sha256: d4f9c0ed1f737cd907d72d2b86ec1c62ef0e2e1bbf06debe6a7614957c554e39
+- section: Current ss 91ZZS–91ZZT, renter may challenge the notice to vacate at the Tribunal within 30 days
+  doc: rta-1997-v115-2026-10-13.pdf
+  start: 685924
+  end: 688252
+  pdf_page: 263
+  sha256: 1afbab111776e2c869bb3c596e92d6572c7dd087e0b6ed6d788462572bbd05ec
+- section: Current s 330(1), when the Tribunal must make a possession order
+  doc: rta-1997-v115-2026-10-13.pdf
+  start: 1463429
+  end: 1469571
+  pdf_page: 574
+  sha256: aac8dbfb112a491dd87771974318835bebad2cf67f5ed566b9a525eea1169bc8
+- section: Current s 330A(i), behaviour of the rental provider or agent
+  doc: rta-1997-v115-2026-10-13.pdf
+  start: 1474541
+  end: 1474855
+  pdf_page: 578
+  sha256: 4fce01d0b4f678344a25a3f26e28550e24c37900f8d6c6aa6edbe65b1b3c37c5

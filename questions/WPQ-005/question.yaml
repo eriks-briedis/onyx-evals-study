@@ -1,0 +1,48 @@
+# Machine record for the case compiler (scripts/make-rental-cases.py). The gold is README.md.
+# start/end are character offsets into corpus/extracted/<doc>.txt (scripts/fetch-corpus.py);
+# sha256 is of the passage text, so a different pdftotext output is caught.
+id: WPQ-005
+set: main
+passages:
+- section: 's 3(1): residential rental agreement'
+  doc: rta-1997-v115-2026-10-13.pdf
+  start: 203692
+  end: 204234
+  pdf_page: 72
+  sha256: e0cfc79bb83d9344b5d59da35bc8047e594a127382694f834a370eda08587f49
+- section: s 81
+  doc: rta-1997-v115-2026-10-13.pdf
+  start: 509448
+  end: 511930
+  pdf_page: 193
+  sha256: 48154d14b3f37a2fa77b17d1653e994773ba7743dafae6e58412609afbf1c675
+- section: s 27
+  doc: rta-1997-v115-2026-10-13.pdf
+  start: 284068
+  end: 286960
+  pdf_page: 106
+  sha256: 2d27a73ccd1ca7f7d7d37fece1ba2e1b092cdffcb23eea71c35ac42573d6db1b
+- section: 'Version 115: s 3(1), definition of residential rental provider'
+  doc: rta-1997-v115-2026-10-13.pdf
+  start: 204448
+  end: 205065
+  pdf_page: 73
+  sha256: ad7c02654c48ac0290778ea92be4f4455d7db4039df2c78f7a0b1277a57ced6c
+- section: 'Version 115: s 91P(1)–(2), offence to force a renter out except under the Act'
+  doc: rta-1997-v115-2026-10-13.pdf
+  start: 556360
+  end: 558127
+  pdf_page: 211
+  sha256: 9b58080f3209d6bfbed9d562ec778d1fa17b24a8b0cf77eecb626e02be741f08
+- section: 'Version 115: s 91R, sub-residential rental agreements'
+  doc: rta-1997-v115-2026-10-13.pdf
+  start: 561772
+  end: 564051
+  pdf_page: 213
+  sha256: 812d6dff359aceaa117cf6ba4260c6bc1f67b23ca5c02cec4df8819e197d62f8
+- section: 'Version 115: s 91S, occupant not on the lease may apply to be made a renter in listed situations'
+  doc: rta-1997-v115-2026-10-13.pdf
+  start: 564069
+  end: 565648
+  pdf_page: 214
+  sha256: ce89bb067bd8228ced87319679e441115790ef60b9a66008c216c55953d9af85

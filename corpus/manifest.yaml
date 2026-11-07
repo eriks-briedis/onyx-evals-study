@@ -1,0 +1,310 @@
+# The 14 law PDFs the study indexed: where each came from, its size and SHA-256, and its in-force dates
+# (from the official version histories on legislation.vic.gov.au, read 26 October 2026).
+# scripts/fetch-corpus.py downloads and checks them. src/seed.ts names the Onyx connector after these
+# checksums, so an edit here means a new connector and a re-index.
+version: 1
+generated: '2026-10-26'
+corpus_id: vic-rentals-v1
+doc_sets:
+- name: vic-rentals-baseline
+  tree: baseline/
+  description: 'Victorian residential tenancy law: Authorised Versions of the Act, the Regulations and the Rooming
+    House Standards Regulations, unmodified PDFs from legislation.vic.gov.au. Several Act versions are distractors,
+    so naming the version in force on the scenario date is tested.'
+  seeding: file connector (PDF extraction is part of the system under test)
+notes:
+- supersedes / superseded_by link the nearest version of the same instrument held in this corpus, not necessarily
+  the immediately preceding Authorised Version.
+- in_force_to is the day before the next Authorised Version took effect; null means in force on 26 October 2026.
+files:
+- path: baseline/rta-1997-v088-2019-07-02.pdf
+  doc_set: vic-rentals-baseline
+  title: Residential Tenancies Act 1997, Authorised Version No. 088
+  source_url: https://content.legislation.vic.gov.au/sites/default/files/b45d24ec-5984-3225-b9f1-f61b16fc197c_97-109aa088%20authorised.pdf
+  version: '088'
+  in_force_from: '2019-07-02'
+  in_force_to: '2019-12-03'
+  supersedes: null
+  superseded_by: baseline/rta-1997-v089-2019-12-04.pdf
+  role: cited
+  sha256: 01c1223f333cc90b22374adcfe12538508fed030d7e9a14dde2101e7764a7212
+  bytes: 3119512
+  format: pdf
+  onyx_metadata:
+    doc_updated_at: '2019-07-02T00:00:00+00:00'
+    link: https://content.legislation.vic.gov.au/sites/default/files/b45d24ec-5984-3225-b9f1-f61b16fc197c_97-109aa088%20authorised.pdf
+    instrument: rta-1997
+    version: '088'
+    version_id: rta-1997-v088
+    in_force_from: '2019-07-02'
+    in_force_to: '2019-12-03'
+- path: baseline/rta-1997-v089-2019-12-04.pdf
+  doc_set: vic-rentals-baseline
+  title: Residential Tenancies Act 1997, Authorised Version No. 089
+  source_url: https://content.legislation.vic.gov.au/sites/default/files/d98b58cd-fe91-3f90-92dd-3ce1ff4a6eb0_97-109aa089%20authorised.pdf
+  version: '089'
+  in_force_from: '2019-12-04'
+  in_force_to: '2020-03-01'
+  supersedes: baseline/rta-1997-v088-2019-07-02.pdf
+  superseded_by: baseline/rta-1997-v090-2020-03-02.pdf
+  role: distractor
+  sha256: b5d77521007d8cb6da5661eb05de3c8e90777cadfb03ae21856d0b059d447fba
+  bytes: 3156397
+  format: pdf
+  onyx_metadata:
+    doc_updated_at: '2019-12-04T00:00:00+00:00'
+    link: https://content.legislation.vic.gov.au/sites/default/files/d98b58cd-fe91-3f90-92dd-3ce1ff4a6eb0_97-109aa089%20authorised.pdf
+    instrument: rta-1997
+    version: '089'
+    version_id: rta-1997-v089
+    in_force_from: '2019-12-04'
+    in_force_to: '2020-03-01'
+- path: baseline/rta-1997-v090-2020-03-02.pdf
+  doc_set: vic-rentals-baseline
+  title: Residential Tenancies Act 1997, Authorised Version No. 090
+  source_url: https://content.legislation.vic.gov.au/sites/default/files/2020-02/97-109aa090%20authorised.pdf
+  version: '090'
+  in_force_from: '2020-03-02'
+  in_force_to: '2020-04-05'
+  supersedes: baseline/rta-1997-v089-2019-12-04.pdf
+  superseded_by: baseline/rta-1997-v097-2021-03-28.pdf
+  role: distractor
+  sha256: d0223786f239e1ac0900750327cff37420d6b379e9c40b48c737703773e7cc73
+  bytes: 1975903
+  format: pdf
+  onyx_metadata:
+    doc_updated_at: '2020-03-02T00:00:00+00:00'
+    link: https://content.legislation.vic.gov.au/sites/default/files/2020-02/97-109aa090%20authorised.pdf
+    instrument: rta-1997
+    version: '090'
+    version_id: rta-1997-v090
+    in_force_from: '2020-03-02'
+    in_force_to: '2020-04-05'
+- path: baseline/rta-1997-v097-2021-03-28.pdf
+  doc_set: vic-rentals-baseline
+  title: Residential Tenancies Act 1997, Authorised Version No. 097
+  source_url: https://content.legislation.vic.gov.au/sites/default/files/2021-03/97-109aa097%20authorised.pdf
+  version: '097'
+  in_force_from: '2021-03-28'
+  in_force_to: '2021-03-28'
+  supersedes: baseline/rta-1997-v090-2020-03-02.pdf
+  superseded_by: baseline/rta-1997-v098-2021-03-29.pdf
+  role: distractor
+  sha256: 583635d82fe31c70dca4196241508d3829121d6b386a11633924188bd3407f86
+  bytes: 2481790
+  format: pdf
+  onyx_metadata:
+    doc_updated_at: '2021-03-28T00:00:00+00:00'
+    link: https://content.legislation.vic.gov.au/sites/default/files/2021-03/97-109aa097%20authorised.pdf
+    instrument: rta-1997
+    version: '097'
+    version_id: rta-1997-v097
+    in_force_from: '2021-03-28'
+    in_force_to: '2021-03-28'
+- path: baseline/rta-1997-v098-2021-03-29.pdf
+  doc_set: vic-rentals-baseline
+  title: Residential Tenancies Act 1997, Authorised Version No. 098
+  source_url: https://content.legislation.vic.gov.au/sites/default/files/2021-03/97-109aa098%20authorised.pdf
+  version: '098'
+  in_force_from: '2021-03-29'
+  in_force_to: '2021-06-18'
+  supersedes: baseline/rta-1997-v097-2021-03-28.pdf
+  superseded_by: baseline/rta-1997-v101-2022-09-07.pdf
+  role: distractor
+  sha256: 70618b5c0f10dbf4d5995dbf8c1337a2ff40858fe20129448e268f9da27793d4
+  bytes: 3481116
+  format: pdf
+  onyx_metadata:
+    doc_updated_at: '2021-03-29T00:00:00+00:00'
+    link: https://content.legislation.vic.gov.au/sites/default/files/2021-03/97-109aa098%20authorised.pdf
+    instrument: rta-1997
+    version: '098'
+    version_id: rta-1997-v098
+    in_force_from: '2021-03-29'
+    in_force_to: '2021-06-18'
+- path: baseline/rta-1997-v101-2022-09-07.pdf
+  doc_set: vic-rentals-baseline
+  title: Residential Tenancies Act 1997, Authorised Version No. 101
+  source_url: https://content.legislation.vic.gov.au/sites/default/files/2022-09/97-109aa101%20authorised.pdf
+  version: '101'
+  in_force_from: '2022-09-07'
+  in_force_to: '2023-05-23'
+  supersedes: baseline/rta-1997-v098-2021-03-29.pdf
+  superseded_by: baseline/rta-1997-v110-2025-08-06.pdf
+  role: cited
+  sha256: dd0a706b5d17e3008376e74d7d7a1538ef52ce4c8b3e7d0e09c6198945bef8f3
+  bytes: 5671595
+  format: pdf
+  onyx_metadata:
+    doc_updated_at: '2022-09-07T00:00:00+00:00'
+    link: https://content.legislation.vic.gov.au/sites/default/files/2022-09/97-109aa101%20authorised.pdf
+    instrument: rta-1997
+    version: '101'
+    version_id: rta-1997-v101
+    in_force_from: '2022-09-07'
+    in_force_to: '2023-05-23'
+- path: baseline/rta-1997-v110-2025-08-06.pdf
+  doc_set: vic-rentals-baseline
+  title: Residential Tenancies Act 1997, Authorised Version No. 110
+  source_url: https://content.legislation.vic.gov.au/sites/default/files/2025-08/97-109aa110-authorised.pdf
+  version: '110'
+  in_force_from: '2025-08-06'
+  in_force_to: '2025-11-24'
+  supersedes: baseline/rta-1997-v101-2022-09-07.pdf
+  superseded_by: baseline/rta-1997-v111-2025-11-25.pdf
+  role: cited
+  sha256: 2185b83e9dcb9277b58ddf113da66f016cbff6370b7b42a07f613226ec28ab51
+  bytes: 3713693
+  format: pdf
+  onyx_metadata:
+    doc_updated_at: '2025-08-06T00:00:00+00:00'
+    link: https://content.legislation.vic.gov.au/sites/default/files/2025-08/97-109aa110-authorised.pdf
+    instrument: rta-1997
+    version: '110'
+    version_id: rta-1997-v110
+    in_force_from: '2025-08-06'
+    in_force_to: '2025-11-24'
+- path: baseline/rta-1997-v111-2025-11-25.pdf
+  doc_set: vic-rentals-baseline
+  title: Residential Tenancies Act 1997, Authorised Version No. 111
+  source_url: https://content.legislation.vic.gov.au/sites/default/files/2025-11/97-109aa111-authorised.pdf
+  version: '111'
+  in_force_from: '2025-11-25'
+  in_force_to: '2026-06-29'
+  supersedes: baseline/rta-1997-v110-2025-08-06.pdf
+  superseded_by: baseline/rta-1997-v115-2026-10-13.pdf
+  role: cited
+  sha256: 9cf468b52cef0dd259817193dbe322eb83d3cd802442d74842dd932ddbc1ac46
+  bytes: 4080487
+  format: pdf
+  onyx_metadata:
+    doc_updated_at: '2025-11-25T00:00:00+00:00'
+    link: https://content.legislation.vic.gov.au/sites/default/files/2025-11/97-109aa111-authorised.pdf
+    instrument: rta-1997
+    version: '111'
+    version_id: rta-1997-v111
+    in_force_from: '2025-11-25'
+    in_force_to: '2026-06-29'
+- path: baseline/rta-1997-v115-2026-10-13.pdf
+  doc_set: vic-rentals-baseline
+  title: Residential Tenancies Act 1997, Authorised Version No. 115
+  source_url: https://content.legislation.vic.gov.au/sites/default/files/2026-10/97-109aa115-authorised.pdf
+  version: '115'
+  in_force_from: '2026-10-13'
+  in_force_to: null
+  supersedes: baseline/rta-1997-v111-2025-11-25.pdf
+  superseded_by: null
+  role: cited
+  sha256: a49d3c1204601c438e3e5866319b6ad95304bc20dc19790e314d8c8ede8c4d63
+  bytes: 4314171
+  format: pdf
+  onyx_metadata:
+    doc_updated_at: '2026-10-13T00:00:00+00:00'
+    link: https://content.legislation.vic.gov.au/sites/default/files/2026-10/97-109aa115-authorised.pdf
+    instrument: rta-1997
+    version: '115'
+    version_id: rta-1997-v115
+    in_force_from: '2026-10-13'
+- path: baseline/rt-regs-2021-v002-2022-06-01.pdf
+  doc_set: vic-rentals-baseline
+  title: Residential Tenancies Regulations 2021, Authorised Version No. 002
+  source_url: https://content.legislation.vic.gov.au/sites/default/files/2022-06/21-3sra002%20authorised.pdf
+  version: '002'
+  in_force_from: '2022-06-01'
+  in_force_to: '2024-11-30'
+  supersedes: null
+  superseded_by: baseline/rt-regs-2021-v004-2025-07-01.pdf
+  role: cited
+  sha256: 3eb09b75651de52247b62005c965b9fa8bc8937c0a5b9831ae1e0666a598a48f
+  bytes: 1055761
+  format: pdf
+  onyx_metadata:
+    doc_updated_at: '2022-06-01T00:00:00+00:00'
+    link: https://content.legislation.vic.gov.au/sites/default/files/2022-06/21-3sra002%20authorised.pdf
+    instrument: rt-regs-2021
+    version: '002'
+    version_id: rt-regs-2021-v002
+    in_force_from: '2022-06-01'
+    in_force_to: '2024-11-30'
+- path: baseline/rt-regs-2021-v004-2025-07-01.pdf
+  doc_set: vic-rentals-baseline
+  title: Residential Tenancies Regulations 2021, Authorised Version No. 004
+  source_url: https://content.legislation.vic.gov.au/sites/default/files/2025-07/21-3sra004-authorised.pdf
+  version: '004'
+  in_force_from: '2025-07-01'
+  in_force_to: '2025-11-24'
+  supersedes: baseline/rt-regs-2021-v002-2022-06-01.pdf
+  superseded_by: baseline/rt-regs-2021-v005-2025-11-25.pdf
+  role: cited
+  sha256: 02d582bc32505b80219d21c93fe979dd2d283ef06230a5b25f314fb34c917302
+  bytes: 1465359
+  format: pdf
+  onyx_metadata:
+    doc_updated_at: '2025-07-01T00:00:00+00:00'
+    link: https://content.legislation.vic.gov.au/sites/default/files/2025-07/21-3sra004-authorised.pdf
+    instrument: rt-regs-2021
+    version: '004'
+    version_id: rt-regs-2021-v004
+    in_force_from: '2025-07-01'
+    in_force_to: '2025-11-24'
+- path: baseline/rt-regs-2021-v005-2025-11-25.pdf
+  doc_set: vic-rentals-baseline
+  title: Residential Tenancies Regulations 2021, Authorised Version No. 005
+  source_url: https://content.legislation.vic.gov.au/sites/default/files/2025-11/21-3sra005-authorised.pdf
+  version: '005'
+  in_force_from: '2025-11-25'
+  in_force_to: '2026-02-09'
+  supersedes: baseline/rt-regs-2021-v004-2025-07-01.pdf
+  superseded_by: baseline/rt-regs-2021-v009-2026-06-30.pdf
+  role: cited
+  sha256: 0747e0046134040908ec71153400539c47bc53e98224a39d8523d04b6d35789e
+  bytes: 1723105
+  format: pdf
+  onyx_metadata:
+    doc_updated_at: '2025-11-25T00:00:00+00:00'
+    link: https://content.legislation.vic.gov.au/sites/default/files/2025-11/21-3sra005-authorised.pdf
+    instrument: rt-regs-2021
+    version: '005'
+    version_id: rt-regs-2021-v005
+    in_force_from: '2025-11-25'
+    in_force_to: '2026-02-09'
+- path: baseline/rt-regs-2021-v009-2026-06-30.pdf
+  doc_set: vic-rentals-baseline
+  title: Residential Tenancies Regulations 2021, Authorised Version No. 009
+  source_url: https://content.legislation.vic.gov.au/sites/default/files/2026-06/21-3sra009-authorised.pdf
+  version: '009'
+  in_force_from: '2026-06-30'
+  in_force_to: null
+  supersedes: baseline/rt-regs-2021-v005-2025-11-25.pdf
+  superseded_by: null
+  role: cited
+  sha256: b90fe79500d7b0a5a1763bc28c7746bef068b148a734c8b567c7d0fc4d62842f
+  bytes: 1732806
+  format: pdf
+  onyx_metadata:
+    doc_updated_at: '2026-06-30T00:00:00+00:00'
+    link: https://content.legislation.vic.gov.au/sites/default/files/2026-06/21-3sra009-authorised.pdf
+    instrument: rt-regs-2021
+    version: '009'
+    version_id: rt-regs-2021-v009
+    in_force_from: '2026-06-30'
+- path: baseline/rt-rooming-house-standards-regs-2023-v002-2024-12-01.pdf
+  doc_set: vic-rentals-baseline
+  title: Residential Tenancies (Rooming House Standards) Regulations 2023, Authorised Version No. 002
+  source_url: https://content.legislation.vic.gov.au/sites/default/files/2024-11/23-10sra002-authorised.pdf
+  version: '002'
+  in_force_from: '2024-12-01'
+  in_force_to: null
+  supersedes: null
+  superseded_by: null
+  role: cited
+  sha256: fc6fe0ea2c8bb1dcfcafcc84e93d0cd1ac968eca4fe4350042fe2b8809926f8f
+  bytes: 314995
+  format: pdf
+  onyx_metadata:
+    doc_updated_at: '2024-12-01T00:00:00+00:00'
+    link: https://content.legislation.vic.gov.au/sites/default/files/2024-11/23-10sra002-authorised.pdf
+    instrument: rt-rooming-house-standards-regs-2023
+    version: '002'
+    version_id: rt-rooming-house-standards-regs-2023-v002
+    in_force_from: '2024-12-01'

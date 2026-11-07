@@ -1,0 +1,61 @@
+# Machine record for the case compiler (scripts/make-rental-cases.py). The gold is README.md.
+# start/end are character offsets into corpus/extracted/<doc>.txt (scripts/fetch-corpus.py);
+# sha256 is of the passage text, so a different pdftotext output is caught.
+id: VRQ-022
+set: held-out
+undated_as_at: '2026-11-05'
+passages:
+- section: Part 2, s 91L
+  doc: rta-1997-v115-2026-10-13.pdf
+  start: 548799
+  end: 549996
+  pdf_page: 208
+  sha256: cc06b2ff12041488694d0de3eaef94e44fa2fe2cf6aadf209929e4147e32881f
+- section: Part 2, s 65A
+  doc: rta-1997-v115-2026-10-13.pdf
+  start: 429736
+  end: 431230
+  pdf_page: 164
+  sha256: dbba77e64a26c79c6837f823e292a6412d2e411600b89844bb98b42e097baa6c
+- section: s 65, landlord's duty on provision of premises (vacant, reasonably clean)
+  doc: rta-1997-v088-2019-07-02.pdf
+  start: 222267
+  end: 223233
+  pdf_page: 88
+  sha256: b22e445e53d93837cdf5a07423f302258b76c72aa9d3d5ddcaac266f25d92f6a
+- section: s 68, landlord's duty to maintain premises in good repair
+  doc: rta-1997-v088-2019-07-02.pdf
+  start: 226729
+  end: 227766
+  pdf_page: 90
+  sha256: 691abb32ef2752f2493797e625446f7b1831f065daac5e2e425e7d4598f74d7f
+- section: s 72, urgent repairs
+  doc: rta-1997-v088-2019-07-02.pdf
+  start: 236372
+  end: 238410
+  pdf_page: 94
+  sha256: 8403cb7b6d74c1759e75395f7adc086e57261272a9adc7be8cd99b9e105fcc6b
+- section: s 226, termination by tenant before possession
+  doc: rta-1997-v088-2019-07-02.pdf
+  start: 559380
+  end: 560294
+  pdf_page: 236
+  sha256: 6717ec4f95cfa7096a1831e664de3a7a4f463223630cc6bff261ac8d90550b7c
+- section: 'Endnotes: amending Act No. 45/2018 s 52, new s 65A (rental minimum standards), not yet in operation'
+  doc: rta-1997-v088-2019-07-02.pdf
+  start: 1470890
+  end: 1472435
+  pdf_page: 647
+  sha256: 694ac30704d75be6dcc072647c454cc1e032e82e81445d8058530e525b211bab
+- section: ss 65–65A, provider's duty on provision of premises; premises must meet rental minimum standards
+  doc: rta-1997-v115-2026-10-13.pdf
+  start: 427100
+  end: 431230
+  pdf_page: 163
+  sha256: b6aa8a77716e1a47cbbfbb8d05d31e0d19d3750bac0b1e753be6bd8696f39db8
+- section: Sch 4 cl 8, mould and dampness
+  doc: rt-regs-2021-v009-2026-06-30.pdf
+  start: 537545
+  end: 537700
+  pdf_page: 259
+  sha256: 9bd55a94f89550c159c060dfa2ba4df46bd5d5225d51a5dcb7e12ba0de9852f2

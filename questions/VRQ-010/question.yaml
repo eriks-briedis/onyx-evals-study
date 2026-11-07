@@ -1,0 +1,36 @@
+# Machine record for the case compiler (scripts/make-rental-cases.py). The gold is README.md.
+# start/end are character offsets into corpus/extracted/<doc>.txt (scripts/fetch-corpus.py);
+# sha256 is of the passage text, so a different pdftotext output is caught.
+id: VRQ-010
+set: main
+passages:
+- section: Part 2, s 62
+  doc: rta-1997-v115-2026-10-13.pdf
+  start: 412428
+  end: 413369
+  pdf_page: 157
+  sha256: 4eb6d46e3326b4ef79c5977a6296eb012012c6b5abb7ab664ff9be5f5bbb5e14
+- section: Part 2, s 64(1)–(1A)
+  doc: rta-1997-v115-2026-10-13.pdf
+  start: 416129
+  end: 417050
+  pdf_page: 158
+  sha256: 245e49aadee90862132868b622280facc527c2f6a1ec8ea02dd504d5d805550a
+- section: Regulation 11(h), prohibited terms
+  doc: rt-regs-2021-v009-2026-06-30.pdf
+  start: 55694
+  end: 56040
+  pdf_page: 24
+  sha256: b07a95eccb46f9519107ddd039d83a7db6cfdeed264dc1be6267aabb7e0319cb
+- section: 'Version 115: s 61, renter must not intentionally or negligently damage the premises'
+  doc: rta-1997-v115-2026-10-13.pdf
+  start: 411372
+  end: 412254
+  pdf_page: 156
+  sha256: 4044a0093d12c1ca4c1e1da7dc34453254aad080dd25c6bc31f70c6d51ed9c62
+- section: 'Version 115: s 63, keep reasonably clean; leave in the same condition, allowing for fair wear and tear'
+  doc: rta-1997-v115-2026-10-13.pdf
+  start: 413370
+  end: 414708
+  pdf_page: 157
+  sha256: 56ee4d7e9f85c5c7c65853b3be259df08da9f0e7ef078e0a11e69da39c62abd9

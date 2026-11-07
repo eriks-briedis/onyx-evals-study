@@ -1,0 +1,43 @@
+# Machine record for the case compiler (scripts/make-rental-cases.py). The gold is README.md.
+# start/end are character offsets into corpus/extracted/<doc>.txt (scripts/fetch-corpus.py);
+# sha256 is of the passage text, so a different pdftotext output is caught.
+id: VRQ-016
+set: held-out
+undated_as_at: '2026-11-05'
+passages:
+- section: s 63, renter must keep and leave the premises reasonably clean
+  doc: rta-1997-v115-2026-10-13.pdf
+  start: 413370
+  end: 416029
+  pdf_page: 157
+  sha256: 17fe36872a471d89012ea38e8feac516529c722f3e7ada12ceb93989f704a601
+- section: s 209, application for compensation or compliance order for breach of duty
+  doc: rta-1997-v115-2026-10-13.pdf
+  start: 1398136
+  end: 1399183
+  pdf_page: 547
+  sha256: 38a8553ce2503e0ee2a5acb4f5ca4769448aa501922d1f3d50a2f4fe1ebb2956
+- section: s 210, compensation order on other grounds
+  doc: rta-1997-v115-2026-10-13.pdf
+  start: 1408660
+  end: 1410561
+  pdf_page: 551
+  sha256: 772e660752e22d1640100e6a2b8edef0afeb169360d2df1746e17eb847a56dd8
+- section: s 214, compensation recovered from a bond does not bar a further claim
+  doc: rta-1997-v115-2026-10-13.pdf
+  start: 1435170
+  end: 1436083
+  pdf_page: 561
+  sha256: 0b9fa59409d2dee282cd6dbd7ce4674028d3d8e0ecce8d0fc20b18980f7ed6be
+- section: s 411, claims for rental bonds
+  doc: rta-1997-v115-2026-10-13.pdf
+  start: 1608956
+  end: 1613625
+  pdf_page: 632
+  sha256: 72215852173f153b1be53129902cc02da9858749b09c55ad7fe885a1f6621f5e
+- section: ss 411AB–411AC, matters a bond claim may cover; repayment where no dispute
+  doc: rta-1997-v115-2026-10-13.pdf
+  start: 1615895
+  end: 1619961
+  pdf_page: 635
+  sha256: 41bd02ed76c905d2b6ec3e88c4d0336b41c97dbd14bb47481d0be8faedabc227

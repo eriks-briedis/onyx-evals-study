@@ -1,0 +1,55 @@
+# Machine record for the case compiler (scripts/make-rental-cases.py). The gold is README.md.
+# start/end are character offsets into corpus/extracted/<doc>.txt (scripts/fetch-corpus.py);
+# sha256 is of the passage text, so a different pdftotext output is caught.
+id: VRQ-011
+set: held-out
+undated_as_at: '2026-11-05'
+passages:
+- section: '42'
+  doc: rta-1997-v111-2025-11-25.pdf
+  start: 341197
+  end: 345781
+  pdf_page: 130
+  sha256: e9c022f784340a7cded9ac6b618f0eabe3f94648ee116225bd452019267c297f
+- section: 51(3)
+  doc: rta-1997-v111-2025-11-25.pdf
+  start: 368271
+  end: 369640
+  pdf_page: 141
+  sha256: 5d73a299ef7376f9c3ffe6eea49395e3c0645123c3a3c5cbfbb0981dd3102945
+- section: 51A
+  doc: rta-1997-v111-2025-11-25.pdf
+  start: 369641
+  end: 370835
+  pdf_page: 141
+  sha256: fbf0a07d77fb06144e9a60d05b5b1bcedbb4c47faf4a202708b8c9acbb040b26
+- section: 21C
+  doc: rt-regs-2021-v005-2025-11-25.pdf
+  start: 76379
+  end: 77340
+  pdf_page: 35
+  sha256: aae8509a85f41f7e6a1941a8c003557fe6f509b27b212aad253fd24fe69be329
+- section: 'Endnotes: No. 6/2025 commencement'
+  doc: rta-1997-v111-2025-11-25.pdf
+  start: 2221227
+  end: 2221657
+  pdf_page: 880
+  sha256: d2e87e3e2533a119a39eb59198b85cb8b69677703075ce3d96a24d87a532c318
+- section: s 42, where and how rent is paid
+  doc: rta-1997-v115-2026-10-13.pdf
+  start: 355282
+  end: 359558
+  pdf_page: 135
+  sha256: 63d3c7d85a94a1f7bf8ce8172c6f0ab1ca8bc03753d1ce39d383930ed2454618
+- section: ss 51–51A, charges prohibited; application and rent payment fees
+  doc: rta-1997-v115-2026-10-13.pdf
+  start: 380830
+  end: 384402
+  pdf_page: 145
+  sha256: c397cf108c10fb3613950e7c2a0bb43d302e7ff4212382d1ff84667f530ec933
+- section: reg 21C, prohibited rental application and rent payment fees
+  doc: rt-regs-2021-v009-2026-06-30.pdf
+  start: 76871
+  end: 78070
+  pdf_page: 35
+  sha256: dfd14ec516eeae346cbb58fa252bfaecec9c61356ea99edd308790f021a60613

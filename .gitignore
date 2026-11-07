@@ -1,0 +1,16 @@
+node_modules/
+dist/
+.env
+.promptfoo/
+.promptfoo-run.json
+__pycache__/
+
+# Downloaded by scripts/fetch-corpus.py; the State of Victoria holds their copyright (NOTICE).
+corpus/baseline/
+corpus/extracted/
+# Built locally from the corpus text; they quote the law in full (NOTICE).
+build/
+datasets/*-oracle.yaml
+
+# Raw promptfoo output and telemetry (large; see results/README.md).
+results/**/*.json

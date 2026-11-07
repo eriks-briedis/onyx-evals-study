@@ -1,0 +1,25 @@
+# Machine record for the case compiler (scripts/make-rental-cases.py). The gold is README.md.
+# start/end are character offsets into corpus/extracted/<doc>.txt (scripts/fetch-corpus.py);
+# sha256 is of the passage text, so a different pdftotext output is caught.
+id: VRQ-020
+set: held-out
+undated_as_at: '2026-11-05'
+passages:
+- section: Section 3(1), urgent repairs definition, paragraphs (h)–(i)
+  doc: rta-1997-v115-2026-10-13.pdf
+  start: 233978
+  end: 234652
+  pdf_page: 85
+  sha256: 3b0b03514753654dc03820d49484f6ebe4114ff012e3bf1964df92594ee72976
+- section: Part 2, s 72
+  doc: rta-1997-v115-2026-10-13.pdf
+  start: 480305
+  end: 483772
+  pdf_page: 182
+  sha256: eeafc6acb996a908bcee2eeb99db574626aae06663c876798c59db31460b04f1
+- section: Regulation 11(e), prohibited terms
+  doc: rt-regs-2021-v009-2026-06-30.pdf
+  start: 55287
+  end: 55502
+  pdf_page: 24
+  sha256: 97c61e41dcf34899bef2051d36a4ca12a411a9d965c4f6eec0693dcd07e4b706

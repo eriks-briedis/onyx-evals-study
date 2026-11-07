@@ -1,0 +1,25 @@
+# Machine record for the case compiler (scripts/make-rental-cases.py). The gold is README.md.
+# start/end are character offsets into corpus/extracted/<doc>.txt (scripts/fetch-corpus.py);
+# sha256 is of the passage text, so a different pdftotext output is caught.
+id: VRQ-013
+set: held-out
+undated_as_at: '2026-11-05'
+passages:
+- section: Part 2, s 27C
+  doc: rta-1997-v115-2026-10-13.pdf
+  start: 292937
+  end: 294722
+  pdf_page: 110
+  sha256: 7f6d7e617e55347d6f1dcbdd0c5faec5203c851bcd0e7955d6de9cc4f706fa50
+- section: Regulation 12, professional cleaning
+  doc: rt-regs-2021-v009-2026-06-30.pdf
+  start: 56266
+  end: 58150
+  pdf_page: 24
+  sha256: 9e80bab8ad16945661425e06e4e60ddbb6172c5886c846bcd2eba085c0741a44
+- section: Part 2, s 63
+  doc: rta-1997-v115-2026-10-13.pdf
+  start: 413370
+  end: 414708
+  pdf_page: 157
+  sha256: 56ee4d7e9f85c5c7c65853b3be259df08da9f0e7ef078e0a11e69da39c62abd9

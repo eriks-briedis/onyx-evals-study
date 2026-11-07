@@ -1,0 +1,25 @@
+# Machine record for the case compiler (scripts/make-rental-cases.py). The gold is README.md.
+# start/end are character offsets into corpus/extracted/<doc>.txt (scripts/fetch-corpus.py);
+# sha256 is of the passage text, so a different pdftotext output is caught.
+id: VRQ-027
+set: held-out
+undated_as_at: '2026-11-05'
+passages:
+- section: Current s 91ZD, premises destroyed or unfit for habitation
+  doc: rta-1997-v115-2026-10-13.pdf
+  start: 608303
+  end: 609265
+  pdf_page: 233
+  sha256: c19d504f8c3445879e02b6da9aea3adc0a4f1aaf943d332d84e1a37e4c8e1de2
+- section: Current s 3(1), urgent repairs definition, paragraphs (h)–(i)
+  doc: rta-1997-v115-2026-10-13.pdf
+  start: 233978
+  end: 234652
+  pdf_page: 85
+  sha256: 3b0b03514753654dc03820d49484f6ebe4114ff012e3bf1964df92594ee72976
+- section: ss 72AA–72, renter must report damage; urgent repairs
+  doc: rta-1997-v115-2026-10-13.pdf
+  start: 479327
+  end: 483847
+  pdf_page: 182
+  sha256: b4106864f6206a1296d47f0e7234a7ba689d3c83c4d29111bdcb8a48a5e6326f

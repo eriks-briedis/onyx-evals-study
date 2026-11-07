@@ -1,0 +1,48 @@
+# Machine record for the case compiler (scripts/make-rental-cases.py). The gold is README.md.
+# start/end are character offsets into corpus/extracted/<doc>.txt (scripts/fetch-corpus.py);
+# sha256 is of the passage text, so a different pdftotext output is caught.
+id: NEWSQ-003
+set: held-out
+passages:
+- section: 85(b)
+  doc: rta-1997-v111-2025-11-25.pdf
+  start: 497580
+  end: 498923
+  pdf_page: 190
+  sha256: ef4a72b188b3c46b30299bbf133649103358e6612b830ba038668bb1cc56bd50
+- section: 86(1)(c)
+  doc: rta-1997-v111-2025-11-25.pdf
+  start: 500666
+  end: 500997
+  pdf_page: 191
+  sha256: 3728840efc8e535663b2ae984a6aef0249df70cefd85e172cbf5f0929088927b
+- section: 88-89
+  doc: rta-1997-v111-2025-11-25.pdf
+  start: 508165
+  end: 511455
+  pdf_page: 193
+  sha256: 44c181a49acb376166fc9f5b17d7a79d68c4a485420788739d3173c3c8c29502
+- section: 68A
+  doc: rta-1997-v111-2025-11-25.pdf
+  start: 430488
+  end: 431496
+  pdf_page: 165
+  sha256: 00f6497fb8b79db16de16178ff9709f1298ed3cbc193cb2c16cf21759e1ea13f
+- section: Schedule 1 smoke alarm safety term
+  doc: rt-regs-2021-v005-2025-11-25.pdf
+  start: 241610
+  end: 243095
+  pdf_page: 114
+  sha256: 281f210b57cb21c10f39acac8907a58a4e1989debf5fc23c58b6de1bd4b2e740
+- section: 'Endnotes: No. 6/2025 commencement'
+  doc: rta-1997-v111-2025-11-25.pdf
+  start: 2221227
+  end: 2221657
+  pdf_page: 880
+  sha256: d2e87e3e2533a119a39eb59198b85cb8b69677703075ce3d96a24d87a532c318
+- section: s 68AA, provider's duty in relation to smoke alarms
+  doc: rta-1997-v111-2025-11-25.pdf
+  start: 428184
+  end: 430484
+  pdf_page: 164
+  sha256: 4aa9d4b4e5d2157deb3713b5c78a302511ec95fb829db2f5bd34e7de751ca852

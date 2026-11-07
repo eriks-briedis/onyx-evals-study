@@ -1,0 +1,24 @@
+# Machine record for the case compiler (scripts/make-rental-cases.py). The gold is README.md.
+# start/end are character offsets into corpus/extracted/<doc>.txt (scripts/fetch-corpus.py);
+# sha256 is of the passage text, so a different pdftotext output is caught.
+id: VRQ-001
+set: main
+passages:
+- section: Part 2, ss 71B–71D
+  doc: rta-1997-v115-2026-10-13.pdf
+  start: 474532
+  end: 476757
+  pdf_page: 180
+  sha256: ed1d227ad19d24c6e7188e5d315c450005e3d22092435ae1e6cbb3f998c29652
+- section: Part 2, s 71E
+  doc: rta-1997-v115-2026-10-13.pdf
+  start: 477049
+  end: 478949
+  pdf_page: 181
+  sha256: 78e156f023344dfb454d78246cc791fcd230334b8aab24a752747afe65661262
+- section: Part 15, s 533
+  doc: rta-1997-v115-2026-10-13.pdf
+  start: 2224704
+  end: 2225501
+  pdf_page: 883
+  sha256: 51488c9d0aa7a1be9f25cf2fa2a443f8cdd7051b31d0908943d52e41210876ce

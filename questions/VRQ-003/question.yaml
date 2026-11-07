@@ -1,0 +1,72 @@
+# Machine record for the case compiler (scripts/make-rental-cases.py). The gold is README.md.
+# start/end are character offsets into corpus/extracted/<doc>.txt (scripts/fetch-corpus.py);
+# sha256 is of the passage text, so a different pdftotext output is caught.
+id: VRQ-003
+set: main
+passages:
+- section: 91ZZB
+  doc: rta-1997-v111-2025-11-25.pdf
+  start: 628729
+  end: 631203
+  pdf_page: 243
+  sha256: f87120eab08b11aaca5e501296a18ac6fe0594f9828ce8960f894ccbb1a762ac
+- section: 91ZZO
+  doc: rta-1997-v111-2025-11-25.pdf
+  start: 661068
+  end: 662447
+  pdf_page: 256
+  sha256: 72c745bcbe073c42cd3e703be40c46ac96f55cf3923f60e92421a444950d75e4
+- section: 91ZZQ
+  doc: rta-1997-v111-2025-11-25.pdf
+  start: 663593
+  end: 664559
+  pdf_page: 257
+  sha256: f5b9e2f68175bf4979c429756bbd8a3932551ee3ec4799c0cf159d82e992cb73
+- section: 91ZZI(1)
+  doc: rta-1997-v111-2025-11-25.pdf
+  start: 649794
+  end: 651515
+  pdf_page: 252
+  sha256: a391a1df6a5175918461d9909e3f371eab0c37768560297c5b8834fa049bd628
+- section: 91ZZB
+  doc: rta-1997-v110-2025-08-06.pdf
+  start: 617139
+  end: 620572
+  pdf_page: 234
+  sha256: f09ea84161b13e0fd0dafd77bf93a0851e839f8565e04e416d81325c7e325752
+- section: 'Endnotes: No. 6/2025 commencement'
+  doc: rta-1997-v111-2025-11-25.pdf
+  start: 2221227
+  end: 2221657
+  pdf_page: 880
+  sha256: d2e87e3e2533a119a39eb59198b85cb8b69677703075ce3d96a24d87a532c318
+- section: 'Version 111: ss 91ZZS–91ZZT, renter may challenge the notice to vacate at the Tribunal within 30 days'
+  doc: rta-1997-v111-2025-11-25.pdf
+  start: 665689
+  end: 667361
+  pdf_page: 258
+  sha256: d0b3f86bfc2b9f6a24d105f6e4da2803533db2ad54d99d96206105871266ad92
+- section: 'Version 110: s 91ZZO, form of notice to vacate'
+  doc: rta-1997-v110-2025-08-06.pdf
+  start: 652662
+  end: 654642
+  pdf_page: 247
+  sha256: dabb4dd153539c2fc0fb432a2f7944e00dc09bb2293b189fb03effd1ac550653
+- section: 'Version 110: s 91ZZQ, how a notice can be withdrawn'
+  doc: rta-1997-v110-2025-08-06.pdf
+  start: 655290
+  end: 655984
+  pdf_page: 248
+  sha256: 5c1495684f1359ddf242b4b0e86f032df676f692f39728e7ac5f94e882fb01aa
+- section: 'Version 110: s 91ZZI(1), notice of no effect before the end of a fixed term'
+  doc: rta-1997-v110-2025-08-06.pdf
+  start: 641088
+  end: 643179
+  pdf_page: 243
+  sha256: 813e8d42917d35971a6cfeb998a426eb2ff131f0483a9984e02c407a698dac67
+- section: 'Version 110: ss 91ZZS–91ZZT, renter may challenge the notice to vacate at the Tribunal within 30 days'
+  doc: rta-1997-v110-2025-08-06.pdf
+  start: 657099
+  end: 659236
+  pdf_page: 249
+  sha256: 8e372c9b9421c03b18226102c3bb46f2b9c774f1f5b45cfe036e380a3fa1204a

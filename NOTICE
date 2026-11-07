@@ -1,0 +1,25 @@
+Licences in this repository
+
+Code (src/, tests/, scripts/, onyx-patches/, the promptfoo configs): MIT, see LICENSE.
+
+Study material written for this repository (questions/, cases/, datasets/, results/, docs/,
+the READMEs): Creative Commons Attribution 4.0 International (CC BY 4.0),
+https://creativecommons.org/licenses/by/4.0/. Credit: Eriks Briedis, onyx-evals-study.
+The model answers in results/ were produced by the models named with each answer.
+
+Victorian legislation: not included, and not covered by either licence.
+The Residential Tenancies Act 1997, the Residential Tenancies Regulations 2021 and the
+Residential Tenancies (Rooming House Standards) Regulations 2023 are © State of Victoria.
+The Government Printer owns copyright in Victorian legislation, and the Authorised Versions on
+legislation.vic.gov.au are published for personal use; reproduction is allowed only as the
+Copyright Act 1968 (Cth) permits. This repository therefore records only where each passage
+the study uses sits in the official PDFs (corpus/manifest.yaml, questions/*/question.yaml);
+scripts/fetch-corpus.py downloads the PDFs from legislation.vic.gov.au for your own use, and
+the scripts that need the full text build it locally into folders that are not committed.
+Short phrases of the legislation appear where an answer or a gold point refers to a provision.
+Copyright enquiries about the legislation: Office of the Chief Parliamentary Counsel,
+ocpc@ocpc.vic.gov.au.
+
+Not legal advice. The gold answers were written by a non-lawyer from the quoted law and checked
+for consistency with it, but not reviewed by a lawyer. Nothing here is legal advice about any
+real situation; for that, see Consumer Affairs Victoria or a lawyer.
