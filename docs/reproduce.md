@@ -295,9 +295,9 @@ patch in the api_server container.
 | undated | `eval:rentals:undated` | none | `rentals-undated` | off, on | applied | haiku, luna, qwen | 3 |
 | undated-j1 | `eval:rentals:undated` | `-j 1` | `rentals-undated` | on | applied | qwen | 1 |
 | oracle | `eval:rentals:oracle` | none | `rentals-oracle` | off | either | haiku, luna, qwen, sonnet, opus, sol-api | 3 |
-| heldout | `eval:rentals:heldout` | none | `rentals` | off, on | applied | haiku, luna-api, qwen, sonnet | 3 |
-| heldout-undated | `eval:rentals:heldout-undated` | none | `rentals-undated` | off, on | applied | haiku, luna-api, qwen, sonnet | 3 |
-| heldout-oracle | `eval:rentals:oracle` | `--tests datasets/vic-rentals-heldout-oracle.yaml` | `rentals-oracle` | off | either | haiku, luna-api, qwen, sonnet | 3 |
+| heldout | `eval:rentals:heldout` | none | `rentals` | off, on | applied | haiku, luna, qwen, sonnet | 3 |
+| heldout-undated | `eval:rentals:heldout-undated` | none | `rentals-undated` | off, on | applied | haiku, luna, qwen, sonnet | 3 |
+| heldout-oracle | `eval:rentals:oracle` | `--tests datasets/vic-rentals-heldout-oracle.yaml` | `rentals-oracle` | off | either | haiku, luna, qwen, sonnet | 3 |
 | heldout-pick25 | `eval:rentals:heldout` | none | `rentals` | on | applied, plus a hand edit | haiku | 3 |
 | heldout-undated-pick25 | `eval:rentals:heldout-undated` | none | `rentals-undated` | on | applied, plus a hand edit | haiku | 3 |
 

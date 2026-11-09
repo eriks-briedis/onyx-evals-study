@@ -76,6 +76,7 @@ Questions were paraphrased from public renter forum posts and news stories and r
 - **Quick subset: 10 cases.** Each main question once, on its earliest date. Most experiments ran on it (`npm run eval:rentals:quick`).
 - **Undated copies: 6.** The main slots whose law is the law in force on 4 Nov 2026, with the date sentence cut. The gold is unchanged. File: [cases/vic-rentals-undated.yaml](../cases/vic-rentals-undated.yaml).
 - **Held-out set: 8 questions, 10 slots** (4 dated, 6 undated). Chosen, and their gold written, after the fix was frozen. Each dated slot phrases its date in its own words ("I am asking on Tuesday 8 November 2022"). Undated gold is the law in force on 5 Nov 2026.
+- **Held-out questions revised on 9 Nov 2026.** Each held-out question's situation had facts that the gold rests on but the question did not state (for example, that the lease is on the standard form and started in 2024, or that the renter has not moved in). The model never sees the situation, only the question, so a gold point resting on one of those facts was unfair. The facts were added to the question text; the gold did not change. Every held-out setup was re-run on the revised questions on 9 Nov 2026, and all held-out numbers here are from that re-run. Each question's page notes the revision.
 
 | question | set | role | slots |
 |---|---|---|---|
@@ -286,7 +287,7 @@ Unless stated, a setup uses persona `rentals`, document set `vic-rentals-baselin
 
 - What changed: the held-out dated slots ([cases/vic-rentals-heldout.yaml](../cases/vic-rentals-heldout.yaml), `npm run eval:rentals:heldout`). Persona `rentals`.
 - off: stock search, the patch installed but dormant. on: the patch, `labels` rule, revised as-at prompt.
-- Models: haiku, luna-api, qwen, sonnet.
+- Models: haiku, luna, qwen, sonnet. The first held-out runs (5-6 Nov 2026, on the first wording of the questions) reached luna through Onyx's direct `openai` provider (label `luna-api`); the re-run on 9 Nov reached it through the gateway (label `luna`).
 
 ### heldout-undated
 
@@ -295,11 +296,11 @@ Unless stated, a setup uses persona `rentals`, document set `vic-rentals-baselin
 ### heldout-oracle
 
 - The oracle setup on all 10 held-out slots (`make-oracle-dataset.py --heldout`).
-- Models: haiku, luna-api, qwen, sonnet.
+- Models: haiku, luna, qwen, sonnet.
 
 ### heldout-pick25 and heldout-undated-pick25
 
-- What changed: the pick25 edit on top of the patch. `max_sections` 10 -> 25 and `SELECTION_TOKEN_BUDGET_MULTIPLIER` 2 -> 6 in the running api_server, on 6 Nov 2026. Reverted after (10 and 2, `apply.sh check` passing, filters off).
+- What changed: the pick25 edit on top of the patch. `max_sections` 10 -> 25 and `SELECTION_TOKEN_BUDGET_MULTIPLIER` 2 -> 6 in the running api_server, on 9 Nov 2026 (the held-out re-run). Reverted after (10 and 2, `apply.sh check` passing, filters off).
 - Filters on (the patch). Model: haiku. Held-out dated slots, and held-out undated slots with persona `rentals-undated`.
 
 ## The version-filter patch
@@ -322,6 +323,6 @@ An in-container patch to Onyx's search tool. It makes Onyx's date step pick, per
 - **One author.** The author wrote the gold and did the hand-check.
 - **Index state differs over time.** Setups run before the re-seed of 3 Nov 2026 used an index without the in-force labels. The `labels` setup measures that difference.
 - **Patch prompt versions.** The as-at prompt was revised on 4 Nov 2026. Earlier patched runs used the first version.
-- **Two providers for luna and sol.** luna/luna-api and sol/sol-api are the same models through different Onyx providers.
+- **Two providers for luna and sol.** luna/luna-api and sol/sol-api are the same models through different Onyx providers. The held-out set uses `luna` only.
 - **qwen timeouts.** Ollama serves qwen one request at a time, while Onyx sends many relevance checks at once. Until `undated-j1`, qwen ran with Onyx's default 60 s timeout for these secondary calls and two cases at a time. Some relevance checks and section picks timed out; Onyx then keeps the section unexpanded or uses the top hits by rank. At least one patched answer came back empty when its date call timed out. Since `undated-j1` the manifest pins `SECONDARY_LLM_FLOW_TIMEOUT_S=300`.
 - **"labels" means two things.** The `labels` setup is the labelled index with no filter, on stock Onyx. The patch's `labels` rule is the selection rule that reads those labels to filter. `datefilter` uses the rule; the `labels` setup does not.

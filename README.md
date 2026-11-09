@@ -35,8 +35,9 @@ answers.
    26 to 30 of 30 answers per model. With no date in the question it answers as at today: haiku
    passes 6 of 6 undated cases in every run, against 1.0 without it.
 5. **It holds on questions it never saw.** On 8 held-out questions (10 slots) written after the
-   patch was frozen: haiku 0.7 → 3.7, luna 0.7 → 5.3, Sonnet 0.7 → 7.7
-   ([heldout-summary.md](results/heldout-summary.md)).
+   patch was frozen: haiku 0.7 → 5.7, luna 1.0 → 6.0, Sonnet 0.7 → 8.7, qwen 0.3 → 4.0
+   ([heldout-summary.md](results/heldout-summary.md); questions revised and re-run on 9 Nov 2026,
+   see [method.md](docs/method.md#questions)).
 6. **What is left is the writing.** Given the gold's own law passages and no search at all,
    haiku passes 7.0 and Opus 9.7 of 10 ([oracle](results/summary.md#oracle)). The
    [dropped-points reports](results/README.md#files) trace each missed point to whether its

@@ -3,7 +3,8 @@
 - id: vr-ho-vrq-011-2026-01-15
   category: date-sensitive
   question: It's the middle of January 2026 (Thursday the 15th). My rent app charges a fee when I pay
-    by card. There's also a manual bank transfer option with no fee, but it's slower. Can the app charge
+    by card. The app is run by a payments company my agent uses, and it's that company that charges the
+    card fee. There's also a manual bank transfer option with no fee, but it's slower. Can the app charge
     me the card fee? Does it matter whether the fee goes to the app company or to the agent?
   document_set: vic-rentals-baseline
   expected_documents:
@@ -94,8 +95,8 @@
 - id: vr-ho-vrq-022-2019-10-15
   category: date-sensitive
   question: This is happening now, on 15 October 2019. I signed a lease and picked up the keys, but before
-    moving in I found damp, mould and rotting timber in the house. What are my options? Can I cancel,
-    ask for repairs, or ask for lower rent?
+    moving in I found damp, mould and rotting timber in the house. I haven't moved any of my things in
+    or stayed there yet. What are my options? Can I cancel, ask for repairs, or ask for lower rent?
   document_set: vic-rentals-baseline
   expected_documents:
   - rta-1997-v088-2019-07-02.pdf
@@ -181,9 +182,10 @@
     quick: true
 - id: vr-ho-newsq-003-2025-12-03
   category: partly-outside-the-law-documents
-  question: Today is Wednesday 3 December 2025. My agent says I must be home for a smoke alarm check on
-    a weekday between 10 am and 12:30 pm, or pay a $90 fee to rebook. Do I have to be there myself to
-    let the inspector in, and can they charge me the $90?
+  question: Today is Wednesday 3 December 2025. My agent gave me written notice seven days ahead that
+    I must be home for a smoke alarm check on a weekday between 10 am and 12:30 pm, or pay a $90 fee to
+    rebook. The agent has a key to the place. Do I have to be there myself to let the inspector in, and
+    can they charge me the $90?
   document_set: vic-rentals-baseline
   expected_documents:
   - rta-1997-v111-2025-11-25.pdf
@@ -278,8 +280,9 @@
 - id: vr-ho-wpq-008-2022-11-08
   category: law-unchanged-across-versions
   question: I am asking on Tuesday 8 November 2022. I signed a lease through an agency and paid the bond
-    and the first month's rent. Now the agent says the owner will manage the place themselves and has
-    sent me new bank details for the rent. What should I check before I pay into the new account?
+    and the first month's rent. Now, a week after I signed, the agent says the owner will manage the place
+    themselves and has sent me new bank details for the rent. What should I check before I pay into the
+    new account?
   document_set: vic-rentals-baseline
   expected_documents:
   - rta-1997-v101-2022-09-07.pdf

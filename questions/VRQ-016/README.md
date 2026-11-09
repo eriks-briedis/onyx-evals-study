@@ -9,7 +9,7 @@ A renter agrees to a cleaning amount being deducted from the bond. The bond is r
 
 ## Question
 
-When I moved out I agreed the agent could take an amount for cleaning out of my bond. Then my full bond came back to me, and now the agent has sent a separate invoice for the cleaning. Do I have to pay it? Is agreeing to a bond deduction the same as agreeing to pay an invoice?
+When I moved out I agreed the agent could take an amount for cleaning out of my bond, but I never signed a bond claim form for it. Then my full bond came back to me, and a month later the agent sent a separate invoice for the cleaning. Do I have to pay it? Is agreeing to a bond deduction the same as agreeing to pay an invoice?
 
 ## Law
 
@@ -28,7 +28,9 @@ The question states no date; the gold is the law in force on 2026-11-05 (today w
 
 Status: approved 5 November 2026. Must mention revised 5 November 2026 (a point no model states with the passages in hand moved to optional credit).
 
-**Question as asked:** When I moved out I agreed the agent could take an amount for cleaning out of my bond. Then my full bond came back to me, and now the agent has sent a separate invoice for the cleaning. Do I have to pay it? Is agreeing to a bond deduction the same as agreeing to pay an invoice?
+Question revised 9 November 2026: the Situation's added facts are now in the question, so the model sees them.
+
+**Question as asked:** When I moved out I agreed the agent could take an amount for cleaning out of my bond, but I never signed a bond claim form for it. Then my full bond came back to me, and a month later the agent sent a separate invoice for the cleaning. Do I have to pay it? Is agreeing to a bond deduction the same as agreeing to pay an invoice?
 
 **Must cite (version in force on this date):**
 - Residential Tenancies Act 1997, Authorised Version No. 115

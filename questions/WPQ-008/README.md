@@ -9,7 +9,7 @@ A renter signs through an agency, pays bond and an initial payment, then is told
 
 ## Question
 
-I signed a lease through an agency and paid the bond and the first month's rent. Now the agent says the owner will manage the place themselves and has sent me new bank details for the rent. What should I check before I pay into the new account?
+I signed a lease through an agency and paid the bond and the first month's rent. Now, a week after I signed, the agent says the owner will manage the place themselves and has sent me new bank details for the rent. What should I check before I pay into the new account?
 
 ## Law
 
@@ -26,7 +26,9 @@ The passages the gold rests on. The full text is not reproduced here (see NOTICE
 
 Status: approved 5 November 2026
 
-**Question as asked:** I am asking on Tuesday 8 November 2022. I signed a lease through an agency and paid the bond and the first month's rent. Now the agent says the owner will manage the place themselves and has sent me new bank details for the rent. What should I check before I pay into the new account?
+Question revised 9 November 2026: the Situation's added facts are now in the question, so the model sees them.
+
+**Question as asked:** I am asking on Tuesday 8 November 2022. I signed a lease through an agency and paid the bond and the first month's rent. Now, a week after I signed, the agent says the owner will manage the place themselves and has sent me new bank details for the rent. What should I check before I pay into the new account?
 
 **Must cite (version in force on this date):**
 - Residential Tenancies Act 1997, Authorised Version No. 101

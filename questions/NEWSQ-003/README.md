@@ -9,7 +9,7 @@ A Melbourne renter received seven days notice requiring them to be home for a we
 
 ## Question
 
-My agent says I must be home for a smoke alarm check on a weekday between 10 am and 12:30 pm, or pay a $90 fee to rebook. Do I have to be there myself to let the inspector in, and can they charge me the $90?
+My agent gave me written notice seven days ahead that I must be home for a smoke alarm check on a weekday between 10 am and 12:30 pm, or pay a $90 fee to rebook. The agent has a key to the place. Do I have to be there myself to let the inspector in, and can they charge me the $90?
 
 ## Law
 
@@ -27,7 +27,9 @@ The passages the gold rests on. The full text is not reproduced here (see NOTICE
 
 Status: approved 5 November 2026. Must mention revised 5 November 2026 (a point no model states with the passages in hand moved to optional credit).
 
-**Question as asked:** Today is Wednesday 3 December 2025. My agent says I must be home for a smoke alarm check on a weekday between 10 am and 12:30 pm, or pay a $90 fee to rebook. Do I have to be there myself to let the inspector in, and can they charge me the $90?
+Question revised 9 November 2026: the Situation's added facts are now in the question, so the model sees them.
+
+**Question as asked:** Today is Wednesday 3 December 2025. My agent gave me written notice seven days ahead that I must be home for a smoke alarm check on a weekday between 10 am and 12:30 pm, or pay a $90 fee to rebook. The agent has a key to the place. Do I have to be there myself to let the inspector in, and can they charge me the $90?
 
 **Must cite (version in force on this date):**
 - Residential Tenancies Act 1997, Authorised Version No. 111

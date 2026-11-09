@@ -9,7 +9,7 @@ After signing a lease and collecting keys, a renter finds damp, mould-like growt
 
 ## Question
 
-I signed a lease and picked up the keys, but before moving in I found damp, mould and rotting timber in the house. What are my options? Can I cancel, ask for repairs, or ask for lower rent?
+I signed a lease and picked up the keys, but before moving in I found damp, mould and rotting timber in the house. I haven't moved any of my things in or stayed there yet. What are my options? Can I cancel, ask for repairs, or ask for lower rent?
 
 **Boundary:** 29 Mar 2021: rental minimum standards (s 65A and the Regulations) and s 91L commence. Version 088 prints s 65A only as amending text in its endnotes, not in force.
 
@@ -31,7 +31,9 @@ The passages the gold rests on. The full text is not reproduced here (see NOTICE
 
 Status: approved 5 November 2026
 
-**Question as asked:** This is happening now, on 15 October 2019. I signed a lease and picked up the keys, but before moving in I found damp, mould and rotting timber in the house. What are my options? Can I cancel, ask for repairs, or ask for lower rent?
+Question revised 9 November 2026: the Situation's added facts are now in the question, so the model sees them.
+
+**Question as asked:** This is happening now, on 15 October 2019. I signed a lease and picked up the keys, but before moving in I found damp, mould and rotting timber in the house. I haven't moved any of my things in or stayed there yet. What are my options? Can I cancel, ask for repairs, or ask for lower rent?
 
 **Must cite (version in force on this date):**
 - Residential Tenancies Act 1997, Authorised Version No. 088
@@ -56,7 +58,9 @@ The question states no date; the gold is the law in force on 2026-11-05 (today w
 
 Status: approved 5 November 2026
 
-**Question as asked:** I signed a lease and picked up the keys, but before moving in I found damp, mould and rotting timber in the house. What are my options? Can I cancel, ask for repairs, or ask for lower rent?
+Question revised 9 November 2026: the Situation's added facts are now in the question, so the model sees them.
+
+**Question as asked:** I signed a lease and picked up the keys, but before moving in I found damp, mould and rotting timber in the house. I haven't moved any of my things in or stayed there yet. What are my options? Can I cancel, ask for repairs, or ask for lower rent?
 
 **Must cite (version in force on this date):**
 - Residential Tenancies Act 1997, Authorised Version No. 115

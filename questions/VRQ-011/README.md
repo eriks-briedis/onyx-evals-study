@@ -9,7 +9,7 @@ A renter is charged a card-payment service fee through a rent app, while a slowe
 
 ## Question
 
-My rent app charges a fee when I pay by card. There's also a manual bank transfer option with no fee, but it's slower. Can the app charge me the card fee? Does it matter whether the fee goes to the app company or to the agent?
+My rent app charges a fee when I pay by card. The app is run by a payments company my agent uses, and it's that company that charges the card fee. There's also a manual bank transfer option with no fee, but it's slower. Can the app charge me the card fee? Does it matter whether the fee goes to the app company or to the agent?
 
 **Boundary:** 31 Mar 2026: reg 21C, the fees banned under s 51A, takes effect. s 51A itself commenced 25 Nov 2025, and reg 21C is already printed in Regulations version 005 but says it has effect only from 31 March 2026. Between Act versions 111 and 115, s 51A was substituted (No. 46/2025): version 111 exempts the rental provider, the agent and banks; version 115 exempts only banks (ADIs).
 
@@ -30,7 +30,9 @@ The passages the gold rests on. The full text is not reproduced here (see NOTICE
 
 Status: approved 5 November 2026. Must mention revised 5 November 2026 (a point no model states with the passages in hand moved to optional credit).
 
-**Question as asked:** It's the middle of January 2026 (Thursday the 15th). My rent app charges a fee when I pay by card. There's also a manual bank transfer option with no fee, but it's slower. Can the app charge me the card fee? Does it matter whether the fee goes to the app company or to the agent?
+Question revised 9 November 2026: the Situation's added facts are now in the question, so the model sees them.
+
+**Question as asked:** It's the middle of January 2026 (Thursday the 15th). My rent app charges a fee when I pay by card. The app is run by a payments company my agent uses, and it's that company that charges the card fee. There's also a manual bank transfer option with no fee, but it's slower. Can the app charge me the card fee? Does it matter whether the fee goes to the app company or to the agent?
 
 **Must cite (version in force on this date):**
 - Residential Tenancies Act 1997, Authorised Version No. 111 (s 42(4), (7); s 51(3); s 51A)
@@ -58,7 +60,9 @@ The question states no date; the gold is the law in force on 2026-11-05 (today w
 
 Status: approved 5 November 2026
 
-**Question as asked:** My rent app charges a fee when I pay by card. There's also a manual bank transfer option with no fee, but it's slower. Can the app charge me the card fee? Does it matter whether the fee goes to the app company or to the agent?
+Question revised 9 November 2026: the Situation's added facts are now in the question, so the model sees them.
+
+**Question as asked:** My rent app charges a fee when I pay by card. The app is run by a payments company my agent uses, and it's that company that charges the card fee. There's also a manual bank transfer option with no fee, but it's slower. Can the app charge me the card fee? Does it matter whether the fee goes to the app company or to the agent?
 
 **Must cite (version in force on this date):**
 - Residential Tenancies Act 1997, Authorised Version No. 115 (s 42(4), (7); s 51(3); s 51A)

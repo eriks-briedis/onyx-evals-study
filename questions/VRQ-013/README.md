@@ -9,7 +9,7 @@ After a tenancy with pets, an agent demands a professional-cleaning receipt unde
 
 ## Question
 
-My lease has a pet clause saying I must have the carpets professionally cleaned when I leave. I cleaned them myself and they're back to how they were when I moved in, but the agent wants a receipt from a professional cleaner. Do I have to pay for one, and what would help show the carpets' condition?
+My lease is on the standard form and started in 2024. It has a pet clause saying I must have the carpets professionally cleaned when I leave. I cleaned them myself and they're back to how they were when I moved in, but the agent wants a receipt from a professional cleaner. Do I have to pay for one, and what would help show the carpets' condition?
 
 ## Law
 
@@ -25,7 +25,9 @@ The question states no date; the gold is the law in force on 2026-11-05 (today w
 
 Status: approved 5 November 2026
 
-**Question as asked:** My lease has a pet clause saying I must have the carpets professionally cleaned when I leave. I cleaned them myself and they're back to how they were when I moved in, but the agent wants a receipt from a professional cleaner. Do I have to pay for one, and what would help show the carpets' condition?
+Question revised 9 November 2026: the Situation's added facts are now in the question, so the model sees them.
+
+**Question as asked:** My lease is on the standard form and started in 2024. It has a pet clause saying I must have the carpets professionally cleaned when I leave. I cleaned them myself and they're back to how they were when I moved in, but the agent wants a receipt from a professional cleaner. Do I have to pay for one, and what would help show the carpets' condition?
 
 **Must cite (version in force on this date):**
 - Residential Tenancies Act 1997, Authorised Version No. 115

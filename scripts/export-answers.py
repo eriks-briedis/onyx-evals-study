@@ -26,7 +26,8 @@ CHECKS = ['retrieval'] + GOLD
 OUT = study.RESULTS / 'answers'
 # Runs judged on the first draft of the held-out gold (three points no model stated with the passages
 # in hand were then made optional); the final held-out runs replace them.
-SKIP_DIRS = ('heldout-gold1', 'heldout-undated-gold1')
+SKIP_DIRS = ('heldout-gold1', 'heldout-undated-gold1',
+             'heldout-q1', 'heldout-undated-q1', 'heldout-oracle-q1', 'heldout-pick25-q1', 'heldout-undated-pick25-q1')
 
 SETUPS = {
     'baseline': "the main matrix: 16 cases; Onyx's date step off and on (stock), and the perfect filter (asof) on the 10 quick cases",

@@ -9,7 +9,7 @@ A broken tap forces a renter to shut off the property's water. The emergency rep
 
 ## Question
 
-A tap broke and I had to turn off the water to the whole house. The emergency repair contact says the owner only lets their own tradespeople do repairs, and none of them can come yet. Do I have to wait, or can I get it fixed myself?
+A tap broke and I had to turn off the water to the whole house. The emergency repair contact says the owner only lets their own tradespeople do repairs, and none of them can come yet. I've called them twice today. Do I have to wait, or can I get it fixed myself?
 
 ## Law
 
@@ -25,7 +25,9 @@ The question states no date; the gold is the law in force on 2026-11-05 (today w
 
 Status: approved 5 November 2026
 
-**Question as asked:** A tap broke and I had to turn off the water to the whole house. The emergency repair contact says the owner only lets their own tradespeople do repairs, and none of them can come yet. Do I have to wait, or can I get it fixed myself?
+Question revised 9 November 2026: the Situation's added facts are now in the question, so the model sees them.
+
+**Question as asked:** A tap broke and I had to turn off the water to the whole house. The emergency repair contact says the owner only lets their own tradespeople do repairs, and none of them can come yet. I've called them twice today. Do I have to wait, or can I get it fixed myself?
 
 **Must cite (version in force on this date):**
 - Residential Tenancies Act 1997, Authorised Version No. 115

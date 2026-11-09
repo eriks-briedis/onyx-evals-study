@@ -9,7 +9,7 @@ A rental is repeatedly burgled during move-out while the lease is still active; 
 
 ## Question
 
-Our rental was broken into several times while we were moving out, and the lease hasn't ended yet. The burglars damaged the plumbing and wiring, so we can't even clean properly. What are our options before the lease ends?
+Our rental was broken into several times while we were moving out, and there are about three weeks left on our fixed-term lease. The burglars damaged the plumbing and wiring, so we can't even clean properly. What are our options before the lease ends?
 
 ## Law
 
@@ -25,7 +25,9 @@ The question states no date; the gold is the law in force on 2026-11-05 (today w
 
 Status: approved 5 November 2026
 
-**Question as asked:** Our rental was broken into several times while we were moving out, and the lease hasn't ended yet. The burglars damaged the plumbing and wiring, so we can't even clean properly. What are our options before the lease ends?
+Question revised 9 November 2026: the Situation's added facts are now in the question, so the model sees them.
+
+**Question as asked:** Our rental was broken into several times while we were moving out, and there are about three weeks left on our fixed-term lease. The burglars damaged the plumbing and wiring, so we can't even clean properly. What are our options before the lease ends?
 
 **Must cite (version in force on this date):**
 - Residential Tenancies Act 1997, Authorised Version No. 115
