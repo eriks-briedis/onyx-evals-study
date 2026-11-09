@@ -72,7 +72,7 @@ in force on that date (an earlier or later version of the same document). Mentio
 version only to say the law was different earlier or changes later is not relying on it.
 Presenting another version's rule as the law or as a step the user can take is relying on it,
 even with a caveat that it may not apply on that date. The test: if everything sourced from
-the other version were deleted, would the answer's substance change?
+the other version were deleted, would the answer's substance change?{{not_in_operation}}
 
 A version can be named as "Authorised Version No. 110" or "version 110", by a file name such
 as rta-1997-v110-2025-08-06.pdf, or by a legislation.vic.gov.au link: in 97-109aa110 the

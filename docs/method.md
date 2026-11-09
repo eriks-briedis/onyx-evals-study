@@ -11,7 +11,7 @@ Each answer gets four checks:
 - **retrieval** (deterministic): every expected document (the versions in force on the question's date) is among the documents the search returned. See [src/asserts/retrieval.ts](../src/asserts/retrieval.ts).
 - **must-mention** (judge): the answer states every required point in the gold.
 - **must-not-say** (judge): the answer asserts nothing on the gold's must-not-say list. Raising a point only to reject it is fine.
-- **version-cited** (judge): the answer names each must-cite document with its version, and every rule it applies comes from the version in force on that date. Applying another version's rule fails, even with a caveat.
+- **version-cited** (judge): the answer names each must-cite document with its version, and every rule it applies comes from the version in force on that date. Applying another version's rule fails, even with a caveat. On the two dates whose in-force Act (v088) also prints the 2018 reforms under "Amendments Not in Operation", the rubric names them and says that applying them fails ([scripts/make-rental-cases.py](../scripts/make-rental-cases.py) `NOT_IN_OPERATION`).
 
 **Gold pass** = retrieval passes AND must-mention, must-not-say and version-cited all pass.
 
@@ -173,6 +173,7 @@ Each persona is an Onyx assistant created by the setup hook from [manifest/manif
 
 - **claude-opus-5-5** judges every answer in this repo, at temperature 0, with up to 4096 output tokens, through any OpenAI-compatible endpoint (`JUDGE_MODEL`, `JUDGE_BASE_URL`).
 - Runs before 2 Nov 2026 were first judged by other models. They were all re-judged with claude-opus-5-5. See the comment in [promptfooconfig.regrade.yaml](../promptfooconfig.regrade.yaml).
+- On 9 Nov 2026 version-cited was re-judged on every answer to the two 2019 cases (vr-newsq-005-2019-11-01, vr-ho-vrq-022-2019-10-15) after the rubric gained its "Amendments Not in Operation" warning: 30 of 154 verdicts went from pass to fail, 3 gold passes were lost. See hand-check batch 3.
 - The setup hook refuses a judge from the same model family as an answering model, unless that judge is cleared by a hand-check. claude-opus-5-5 is cleared on the hand-check of haiku answers ([src/setup.ts](../src/setup.ts), `SAME_FAMILY_CLEARED`).
 
 ### Blind hand-check
@@ -181,6 +182,7 @@ The author labelled a sample of answers point by point, with no model, setup or 
 
 - **Batch 1:** 20 answers from the quick cases, filters off and perfect filter. Agreement 59 of 60 checks. The judge rules were revised against this batch. Sheet: [sheet.md](../results/hand-check/sheet.md), score: [score.md](../results/hand-check/score.md).
 - **Batch 2:** 15 fresh answers, from the filters-on runs and the 6 non-quick cases with filters off. Agreement 44 of 45 checks. This is the independent check of the revised rules. Sheet: [sheet2.md](../results/hand-check/sheet2.md), score: [score2.md](../results/hand-check/score2.md).
+- **Batch 3 (second judge):** gpt-6-astra re-judged 92 answers (r1 of `datefilter` and `heldout`, every model) with the same rubrics and agreed with claude-opus-5-5 on 262 of 276 verdicts. The 14 splits were labelled by hand: the label sided with Opus on 8 and astra on 6, and on Claude answers 6 to 5. astra was right on all 4 version-cited splits, three of them the "Amendments Not in Operation" trap the rubric now warns about. Not blind like batches 1 and 2: the labels were made in discussion of each item. Sheet: [sheet3.md](../results/hand-check/sheet3.md), score: [score3.md](../results/hand-check/score3.md).
 
 ## Setups
 
@@ -316,7 +318,7 @@ An in-container patch to Onyx's search tool. It makes Onyx's date step pick, per
 - **Small n.** 10 main questions (16 dated slots, 10 in the quick subset) and 8 held-out questions (10 slots). A one-case change is often inside run-to-run spread.
 - **Three runs.** Some cells have fewer: sol in `ctx` has one run, `undated-j1` has one.
 - **The fix was developed on the main set.** The held-out set exists to test it on questions it never met.
-- **Same-family judge.** The judge is a Claude model, as are haiku, sonnet and opus. The hand-check sampled haiku, luna and qwen answers only. Sonnet and opus answers were not hand-checked, and opus is the judge model itself. Read their answers, not only the verdicts.
+- **Same-family judge.** The judge is a Claude model, as are haiku, sonnet and opus. Batches 1 and 2 of the hand-check sampled haiku, luna and qwen answers only. Batch 3 tested the judge against a second judge from another family (gpt-6-astra) on every model and found no lean towards Claude answers, but its human labels cover only the 14 verdicts where the judges split, 3 of them Sonnet or Opus answers. Opus is the judge model itself. Read their answers, not only the verdicts.
 - **One author.** The author wrote the gold and did the hand-check.
 - **Index state differs over time.** Setups run before the re-seed of 3 Nov 2026 used an index without the in-force labels. The `labels` setup measures that difference.
 - **Patch prompt versions.** The as-at prompt was revised on 4 Nov 2026. Earlier patched runs used the first version.

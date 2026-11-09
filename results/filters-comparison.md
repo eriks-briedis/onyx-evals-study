@@ -6,15 +6,15 @@ Filters: off = Onyx's date step off, every version searched; on = Onyx's stock d
 
 | filters | model | judged | cases | time filter set | 0 docs | Onyx error | retrieval | must-mention | must-not-say | version-cited | gold pass | judge errors | median latency s |
 |---|---|---|---|---|---|---|---|---|---|---|---|---|---|
-| on | haiku | original, gpt-6-astra; re-judged must-mention, must-not-say, version-cited, claude-opus-5-5; re-judged must-mention, Re-judge saved Onyx answers - Victorian rentals | 16 | 2 | 0 | 0 | 15 | 8 | 14 | 5 | 4 | 0 | 37 |
-| off | haiku | original, gpt-6-astra; re-judged must-mention, must-not-say, version-cited, claude-opus-5-5; re-judged must-mention, Re-judge saved Onyx answers - Victorian rentals | 16 | 0 | 0 | 0 | 16 | 10 | 14 | 8 | 5 | 0 | 35 |
-| asof | haiku | original, gpt-6-astra; re-judged must-mention, must-not-say, version-cited, claude-opus-5-5; re-judged must-mention, Re-judge saved Onyx answers - Victorian rentals | 10 | 0 | 0 | 0 | 10 | 6 | 9 | 10 | 6 | 0 | 31 |
-| on | luna | original, claude-sonnet-5-5; re-judged must-mention, must-not-say, version-cited, claude-opus-5-5; re-judged must-mention, Re-judge saved Onyx answers - Victorian rentals | 16 | 7 | 6 | 0 | 10 | 7 | 16 | 9 | 6 | 0 | 17 |
-| off | luna | original, claude-sonnet-5-5; re-judged must-mention, must-not-say, version-cited, claude-opus-5-5; re-judged must-mention, Re-judge saved Onyx answers - Victorian rentals | 16 | 0 | 0 | 0 | 16 | 10 | 14 | 7 | 4 | 0 | 18 |
-| asof | luna | original, claude-sonnet-5-5; re-judged must-mention, must-not-say, version-cited, claude-opus-5-5; re-judged must-mention, Re-judge saved Onyx answers - Victorian rentals | 10 | 0 | 0 | 0 | 10 | 7 | 10 | 10 | 7 | 0 | 92 |
-| on | qwen | original, claude-sonnet-5-5; re-judged must-mention, must-not-say, version-cited, claude-opus-5-5; re-judged must-mention, Re-judge saved Onyx answers - Victorian rentals | 16 | 1 | 1 | 1 | 14 | 8 | 13 | 2 | 1 | 0 | 321 |
-| off | qwen | original, claude-sonnet-5-5; re-judged must-mention, must-not-say, version-cited, claude-opus-5-5; re-judged must-mention, Re-judge saved Onyx answers - Victorian rentals | 16 | 0 | 0 | 0 | 15 | 6 | 13 | 5 | 2 | 0 | 293 |
-| asof | qwen | original, claude-sonnet-5-5; re-judged must-mention, must-not-say, version-cited, claude-opus-5-5; re-judged must-mention, Re-judge saved Onyx answers - Victorian rentals | 10 | 0 | 0 | 0 | 10 | 4 | 8 | 9 | 4 | 0 | 336 |
+| on | haiku | original, gpt-6-astra; re-judged must-mention, must-not-say, version-cited, claude-opus-5-5; re-judged version-cited, claude-opus-5-5; re-judged must-mention, claude-opus-5-5 | 16 | 2 | 0 | 0 | 15 | 8 | 14 | 5 | 4 | 0 | 37 |
+| off | haiku | original, gpt-6-astra; re-judged must-mention, must-not-say, version-cited, claude-opus-5-5; re-judged version-cited, claude-opus-5-5; re-judged must-mention, claude-opus-5-5 | 16 | 0 | 0 | 0 | 16 | 10 | 14 | 8 | 5 | 0 | 35 |
+| asof | haiku | original, gpt-6-astra; re-judged must-mention, must-not-say, version-cited, claude-opus-5-5; re-judged version-cited, claude-opus-5-5; re-judged must-mention, claude-opus-5-5 | 10 | 0 | 0 | 0 | 10 | 6 | 9 | 9 | 6 | 0 | 31 |
+| on | luna | original, claude-sonnet-5-5; re-judged must-mention, must-not-say, version-cited, claude-opus-5-5; re-judged version-cited, claude-opus-5-5; re-judged must-mention, claude-opus-5-5 | 16 | 7 | 6 | 0 | 10 | 7 | 16 | 9 | 6 | 0 | 17 |
+| off | luna | original, claude-sonnet-5-5; re-judged must-mention, must-not-say, version-cited, claude-opus-5-5; re-judged version-cited, claude-opus-5-5; re-judged must-mention, claude-opus-5-5 | 16 | 0 | 0 | 0 | 16 | 10 | 14 | 7 | 4 | 0 | 18 |
+| asof | luna | original, claude-sonnet-5-5; re-judged must-mention, must-not-say, version-cited, claude-opus-5-5; re-judged version-cited, claude-opus-5-5; re-judged must-mention, claude-opus-5-5 | 10 | 0 | 0 | 0 | 10 | 7 | 10 | 10 | 7 | 0 | 92 |
+| on | qwen | original, claude-sonnet-5-5; re-judged must-mention, must-not-say, version-cited, claude-opus-5-5; re-judged version-cited, claude-opus-5-5; re-judged must-mention, claude-opus-5-5 | 16 | 1 | 1 | 1 | 14 | 8 | 13 | 2 | 1 | 0 | 321 |
+| off | qwen | original, claude-sonnet-5-5; re-judged must-mention, must-not-say, version-cited, claude-opus-5-5; re-judged version-cited, claude-opus-5-5; re-judged must-mention, claude-opus-5-5 | 16 | 0 | 0 | 0 | 15 | 6 | 13 | 5 | 2 | 0 | 293 |
+| asof | qwen | original, claude-sonnet-5-5; re-judged must-mention, must-not-say, version-cited, claude-opus-5-5; re-judged version-cited, claude-opus-5-5; re-judged must-mention, claude-opus-5-5 | 10 | 0 | 0 | 0 | 10 | 4 | 8 | 9 | 4 | 0 | 336 |
 
 ## Perfect date filter vs filters off, same cases
 
@@ -22,12 +22,12 @@ asof searches only the versions in force on the scenario date; off searches ever
 
 | filters | model | judged | cases | time filter set | 0 docs | Onyx error | retrieval | must-mention | must-not-say | version-cited | gold pass | judge errors | median latency s |
 |---|---|---|---|---|---|---|---|---|---|---|---|---|---|
-| off | haiku | original, gpt-6-astra; re-judged must-mention, must-not-say, version-cited, claude-opus-5-5; re-judged must-mention, Re-judge saved Onyx answers - Victorian rentals | 10 | 0 | 0 | 0 | 10 | 7 | 10 | 6 | 4 | 0 | 35 |
-| asof | haiku | original, gpt-6-astra; re-judged must-mention, must-not-say, version-cited, claude-opus-5-5; re-judged must-mention, Re-judge saved Onyx answers - Victorian rentals | 10 | 0 | 0 | 0 | 10 | 6 | 9 | 10 | 6 | 0 | 31 |
-| off | luna | original, claude-sonnet-5-5; re-judged must-mention, must-not-say, version-cited, claude-opus-5-5; re-judged must-mention, Re-judge saved Onyx answers - Victorian rentals | 10 | 0 | 0 | 0 | 10 | 7 | 9 | 5 | 3 | 0 | 21 |
-| asof | luna | original, claude-sonnet-5-5; re-judged must-mention, must-not-say, version-cited, claude-opus-5-5; re-judged must-mention, Re-judge saved Onyx answers - Victorian rentals | 10 | 0 | 0 | 0 | 10 | 7 | 10 | 10 | 7 | 0 | 92 |
-| off | qwen | original, claude-sonnet-5-5; re-judged must-mention, must-not-say, version-cited, claude-opus-5-5; re-judged must-mention, Re-judge saved Onyx answers - Victorian rentals | 10 | 0 | 0 | 0 | 9 | 3 | 7 | 4 | 1 | 0 | 299 |
-| asof | qwen | original, claude-sonnet-5-5; re-judged must-mention, must-not-say, version-cited, claude-opus-5-5; re-judged must-mention, Re-judge saved Onyx answers - Victorian rentals | 10 | 0 | 0 | 0 | 10 | 4 | 8 | 9 | 4 | 0 | 336 |
+| off | haiku | original, gpt-6-astra; re-judged must-mention, must-not-say, version-cited, claude-opus-5-5; re-judged version-cited, claude-opus-5-5; re-judged must-mention, claude-opus-5-5 | 10 | 0 | 0 | 0 | 10 | 7 | 10 | 6 | 4 | 0 | 35 |
+| asof | haiku | original, gpt-6-astra; re-judged must-mention, must-not-say, version-cited, claude-opus-5-5; re-judged version-cited, claude-opus-5-5; re-judged must-mention, claude-opus-5-5 | 10 | 0 | 0 | 0 | 10 | 6 | 9 | 9 | 6 | 0 | 31 |
+| off | luna | original, claude-sonnet-5-5; re-judged must-mention, must-not-say, version-cited, claude-opus-5-5; re-judged version-cited, claude-opus-5-5; re-judged must-mention, claude-opus-5-5 | 10 | 0 | 0 | 0 | 10 | 7 | 9 | 5 | 3 | 0 | 21 |
+| asof | luna | original, claude-sonnet-5-5; re-judged must-mention, must-not-say, version-cited, claude-opus-5-5; re-judged version-cited, claude-opus-5-5; re-judged must-mention, claude-opus-5-5 | 10 | 0 | 0 | 0 | 10 | 7 | 10 | 10 | 7 | 0 | 92 |
+| off | qwen | original, claude-sonnet-5-5; re-judged must-mention, must-not-say, version-cited, claude-opus-5-5; re-judged version-cited, claude-opus-5-5; re-judged must-mention, claude-opus-5-5 | 10 | 0 | 0 | 0 | 9 | 3 | 7 | 4 | 1 | 0 | 299 |
+| asof | qwen | original, claude-sonnet-5-5; re-judged must-mention, must-not-say, version-cited, claude-opus-5-5; re-judged version-cited, claude-opus-5-5; re-judged must-mention, claude-opus-5-5 | 10 | 0 | 0 | 0 | 10 | 4 | 8 | 9 | 4 | 0 | 336 |
 
 ## Per case
 
@@ -35,7 +35,7 @@ Columns: time filter Onyx inferred, documents returned, then R = retrieval, M = 
 
 | case | haiku on | haiku off | haiku asof | luna on | luna off | luna asof | qwen on | qwen off | qwen asof |
 |---|---|---|---|---|---|---|---|---|---|
-| newsq-005-2019-11-01 | updated None .. 2019-11-01; 50 docs; Rmnv | no call; 50 docs; RmNV | no call; 50 docs; RmnV | updated 2019-11-01 .. 2019-11-01; 0 docs; rmNv | no call; 150 docs; RMNV | no call; 86 docs; RMNV | none; 50 docs; rmnv | no call; 50 docs; rmNv | no call; 50 docs; Rmnv |
+| newsq-005-2019-11-01 | updated None .. 2019-11-01; 50 docs; Rmnv | no call; 50 docs; RmNV | no call; 50 docs; Rmnv | updated 2019-11-01 .. 2019-11-01; 0 docs; rmNv | no call; 150 docs; RMNV | no call; 86 docs; RMNV | none; 50 docs; rmnv | no call; 50 docs; rmNv | no call; 50 docs; Rmnv |
 | newsq-005-2026-10-15 | none; 50 docs; RmNv | no call; 50 docs; RMNv | - | updated 2026-10-15 .. 2026-10-15; 0 docs; rmNv | no call; 100 docs; RmnV | - | none; 50 docs; RmNv | no call; 50 docs; RmNv | - |
 | newsq-008-2025-10-01 | none; 50 docs; RmNv | no call; 50 docs; RmNV | no call; 50 docs; RmNV | none; 50 docs; RMNV | no call; 100 docs; RmNV | no call; 50 docs; RmNV | none; 50 docs; RmnV | no call; 50 docs; RmnV | no call; 50 docs; RmNV |
 | newsq-008-2026-02-01 | none; 50 docs; RmNV | no call; 50 docs; RmNV | - | none; 150 docs; RmNV | no call; 100 docs; RmNv | - | none; 50 docs; RmNv | no call; 50 docs; RmNv | - |

@@ -51,6 +51,32 @@ class NoAliases(yaml.SafeDumper):
         return True
 
 
+# In-force files that print, at the back under "Amendments Not in Operation", amendments passed but
+# not yet law. Only v088 and v089 of the Act do (later versions say they contain none), and the
+# rules named below occur there and not in the body; check_not_in_operation() re-checks the first
+# part against the extracted text. The note reaches the version-cited rubric (src/cases.ts
+# notInOperation): without it the judge passed answers that applied the 2018 reforms as 2019 law
+# because they cited v088 (results/hand-check/score3.md).
+_RTA_2018 = ('the Residential Tenancies Amendment Act 2018 (No. 45/2018) and related 2019 amendments, '
+             'most of which commenced on 29 March 2021. They include the rental minimum standards, mould or '
+             'damp caused by or related to the building structure as an urgent repair, and new sections '
+             'such as ss 91ZK, 91ZX-91ZZD and 91ZZI. Using their terms ("renter", "rental provider") is not '
+             'by itself applying their rules')
+NOT_IN_OPERATION = {
+    'Residential Tenancies Act 1997, Authorised Version No. 088': _RTA_2018,
+    'Residential Tenancies Act 1997, Authorised Version No. 089': _RTA_2018,
+}
+NONE_PENDING = 'does not contain amendments that are not yet in operation'
+
+
+def check_not_in_operation(corpus):
+    """Every file whose text prints pending amendments is in NOT_IN_OPERATION, and no other."""
+    for f in corpus:
+        text = corpus_text(f['path'])
+        pending = 'Amendments Not in Operation' in text and NONE_PENDING not in text
+        assert pending == (f['title'] in NOT_IN_OPERATION), (f['title'], 'NOT_IN_OPERATION is out of date')
+
+
 def section(md, start, stops=('**', '## ')):
     """Text after the bold label `start` up to the next bold label or heading."""
     i = md.index(start) + len(start)
@@ -163,6 +189,8 @@ def compile_question(q, corpus, by_title):
             # The date lets the judge accept a version named by its date ("the version dated 6 August 2025").
             in_force=[f"{l}, dated {date.fromisoformat(by_title[l]['in_force_from']):%-d %B %Y}" if l in by_title else l
                       for l in live],
+            **(dict(not_in_operation=[f'{l}: {NOT_IN_OPERATION[l]}' for l in live if l in NOT_IN_OPERATION])
+               if any(l in NOT_IN_OPERATION for l in live) else {}),
             extra=dict(question_id=q['id'], scenario_date=slot['date'], role=q['role'],
                        gold_answer=slot['answer'], optional_credit=slot['optional'],
                        **(dict(heldout=True) if heldout else {}),
@@ -232,6 +260,7 @@ def write_index(questions, cases):
 
 def main():
     corpus = study.corpus_files()
+    check_not_in_operation(corpus)
     by_title = {f['title']: f for f in corpus}
     questions = load_questions()
     main_cases = [c for q in questions if q['set'] == 'main' for c in compile_question(q, corpus, by_title)]

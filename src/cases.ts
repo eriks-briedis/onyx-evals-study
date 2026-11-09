@@ -39,6 +39,12 @@ export interface Case {
   must_cite?: string[];
   /** Every instrument in the library with the version in force on the scenario date. */
   in_force?: string[];
+  /**
+   * In-force files that also print, under "Amendments Not in Operation", amendments not yet law
+   * on the scenario date (one note each). Fills the version-cited rubric's warning; empty means
+   * no warning.
+   */
+  not_in_operation?: string[];
   /** Anything else worth keeping in the results file; passed through to metadata. */
   extra?: Record<string, unknown>;
 }
@@ -52,6 +58,26 @@ const MUST_NOT_CONTAIN = 'file://dist/src/asserts/mustNotContain.js';
 /** The judge sees the answer text only, not the citations block or the retrieved passages. */
 const ANSWER_ONLY = 'output.answer';
 
+/**
+ * The version-cited warning for a date whose in-force file prints amendments not yet in force.
+ * The judge does not see the file, and without the warning it passes a rule quoted from that
+ * section because the answer cites the in-force version for it. Grounded in the corpus rather
+ * than the judge's memory: a general "fail rules you know came later" fails correct answers.
+ */
+function notInOperation(notes: string[]): string {
+  if (notes.length === 0) return '';
+  return `
+
+On this date the in-force file also prints, at the back under "Amendments Not in Operation",
+amendments that had been passed but were not yet law:
+
+${notes.map((n) => `- ${n}`).join('\n')}
+
+A rule found only there was not in force on this date, even though it is printed in the
+in-force file. Applying it as the law, or as a step the user can take, is applying a later
+version's rule and fails, even when the answer cites the in-force version for it.`;
+}
+
 /** Fill the case's fields into a rubric. */
 function fillRubric(value: string, c: Case): string {
   const filled = value
@@ -59,7 +85,8 @@ function fillRubric(value: string, c: Case): string {
     .replaceAll('{{correct_answer_summary}}', c.correct_answer_summary.trim())
     .replaceAll('{{wrong_answer_looks_like}}', c.wrong_answer_looks_like.trim())
     .replaceAll('{{must_cite}}', (c.must_cite ?? []).map((m) => `- ${m}`).join('\n'))
-    .replaceAll('{{in_force}}', (c.in_force ?? []).map((m) => `- ${m}`).join('\n'));
+    .replaceAll('{{in_force}}', (c.in_force ?? []).map((m) => `- ${m}`).join('\n'))
+    .replaceAll('{{not_in_operation}}', notInOperation(c.not_in_operation ?? []));
   for (const key of ['must_cite', 'in_force'] as const) {
     if (value.includes(`{{${key}}}`) && (c[key] ?? []).length === 0) {
       throw new Error(`the version-cited rubric needs ${key}, and the case has none`);
@@ -124,6 +151,7 @@ export function compileCase(c: Case): Record<string, unknown> {
       wrong_answer_looks_like: c.wrong_answer_looks_like.trim(),
       ...(c.must_cite ? { must_cite: c.must_cite } : {}),
       ...(c.in_force ? { in_force: c.in_force } : {}),
+      ...(c.not_in_operation?.length ? { not_in_operation: c.not_in_operation } : {}),
       ...(c.extra ?? {}),
     },
     ...(assert.length > 0 ? { assert } : {}),

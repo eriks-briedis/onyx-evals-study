@@ -749,6 +749,12 @@
   - 'Residential Tenancies Regulations 2021: no version in the library was in force on this date'
   - 'Residential Tenancies (Rooming House Standards) Regulations 2023: no version in the library was in
     force on this date'
+  not_in_operation:
+  - 'Residential Tenancies Act 1997, Authorised Version No. 088: the Residential Tenancies Amendment Act
+    2018 (No. 45/2018) and related 2019 amendments, most of which commenced on 29 March 2021. They include
+    the rental minimum standards, mould or damp caused by or related to the building structure as an urgent
+    repair, and new sections such as ss 91ZK, 91ZX-91ZZD and 91ZZI. Using their terms ("renter", "rental
+    provider") is not by itself applying their rules'
   extra:
     question_id: NEWSQ-005
     scenario_date: '2019-11-01'

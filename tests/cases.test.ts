@@ -122,6 +122,20 @@ describe('compiler', () => {
     assert.throws(() => compile([{ ...c, in_force: [] }]), /needs in_force/);
   });
 
+  it('warns the version-cited judge about amendments not in operation only when the case lists them', () => {
+    const c = { ...baseCase, document_set: 'vic-rentals-baseline', judge_questions: ['version-cited'],
+      must_cite: ['Residential Tenancies Act 1997, Authorised Version No. 088'],
+      in_force: ['Residential Tenancies Act 1997, Authorised Version No. 088'] };
+    const rubricOf = (x: typeof c & { not_in_operation?: string[] }) =>
+      (compile([x]).compiled[0]!.assert as { metric: string; value: string }[]).find((a) => a.metric === 'version-cited')!.value;
+    const plain = rubricOf(c);
+    assert.doesNotMatch(plain, /Amendments Not in Operation|\{\{not_in_operation\}\}/);
+    assert.match(plain, /substance change\?\n\nA version can be named/);
+    const warned = rubricOf({ ...c, not_in_operation: ['Residential Tenancies Act 1997, Authorised Version No. 088: the 2018 reforms'] });
+    assert.match(warned, /under "Amendments Not in Operation"/);
+    assert.match(warned, /- Residential Tenancies Act 1997, Authorised Version No. 088: the 2018 reforms/);
+  });
+
   it('refuses a judge question with no rubric written', () => {
     assert.throws(() => compile([{ ...baseCase, judge_questions: ['unsupported-claim'] }]),
       /No rubric written for judge question "unsupported-claim"/);

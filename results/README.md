@@ -38,6 +38,8 @@ fewer models than [setups.md](setups.md) lists for the same setup. Their header 
 Batch 1 (`sheet.md`, `score.md`): 60 verdicts, the judge agreed with the hand label on 59. The
 judge's rules were revised on this batch, so it is not an independent test. Batch 2
 (`sheet2.md`, `score2.md`): 45 new verdicts after the revision, 44 agreed.
+Batch 3 (`sheet3.md`, `score3.md`): the 14 verdicts where a second judge, gpt-6-astra, split
+from the judge of record on 92 answers. The label sided with the judge of record on 8.
 
 ## Raw runs
 

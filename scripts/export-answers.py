@@ -110,6 +110,8 @@ def load_answers(root):
     rows = []
     for p in results_files(root):
         setup, filters, model, run = setup_of(p, root)
+        if setup not in SETUPS:  # only the published setups; the private tree also holds judge tests
+            continue
         doc = json.loads(p.read_text())
         judges = [study.judge_of(doc) or 'unknown']
         redone = defaultdict(dict)

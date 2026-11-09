@@ -1092,6 +1092,8 @@
       - Residential Tenancies Act 1997, Authorised Version No. 088, dated 2 July 2019
       - "Residential Tenancies Regulations 2021: no version in the library was in force on this date"
       - "Residential Tenancies (Rooming House Standards) Regulations 2023: no version in the library was in force on this date"
+    not_in_operation:
+      - 'Residential Tenancies Act 1997, Authorised Version No. 088: the Residential Tenancies Amendment Act 2018 (No. 45/2018) and related 2019 amendments, most of which commenced on 29 March 2021. They include the rental minimum standards, mould or damp caused by or related to the building structure as an urgent repair, and new sections such as ss 91ZK, 91ZX-91ZZD and 91ZZI. Using their terms ("renter", "rental provider") is not by itself applying their rules'
     question_id: NEWSQ-005
     scenario_date: 2019-11-01
     role: date-sensitive
@@ -1165,6 +1167,15 @@
         Presenting another version's rule as the law or as a step the user can take is relying on it,
         even with a caveat that it may not apply on that date. The test: if everything sourced from
         the other version were deleted, would the answer's substance change?
+
+        On this date the in-force file also prints, at the back under "Amendments Not in Operation",
+        amendments that had been passed but were not yet law:
+
+        - Residential Tenancies Act 1997, Authorised Version No. 088: the Residential Tenancies Amendment Act 2018 (No. 45/2018) and related 2019 amendments, most of which commenced on 29 March 2021. They include the rental minimum standards, mould or damp caused by or related to the building structure as an urgent repair, and new sections such as ss 91ZK, 91ZX-91ZZD and 91ZZI. Using their terms ("renter", "rental provider") is not by itself applying their rules
+
+        A rule found only there was not in force on this date, even though it is printed in the
+        in-force file. Applying it as the law, or as a step the user can take, is applying a later
+        version's rule and fails, even when the answer cites the in-force version for it.
 
         A version can be named as "Authorised Version No. 110" or "version 110", by a file name such
         as rta-1997-v110-2025-08-06.pdf, or by a legislation.vic.gov.au link: in 97-109aa110 the
